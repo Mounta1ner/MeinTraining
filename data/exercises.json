@@ -1,0 +1,2809 @@
+[
+  {
+    "id": "e0",
+    "n": "Kniebeuge",
+    "al": [
+      "Squat",
+      "Air Squat",
+      "Hocke"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Füße schulterbreit, Gesäß nach hinten unten schieben, Knie über den Zehen, Rücken gerade.",
+    "s": "Aufrecht stehen, Arme vor der Brust",
+    "e": "Oberschenkel waagerecht, Gewicht auf den Fersen",
+    "g": "Knie- und Hüftstabilität, Oberschenkel- und Gesäßkraft, Alltagskraft (Aufstehen, Treppen)",
+    "x": "Akute Knieschmerzen oder Schwellung, frische Verletzung; sonst nur flach und schmerzfrei",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,28,15,33,15",
+      "26,15,23,21,15,32,28,33,25,44,29,20,34,20"
+    ]
+  },
+  {
+    "id": "e1",
+    "n": "Ausfallschritt",
+    "al": [
+      "Lunge",
+      "Lunges"
+    ],
+    "c": "Kraft",
+    "m": "optional Hanteln",
+    "d": "Großer Schritt nach vorn, hinteres Knie senkt sich Richtung Boden, dann zurückdrücken.",
+    "s": "Aufrecht, Beine hüftbreit",
+    "e": "Beide Knie ca. 90°",
+    "g": "Beinkraft, Gleichgewicht, Gesäß, Kniestabilität",
+    "x": "Akute Knieprobleme; bei Schwindel nur mit Festhalten",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,12,24,18,24,32,32,34,32,44,24,25,24,32;M24 32L19 41L12 44"
+    ]
+  },
+  {
+    "id": "e2",
+    "n": "Wadenheben",
+    "al": [
+      "Calf Raise",
+      "Zehenstand"
+    ],
+    "c": "Kraft",
+    "m": "optional Brett",
+    "d": "Auf die Zehenspitzen hochdrücken, oben kurz halten, langsam absenken. Auf einem Brett für mehr Bewegungsweg.",
+    "s": "Fersen am Boden oder Brettkante",
+    "e": "Maximal auf den Zehenspitzen",
+    "g": "Wade, Achillessehne, Sprunggelenk-Stabilität, Fußkraft",
+    "x": "Akute Achillessehnen- oder Sprunggelenkverletzung ohne Freigabe",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 44L28 44",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M24 41L28 44"
+    ]
+  },
+  {
+    "id": "e3",
+    "n": "Hüftbrücke",
+    "al": [
+      "Glute Bridge",
+      "Beckenheben",
+      "Gesäßheben"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Rückenlage, Füße aufgestellt. Becken anheben, Gesäß anspannen, kontrolliert absenken.",
+    "s": "Rückenlage, Knie gebeugt",
+    "e": "Schulter, Hüfte, Knie in einer Linie",
+    "g": "Gesäß, unterer Rücken, Hüftstabilität, unspezifischer Rückenschmerz, Kniebeschwerden",
+    "x": "Akute starke Rückenschmerzen mit Ausstrahlung",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,20,43,26,43",
+      "8,42,14,42,26,35,37,30,38,44,20,43,26,42"
+    ]
+  },
+  {
+    "id": "e4",
+    "n": "Liegestütz",
+    "al": [
+      "Push-up",
+      "Pushup",
+      "Klappmesser-frei"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Körper gerade wie ein Brett, Brust zum Boden, Ellbogen ca. 45° vom Körper, hochdrücken. Erleichterung: Knie am Boden.",
+    "s": "Stütz, Arme gestreckt",
+    "e": "Brust knapp über dem Boden",
+    "g": "Brust, Schulter, Trizeps, Rumpfstabilität",
+    "x": "Akute Schulter-, Handgelenks- oder Ellbogenbeschwerden; leichter an der Wand oder auf den Knien",
+    "fig": [
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43",
+      "40,35,34,36,24,39,15,41,6,43,28,39,34,43"
+    ]
+  },
+  {
+    "id": "e5",
+    "n": "Unterarmstütz",
+    "al": [
+      "Plank",
+      "Brett",
+      "Planke"
+    ],
+    "c": "Rumpf",
+    "m": "–",
+    "d": "Auf Unterarmen und Zehen, Körper bildet eine Linie, Bauch und Gesäß anspannen. Zeit halten.",
+    "s": "Ellbogen unter den Schultern",
+    "e": "Position halten, nicht durchhängen",
+    "g": "Rumpfstabilität, Rücken, Haltung",
+    "x": "Akute Schulterprobleme, Hohlkreuz mit Rückenschmerzen, Bluthochdruck bei Pressatmung",
+    "fig": [
+      "38,31,32,33,24,36,15,39,6,43,32,43,38,43",
+      "38,31,32,33,24,36,15,39,6,43,32,43,38,43"
+    ]
+  },
+  {
+    "id": "e6",
+    "n": "Seitstütz",
+    "al": [
+      "Side Plank",
+      "Seitliche Planke"
+    ],
+    "c": "Rumpf",
+    "m": "–",
+    "d": "Auf einem Unterarm seitlich stützen, Hüfte hoch, Körper bildet eine Linie.",
+    "s": "Seitlage, Ellbogen unter Schulter",
+    "e": "Hüfte angehoben, Linie Kopf bis Fuß",
+    "g": "Seitlicher Rumpf, Hüfte, Rückenstabilität",
+    "x": "Akute Schulterbeschwerden",
+    "fig": [
+      "40,40,34,41,20,43,13,43.5,6,44,33,44,40,44",
+      "40,27,34,30,20,37,13,40,6,44,34,44,41,44"
+    ],
+    "l": "Lege dich auf die Seite, der Ellbogen liegt genau unter der Schulter, der Unterarm quer zum Körper auf dem Boden. Die Beine sind gestreckt und übereinander (leichter: Knie gebeugt am Boden lassen). Hebe das Becken an, bis Schulter, Hüfte und Füße eine gerade Linie bilden, und halte Rumpf und Gesäß angespannt. Die Hüfte darf nicht nach hinten oder unten durchsacken, atme ruhig weiter. Nach der Haltezeit das Becken kontrolliert absenken und die Seite wechseln."
+  },
+  {
+    "id": "e7",
+    "n": "Vierfüßler diagonal",
+    "al": [
+      "Bird Dog",
+      "Birddog"
+    ],
+    "c": "Rumpf",
+    "m": "–",
+    "d": "Im Vierfüßlerstand gegengleich Arm und Bein strecken, Rumpf ruhig halten.",
+    "s": "Vierfüßlerstand",
+    "e": "Arm und gegenüberliegendes Bein waagerecht",
+    "g": "Rückenstabilität, Rumpfkontrolle, Koordination",
+    "x": "Akute Handgelenk- oder Knieschmerzen (sonst gepolstert)",
+    "fig": [
+      "40,27,34,30,18,30,18,44,10,44,34,37,34,44",
+      "39,24,34,30,18,30,10,30,3,30,40,30,46,30;M18 30L18 44L10 44M34 30L34 37L34 44"
+    ]
+  },
+  {
+    "id": "e8",
+    "n": "Rückenheben",
+    "al": [
+      "Superman",
+      "Reverse Hyperextension"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Bauchlage, Arme nach vorn, Arme und Beine gleichzeitig leicht anheben, kurz halten.",
+    "s": "Bauchlage, Arme vorn",
+    "e": "Arme und Beine knapp vom Boden gelöst",
+    "g": "Rückenstrecker, Haltung, unterer Rücken",
+    "x": "Akute Rückenschmerzen im Hohlkreuz, Bandscheibenvorfall ohne Freigabe",
+    "fig": [
+      "38,42,32,43,18,43,10,43,3,43,38,43,45,43",
+      "38,37,32,40,18,43,10,40,3,37,38,38,45,36"
+    ]
+  },
+  {
+    "id": "e9",
+    "n": "Step-up",
+    "al": [
+      "Aufsteigen",
+      "Stufensteigen",
+      "Box Step-up"
+    ],
+    "c": "Kraft",
+    "m": "Brett/Stufe, optional Hanteln",
+    "d": "Mit einem Fuß fest auf Brett/Stufe steigen, ganz aufrichten, kontrolliert zurück.",
+    "s": "Ein Fuß auf dem Brett",
+    "e": "Aufrecht auf dem Brett, anderes Knie angehoben",
+    "g": "Beinkraft, Treppensteigen, Gesäß, Kniestabilität",
+    "x": "Gleichgewichtsprobleme ohne Festhalten, akute Knieschmerzen",
+    "fig": [
+      "22,7,22,13,22,27,28,31,30,36,22,20,22,27;M22 27L20 36L20 44M28 36L42 36L42 44L28 44Z",
+      "32,3,32,9,32,22,32,31,32,36,32,15,32,22;M32 22L38 26L38 33M28 36L42 36L42 44L28 44Z"
+    ]
+  },
+  {
+    "id": "e10",
+    "n": "Rumänisches Kreuzheben",
+    "al": [
+      "Romanian Deadlift",
+      "RDL",
+      "Kreuzheben"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Hanteln vor den Oberschenkeln, Hüfte nach hinten schieben, Rücken gerade, bis Dehnung hinten spürbar.",
+    "s": "Aufrecht, Hanteln vor den Oberschenkeln",
+    "e": "Oberkörper vorgebeugt, Hanteln am Schienbein",
+    "g": "Hintere Oberschenkel, Gesäß, Rückenstrecker, Hüfte",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,25,20,25,27;;d",
+      "36,20,30,22,14,25,18,35,20,44,30,30,29,38;;d"
+    ]
+  },
+  {
+    "id": "e11",
+    "n": "Bizeps-Curl",
+    "al": [
+      "Curl",
+      "Kurzhantel-Curl",
+      "Armbeugen"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Ellbogen am Körper, Hanteln zur Schulter beugen, langsam senken.",
+    "s": "Arme gestreckt, Hanteln seitlich",
+    "e": "Hanteln auf Schulterhöhe",
+    "g": "Armkraft, Ellbogenbeugung, Greifkraft",
+    "x": "Akute Ellbogen- oder Bizepssehnenbeschwerden",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,23,20,24,28;;d",
+      "24,7,24,13,24,27,24,36,24,44,23,21,29,15;;d"
+    ]
+  },
+  {
+    "id": "e12",
+    "n": "Schulterdrücken",
+    "al": [
+      "Shoulder Press",
+      "Overhead Press",
+      "Military Press"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Hanteln von Schulterhöhe senkrecht nach oben drücken, ohne ins Hohlkreuz zu gehen.",
+    "s": "Hanteln auf Schulterhöhe",
+    "e": "Arme gestreckt über dem Kopf",
+    "g": "Schulterkraft, Trizeps, Oberkörperstabilität",
+    "x": "Schulterengpass (Impingement), akute Schulterschmerzen, starke Nackenverspannung",
+    "fig": [
+      "24,10,24,16,24,29,24,37,24,44,27,22,29,15;;d",
+      "24,10,24,16,24,29,24,37,24,44,28,10,28,3;;d"
+    ]
+  },
+  {
+    "id": "e13",
+    "n": "Seitheben",
+    "al": [
+      "Lateral Raise",
+      "Seitliches Armheben"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Arme leicht gebeugt seitlich bis Schulterhöhe heben, langsam senken.",
+    "s": "Hanteln neben dem Körper",
+    "e": "Arme waagerecht seitlich",
+    "g": "Schulter (seitlicher Deltamuskel), Haltung",
+    "x": "Schulterengpass; nur bis Schulterhöhe und mit leichten Gewichten",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,27,20,28,27;M24 13L21 20L20 27M24 27L21 36L21 44;d",
+      "24,7,24,13,24,27,27,36,27,44,31,13,38,13;M24 13L17 13L10 13M24 27L21 36L21 44;d"
+    ]
+  },
+  {
+    "id": "e14",
+    "n": "Vorgebeugtes Rudern",
+    "al": [
+      "Bent-over Row",
+      "Rudern",
+      "Hantelrudern"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Oberkörper vorgeneigt, Rücken gerade, Hanteln zu den Rippen ziehen, Schulterblätter zusammen.",
+    "s": "Vorgebeugt, Arme hängen",
+    "e": "Ellbogen hinter dem Rumpf",
+    "g": "Oberer Rücken, Haltung, Schulterblattkontrolle",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe",
+    "fig": [
+      "31,15,26,18,14,27,18,36,18,44,26,26,26,34;;d",
+      "31,15,26,18,14,27,18,36,18,44,19,23,25,27;;d"
+    ]
+  },
+  {
+    "id": "e15",
+    "n": "Dips am Stuhl",
+    "al": [
+      "Trizeps-Dips",
+      "Bank Dips",
+      "Dips"
+    ],
+    "c": "Kraft",
+    "m": "Stuhl",
+    "d": "Hände auf Stuhlkante, Gesäß davor, Ellbogen beugen und wieder strecken.",
+    "s": "Arme gestreckt, Gesäß vor dem Stuhl",
+    "e": "Ellbogen ca. 90°",
+    "g": "Trizeps, Schulterkraft",
+    "x": "Schulterbeschwerden, instabile Schulter",
+    "fig": [
+      "9,13,10,20,16,36,27,40,38,44,10,27,10,34;M4 34L14 34L14 44L4 44Z",
+      "10,21,11,28,16,41,27,42,38,44,5,30,10,34;M4 34L14 34L14 44L4 44Z"
+    ],
+    "l": "Setze dich an die Kante eines stabilen Stuhls (an die Wand stellen, damit er nicht rutscht). Die Hände stützen neben dem Gesäß auf der Kante, die Finger zeigen nach vorn. Rutsche mit dem Gesäß vor die Sitzfläche, die Beine sind gestreckt oder angewinkelt (leichter). Beuge die Ellbogen nach hinten bis etwa 90°, ohne dass die Schultern nach oben wandern, und drücke dich wieder hoch, ohne die Ellbogen ganz durchzudrücken. Der Rücken bleibt nah am Stuhl."
+  },
+  {
+    "id": "e16",
+    "n": "Muschel",
+    "al": [
+      "Clamshell",
+      "Clam"
+    ],
+    "c": "Kraft",
+    "m": "optional Band",
+    "d": "Seitlage, Knie gebeugt, Fersen zusammen, oberes Knie öffnen ohne das Becken zu kippen.",
+    "s": "Seitlage, Knie zusammen",
+    "e": "Oberes Knie geöffnet",
+    "g": "Hüftstabilität, seitliches Gesäß, Knie (X-Bein), Läuferknie",
+    "x": "Akute Hüftschmerzen, frische Hüft-OP ohne Freigabe",
+    "fig": [
+      "8,20,14,22,28,22,38,30,30,34,12,28,8,25;M28 22L38 31L30 35",
+      "8,20,14,22,28,22,38,30,30,34,12,28,8,25;M28 22L40 17L32 13"
+    ],
+    "l": "Lege dich auf die Seite, Kopf auf dem unteren Arm oder einem Kissen. Die Beine liegen übereinander, Hüften und Knie sind etwa 45° gebeugt, die Füße bleiben auf einer Linie mit dem Gesäß. Halte die Fersen zusammen und öffne das obere Knie wie eine Muschel so weit, wie es geht, ohne dass das Becken nach hinten kippt (eine Hand auf der oberen Hüfte hilft zur Kontrolle). Kurz halten und langsam schließen. Die Zeichnung zeigt die Position von oben: Das untere Bein bleibt liegen, das obere klappt auf."
+  },
+  {
+    "id": "e17",
+    "n": "Seitliches Beinheben",
+    "al": [
+      "Side Leg Raise",
+      "Abduktion"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Seitlage, oberes Bein gestreckt anheben und kontrolliert senken.",
+    "s": "Seitlage, Beine übereinander",
+    "e": "Oberes Bein ca. 45° angehoben",
+    "g": "Hüftabduktoren, Gangstabilität, Gesäß, Hüfte",
+    "x": "Akute Hüftbeschwerden",
+    "fig": [
+      "6,39,12,41,26,43,33,43.5,40,44,9,43,4,42;M26 42L33 42L40 43",
+      "6,39,12,41,26,43,33,43.5,40,44,9,43,4,42;M26 42L35 34L42 28"
+    ],
+    "l": "Lege dich auf die Seite, der Körper bildet eine gerade Linie von Kopf bis Fuß. Der untere Arm stützt den Kopf, die obere Hand liegt zur Stabilität vor dem Körper auf dem Boden. Das untere Bein darf leicht gebeugt sein. Hebe das obere Bein gestreckt etwa 30 bis 45° an, ohne dass sich das Becken nach hinten dreht, halte kurz und lege es langsam wieder ab. Die Zeichnung zeigt die Seitlage von hinten betrachtet."
+  },
+  {
+    "id": "e18",
+    "n": "Wandsitzen",
+    "al": [
+      "Wall Sit",
+      "Wandhocke"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Rücken an der Wand, Knie ca. 90° gebeugt, Position halten.",
+    "s": "Rücken an der Wand, stehend",
+    "e": "Sitzposition, Oberschenkel waagerecht",
+    "g": "Oberschenkelkraft, Kniestabilität, Kraftausdauer",
+    "x": "Akute Knieschmerzen, Bluthochdruck bei Pressatmung",
+    "fig": [
+      "17,7,16,13,16,27,16,36,17,44,19,20,19,27;M12 0L12 44",
+      "17,10,16,16,16,30,30,30,30,44,20,24,26,29;M12 0L12 44"
+    ]
+  },
+  {
+    "id": "e19",
+    "n": "Einbeinstand",
+    "al": [
+      "Single Leg Balance",
+      "Einbeinig stehen"
+    ],
+    "c": "Gleichgewicht",
+    "m": "optional Kissen",
+    "d": "Auf einem Bein stehen, Position halten. Schwerer: Augen zu oder weicher Untergrund.",
+    "s": "Beidbeinig stehen",
+    "e": "Ein Bein angehoben, ruhiger Stand",
+    "g": "Gleichgewicht, Balance, Sturzprophylaxe, Sprunggelenkstabilität",
+    "x": "Schwindel oder Unsicherheit ohne Festhaltemöglichkeit",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L21 36L21 44",
+      "24,7,24,13,24,27,24,36,24,44,30,18,36,20;M24 27L31 31L29 39"
+    ]
+  },
+  {
+    "id": "e20",
+    "n": "Oberschenkel-Vorderseite dehnen",
+    "al": [
+      "Quad Stretch",
+      "Quadrizeps-Dehnung"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Ferse zum Gesäß ziehen, Knie zeigen nach unten, Hüfte nach vorn. 30 Sek. halten.",
+    "s": "Stehend, an Wand abstützen",
+    "e": "Ferse am Gesäß, Dehnung vorn",
+    "g": "Beweglichkeit Oberschenkel, Knie, Verspannung nach dem Laufen",
+    "x": "Akute Knieschmerzen, Muskelfaserriss",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L21 36L21 44",
+      "24,7,24,13,24,27,24,36,24,44,19,24,14,33;M24 27L23 37L14 33"
+    ]
+  },
+  {
+    "id": "e21",
+    "n": "Oberschenkel-Rückseite dehnen",
+    "al": [
+      "Hamstring Stretch",
+      "Beinbeuger-Dehnung"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Ferse auf Stufe, Bein gestreckt, Oberkörper mit geradem Rücken nach vorn neigen.",
+    "s": "Ferse aufgestellt, Bein gestreckt",
+    "e": "Oberkörper vorgeneigt, Zug hinten",
+    "g": "Verspannte Beinrückseite, Rücken, Beweglichkeit",
+    "x": "Muskelzerrung, Ischiasreizung mit Ausstrahlung",
+    "fig": [
+      "18,7,18,13,18,27,18,36,18,44,19,20,20,27;M18 27L27 31.5L36 36M32 36L44 36L44 44L32 44Z",
+      "32,16,27,18,18,27,18,36,18,44,31,26,35,33;M18 27L27 31.5L36 36M32 36L44 36L44 44L32 44Z"
+    ]
+  },
+  {
+    "id": "e22",
+    "n": "Wadendehnung",
+    "al": [
+      "Calf Stretch",
+      "Wadenstretch"
+    ],
+    "c": "Dehnung",
+    "m": "Wand",
+    "d": "Hände an der Wand, ein Bein nach hinten, Ferse bleibt am Boden, Hüfte nach vorn.",
+    "s": "Schrittstellung an der Wand",
+    "e": "Hinteres Bein gestreckt, Ferse am Boden",
+    "g": "Verkürzte Waden, Achillessehne, Fersenschmerz, Plantarfasziitis",
+    "x": "Akute Achillessehnenverletzung",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,32,14,39,14;M40 0L40 44",
+      "33,8,31,14,24,28,18,36,12,44,36,14,39,14;M24 28L31 36L31 44M40 0L40 44"
+    ]
+  },
+  {
+    "id": "e23",
+    "n": "Hüftbeuger-Dehnung",
+    "al": [
+      "Hip Flexor Stretch",
+      "Psoas-Dehnung"
+    ],
+    "c": "Dehnung",
+    "m": "Kissen",
+    "d": "Ausfallschritt-Position, Becken nach vorn schieben, aufrecht bleiben.",
+    "s": "Kniender Ausfallschritt",
+    "e": "Becken vorn, Dehnung an der Hüftvorderseite",
+    "g": "Hüftsteife durch langes Sitzen, Hohlkreuz, Rückenschmerz",
+    "x": "Akute Knieschmerzen im Kniestand (sonst Polster), frische Hüft-OP",
+    "fig": [
+      "20,14,20,20,20,34,15,44,7,44,24,27,22,33;M20 34L30 36L30 44",
+      "24,14,24,20,24,34,15,44,7,44,28,13,29,6;M24 34L32 36L32 44"
+    ]
+  },
+  {
+    "id": "e24",
+    "n": "Katze-Kuh",
+    "al": [
+      "Cat-Cow",
+      "Cat Cow",
+      "Katzenbuckel"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Im Vierfüßlerstand abwechselnd Rücken rund und Hohlkreuz, mit dem Atem.",
+    "s": "Vierfüßlerstand, neutraler Rücken",
+    "e": "Abwechselnd runder und hohler Rücken",
+    "g": "Rückenbeweglichkeit, Verspannung, Wirbelsäulenmobilität",
+    "x": "Akute Handgelenkbeschwerden; nur im schmerzfreien Bereich",
+    "fig": [
+      "40,34,34,32,18,30,18,44,10,44,34,38,34,44;M34 32Q26 22 18 30",
+      "41,25,34,30,18,30,18,44,10,44,34,37,34,44;M34 30Q26 38 18 30"
+    ],
+    "l": "Beginne im Vierfüßlerstand: Hände unter den Schultern, Knie unter den Hüften, Rücken neutral. Katze: Atme aus, runde den Rücken nach oben wie ein Katzenbuckel, das Kinn geht zur Brust, der Bauchnabel Richtung Wirbelsäule. Kuh: Atme ein, senke den Bauch, hebe Brustbein und Steißbein an und blicke leicht nach vorn, ohne den Nacken zu überstrecken. Wechsle langsam im Atemrhythmus, nur im schmerzfreien Bereich. Die Zeichnung zeigt vereinfacht Start = Katze und Ende = Kuh."
+  },
+  {
+    "id": "e25",
+    "n": "Kindhaltung",
+    "al": [
+      "Child's Pose",
+      "Kindeshaltung",
+      "Balasana"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Gesäß auf die Fersen, Arme weit nach vorn, Stirn ablegen, ruhig atmen.",
+    "s": "Vierfüßlerstand",
+    "e": "Gesäß auf Fersen, Arme gestreckt",
+    "g": "Entspannung unterer Rücken, Hüfte, Stress",
+    "x": "Akute Knieschmerzen, frische Hüft- oder Knie-OP",
+    "fig": [
+      "40,27,34,30,18,30,18,44,10,44,34,37,34,44",
+      "34,40,28,37,10,38,20,44,8,44,38,43,46,44"
+    ]
+  },
+  {
+    "id": "e26",
+    "n": "Brustdehnung im Türrahmen",
+    "al": [
+      "Doorway Stretch",
+      "Pec Stretch",
+      "Brustdehnung"
+    ],
+    "c": "Dehnung",
+    "m": "Türrahmen",
+    "d": "Unterarme am Türrahmen, einen Schritt nach vorn gehen, bis es in der Brust zieht.",
+    "s": "Unterarme am Rahmen, Ellbogen auf Schulterhöhe",
+    "e": "Brust nach vorn, Zug vorn an der Schulter",
+    "g": "Rundrücken, Brustverspannung, Haltung, Schulter",
+    "x": "Instabile Schulter, Nervenreizung in Arm oder Hand",
+    "fig": [
+      "18,7,18,13,18,27,18,36,18,44,14,13,14,4;M14 0L14 44",
+      "26,7,26,13,26,27,22,36,18,44,14,13,14,4;M26 27L33 34L33 44M14 0L14 44"
+    ],
+    "l": "Stelle dich in einen Türrahmen. Hebe den Unterarm senkrecht an den Rahmen, der Ellbogen ist auf Schulterhöhe im rechten Winkel gebeugt. Setze einen Fuß einen kleinen Schritt nach vorn durch die Tür und verlagere das Gewicht langsam nach vorn, bis du die Dehnung an Brust und Schulterfront spürst. Der Rücken bleibt gerade, kein Hohlkreuz. 20 bis 30 Sekunden halten, dann die Seite wechseln. Bei Kribbeln in Arm oder Hand sofort lösen."
+  },
+  {
+    "id": "e27",
+    "n": "Piriformis-Dehnung",
+    "al": [
+      "Figure-4",
+      "Vierer-Dehnung",
+      "Gesäßdehnung"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Rückenlage, Knöchel über das andere Knie, Bein zur Brust ziehen.",
+    "s": "Rückenlage, Fuß über dem Knie",
+    "e": "Unteres Bein zur Brust gezogen",
+    "g": "Gesäß, Hüfte, ischiasartige Beschwerden durch Verspannung",
+    "x": "Frische Hüft-OP, starke Hüftschmerzen",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,20,43,26,43",
+      "8,42,14,43,26,43,38,34,30,31,22,38,28,32;M26 43L30 31L24 32"
+    ],
+    "l": "Lege dich auf den Rücken, beide Knie gebeugt, Füße auf dem Boden. Lege den Knöchel des einen Beins knapp über das Knie des anderen, sodass die Beine eine „4“ bilden. Umfasse den Oberschenkel des unten stehenden Beins (oder dahinter) und ziehe ihn sanft zur Brust, bis du die Dehnung tief im Gesäß der oberen Seite spürst. Kopf und Schultern bleiben entspannt am Boden, den Druck auf das obere Knie sanft halten. 30 Sekunden halten, dann die Seite wechseln. Die Zeichnung zeigt das gekreuzte Bein nur vereinfacht."
+  },
+  {
+    "id": "e28",
+    "n": "Nackendehnung",
+    "al": [
+      "Neck Stretch",
+      "Nacken dehnen"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Ohr zur Schulter neigen, Schulter bleibt unten, sanft halten.",
+    "s": "Aufrecht sitzen",
+    "e": "Kopf seitlich geneigt",
+    "g": "Nackenverspannung, Bürohaltung, Spannungskopfschmerz",
+    "x": "Schwindel, Kribbeln in den Armen; nur sanft",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,28,27;M24 13L21 20L21 27M24 27L21 36L21 44",
+      "29,9,24,13,24,27,27,36,27,44,34,10,30,4;M24 13L21 20L21 27M24 27L21 36L21 44"
+    ],
+    "l": "Setze oder stelle dich aufrecht hin, die Schultern hängen entspannt nach unten. Neige den Kopf langsam seitlich, als wolle das Ohr zur Schulter wandern, ohne die Schulter hochzuziehen. Zum Verstärken legst du die Hand der gleichen Seite locker auf den Kopf, nur mit dem Gewicht der Hand und ohne zu ziehen. Der andere Arm hängt entspannt nach unten. Ruhig atmen, 20 bis 30 Sekunden halten, dann die Seite wechseln. Bei Kribbeln, Schwindel oder Schmerz sofort lösen. Die Zeichnung zeigt die Ansicht von vorn."
+  },
+  {
+    "id": "e29",
+    "n": "Hampelmann",
+    "al": [
+      "Jumping Jacks",
+      "Hampelmänner"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Sprung in die Grätsche mit Armen über den Kopf, zurück in die Ausgangsstellung.",
+    "s": "Füße zusammen, Arme unten",
+    "e": "Beine gegrätscht, Arme oben",
+    "g": "Ausdauer, Aufwärmen, Koordination",
+    "x": "Knie-, Sprunggelenk- oder Beckenbodenbeschwerden; besser stoßärmere Variante",
+    "fig": [
+      "24,7,24,13,24,27,25,36,25,44,28,20,29,27;M24 13L20 20L19 27M24 27L23 36L23 44",
+      "24,4,24,10,24,24,30,32,36,40,30,5,35,1;M24 10L18 5L13 1M24 24L18 32L12 40"
+    ]
+  },
+  {
+    "id": "e30",
+    "n": "Skater-Sprünge",
+    "al": [
+      "Skaters",
+      "Seitsprünge",
+      "Skater Jumps"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Seitlich von Bein zu Bein springen wie ein Eisschnellläufer, weich landen.",
+    "s": "Auf einem Bein, leicht gebeugt",
+    "e": "Landung auf dem anderen Bein, Gegenbein hinter dem Körper",
+    "g": "Schnelligkeit, Sprunggelenk, Gleichgewicht, Seitkraft",
+    "x": "Akute Knie- oder Sprunggelenkprobleme, Instabilität",
+    "fig": [
+      "22,8,20,14,17,27,15,36,14,44,13,20,8,25;M17 27L25 33L31 38",
+      "26,8,28,14,31,27,33,36,34,44,33,20,38,25;M31 27L24 33L17 38"
+    ],
+    "l": "Stelle dich auf ein Bein, Knie leicht gebeugt, Oberkörper etwas nach vorn geneigt. Springe seitlich mit Schwung auf das andere Bein, lande weich auf dem Vorfuß und lasse das Standbein schräg hinter dem Körper schweben, ohne es abzusetzen. Die Arme schwingen locker gegengleich mit. Stabilisiere kurz, dann springe zur anderen Seite zurück. Wähle den Abstand so, dass du sicher und kontrolliert landest. Die Zeichnung zeigt Start auf dem linken und Landung auf dem rechten Bein."
+  },
+  {
+    "id": "e31",
+    "n": "Hocksprung",
+    "al": [
+      "Squat Jump",
+      "Jump Squat",
+      "Strecksprung"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Tiefe Kniebeuge, explosiv nach oben springen, weich landen.",
+    "s": "Kniebeuge-Position",
+    "e": "Gestreckt in der Luft",
+    "g": "Schnellkraft, Sprungkraft, Beinkraft",
+    "x": "Knie-, Rücken- oder Sprunggelenkbeschwerden",
+    "fig": [
+      "26,15,23,21,15,32,28,33,25,44,17,26,11,28",
+      "24,3,24,9,24,23,24,32,24,40,28,5,31,0"
+    ]
+  },
+  {
+    "id": "e32",
+    "n": "Kniehebelauf",
+    "al": [
+      "High Knees",
+      "Knee Drives"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Auf der Stelle laufen, Knie bis Hüfthöhe, schnell.",
+    "s": "Aufrecht",
+    "e": "Wechselnd Knie auf Hüfthöhe",
+    "g": "Ausdauer, Koordination, Aufwärmen",
+    "x": "Akute Knie- und Hüftbeschwerden; stattdessen im Gehschritt",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,29,19,26,13;M24 13L19 19L21 25",
+      "24,7,24,13,24,27,24,36,24,44,29,19,32,13;M24 27L33 27L33 36M24 13L19 19L21 25"
+    ]
+  },
+  {
+    "id": "e33",
+    "n": "Box Jump",
+    "al": [
+      "Kastensprung",
+      "Brettsprung",
+      "Sprung auf Brett"
+    ],
+    "c": "Schnelligkeit",
+    "m": "stabiles Brett/Box",
+    "d": "Aus leichter Hocke beidbeinig auf das Brett springen, aufrecht landen, Schritt zurück.",
+    "s": "Vor dem Brett, leichte Hocke",
+    "e": "Aufrecht auf dem Brett",
+    "g": "Schnellkraft, Sprungkraft",
+    "x": "Akute Knie- oder Achillessehnenbeschwerden, Gleichgewichtsprobleme, wackeliges Brett",
+    "fig": [
+      "16,19,14,24,8,34,16,37,14,44,9,29,4,31;M26 36L42 36L42 44L26 44Z",
+      "32,3,32,9,32,22,32,31,32,36,35,15,36,21;M26 36L42 36L42 44L26 44Z"
+    ]
+  },
+  {
+    "id": "e34",
+    "n": "Bergsteiger",
+    "al": [
+      "Mountain Climbers",
+      "Mountain Climber"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Im Liegestütz abwechselnd schnell die Knie zur Brust ziehen.",
+    "s": "Hohe Liegestütz-Position",
+    "e": "Ein Knie unter der Brust",
+    "g": "Rumpf, Ausdauer, Schnelligkeit",
+    "x": "Akute Handgelenk- oder Schulterbeschwerden",
+    "fig": [
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43",
+      "40,25,34,29,24,33,32,37,27,43,34,36,34,43;M24 33L15 37L6 42"
+    ],
+    "l": "Gehe in die hohe Liegestützposition: Hände unter den Schultern, Arme gestreckt, Körper eine gerade Linie von Kopf bis Ferse, Bauch und Gesäß angespannt. Ziehe abwechselnd ein Knie schnell Richtung Brust, das andere Bein bleibt gestreckt mit den Zehen am Boden. Die Hüfte bleibt tief und der Rücken gerade, du läufst gewissermaßen auf der Stelle. Starte langsam und steigere das Tempo erst, wenn die Haltung sauber ist."
+  },
+  {
+    "id": "e35",
+    "n": "Tandemstand",
+    "al": [
+      "Tandem Stand",
+      "Fuß-vor-Fuß-Stand",
+      "Seiltänzerstand"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Einen Fuß direkt vor den anderen stellen, die Ferse berührt die Zehen des vorderen Fußes. Arme zur Seite oder an die Hüfte, Position halten und ruhig atmen. Schwerer mit geschlossenen Augen.",
+    "s": "Füße hüftbreit nebeneinander",
+    "e": "Ein Fuß genau vor dem anderen auf einer Linie",
+    "g": "Gleichgewicht, Sturzprophylaxe, Gangsicherheit, Sprunggelenkstabilität",
+    "x": "Schwindel oder starke Unsicherheit ohne Festhaltemöglichkeit; zuerst neben einer Wand üben",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,26,36,28,44,30,19,35,19;M24 27L23 36L20 44"
+    ]
+  },
+  {
+    "id": "e36",
+    "n": "Standwaage",
+    "al": [
+      "Airplane",
+      "Einbeinige Standwaage",
+      "Flugzeug"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Auf einem Bein stehen, den Oberkörper nach vorn neigen und das andere Bein gestreckt nach hinten heben, bis Oberkörper und Bein waagerecht sind. Kurz halten, dann kontrolliert zurück.",
+    "s": "Aufrecht auf einem Bein",
+    "e": "Oberkörper und Bein waagerecht",
+    "g": "Gleichgewicht, Hüftstabilität, hintere Oberschenkel, Rumpfkontrolle, Sprunggelenk",
+    "x": "Schwindel, akute Rückenschmerzen, akute Knie- oder Sprunggelenkprobleme; mit Festhalten üben",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L26 34L20 38",
+      "41,26,36,26,22,26,22,35,22,44,36,31,36,37;M22 26L13 26L5 26"
+    ],
+    "l": "Stelle dich auf ein Bein, das Standbein ist leicht gebeugt, die Arme sind zur Seite oder nach vorn gestreckt. Neige den Oberkörper mit geradem Rücken nach vorn und hebe gleichzeitig das andere Bein gestreckt nach hinten, bis Oberkörper und Bein ungefähr waagerecht sind, wie ein Flugzeug. Schaue auf einen Punkt am Boden, halte kurz und kehre kontrolliert zurück. Halte dich am Anfang an einer Wand oder Stuhllehne fest. Die Zeichnung zeigt die Arme vereinfacht nach unten."
+  },
+  {
+    "id": "e37",
+    "n": "Fersengang",
+    "al": [
+      "Fersen gehen",
+      "Auf den Fersen gehen",
+      "Hackengang"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Auf den Fersen gehen, die Fußspitzen bleiben angehoben, aufrecht bleiben. Etwa 10 Schritte, wenn möglich auf einer Linie.",
+    "s": "Aufrecht stehen",
+    "e": "Im Gehen auf den Fersen, Zehen angehoben",
+    "g": "Gangsicherheit, vorderer Unterschenkel, Fußhebung, Gleichgewicht",
+    "x": "Akute Sprunggelenkbeschwerden, Schienbeinkantenschmerz; Festhalten bei Unsicherheit",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,21,36,20,44,28,20,30,26;M20 44L25 41M24 27L28 36L32 44L37 41"
+    ]
+  },
+  {
+    "id": "e38",
+    "n": "Schulterkreisen",
+    "al": [
+      "Shoulder Rolls",
+      "Schultern kreisen",
+      "Schulterrollen"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Beide Schultern langsam nach oben, hinten, unten und vorn kreisen lassen, die Arme hängen locker. Die Kreise langsam größer machen, dann die Richtung wechseln.",
+    "s": "Aufrecht, Schultern entspannt",
+    "e": "Schultern nach oben gezogen, im Kreis nach hinten",
+    "g": "Schultermobilität, Nackenverspannung, Bürohaltung, Aufwärmen",
+    "x": "Akute Schulterverletzung oder Instabilität; nur im schmerzfreien Bereich",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,29,27;M24 13L20 20L19 27M24 27L21 36L21 44",
+      "24,7,24,11,24,27,27,36,27,44,28,18,29,25;M24 11L20 18L19 25M24 27L21 36L21 44"
+    ],
+    "l": "Die Zeichnung zeigt die Ansicht von vorn: Start mit hängenden Schultern, Ende mit hochgezogenen Schultern. Beim Üben ziehst du die Schultern erst hoch, dann nach hinten, senkst sie und führst sie wieder nach vorn, ein langsamer, runder Kreis. 8 bis 10 Kreise, dann die Richtung wechseln."
+  },
+  {
+    "id": "e39",
+    "n": "Hüftkreisen",
+    "al": [
+      "Hip Circles",
+      "Becken kreisen",
+      "Hula"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Füße hüftbreit, Hände an der Hüfte, Knie leicht gebeugt. Das Becken in großen, langsamen Kreisen bewegen, der Oberkörper bleibt ruhig. Nach 8 bis 10 Kreisen die Richtung wechseln.",
+    "s": "Aufrecht, Hände an der Hüfte",
+    "e": "Becken zur Seite ausgelenkt, im Kreis",
+    "g": "Hüftmobilität, Hüftsteife, Aufwärmen, Rückenverspannung",
+    "x": "Frische Hüft-OP ohne Freigabe, akute Hüftschmerzen, Schwindel",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,29,20,27,27;M24 13L19 20L21 27M24 27L21 36L21 44",
+      "24,7,24,13,28,27,28,36,28,44,29,20,28,27;M24 13L19 20L26 27M28 27L23 36L21 44"
+    ],
+    "l": "Die Zeichnung zeigt von vorn den Start und eine Zwischenstellung, in der das Becken zur Seite geschoben ist. Beim Üben schiebst du das Becken nacheinander nach rechts, hinten, links und vorn, sodass es einen großen Kreis zeichnet. Die Schultern bleiben dabei ruhig über den Füßen."
+  },
+  {
+    "id": "e40",
+    "n": "Brustwirbelsäulen-Rotation",
+    "al": [
+      "Open Book",
+      "Offenes Buch",
+      "BWS-Rotation"
+    ],
+    "c": "Mobilisation",
+    "m": "Matte",
+    "d": "Seitlage, Knie auf Hüfthöhe angewinkelt, Arme gestreckt vor dem Körper. Der obere Arm öffnet sich wie ein Buch zur anderen Seite, der Blick folgt der Hand, die Knie bleiben zusammen.",
+    "s": "Seitlage, Arme übereinander",
+    "e": "Oberer Arm zur Gegenseite aufgeklappt, Blick folgt",
+    "g": "Brustwirbelsäulen-Beweglichkeit, Rundrücken, Verspannung zwischen den Schulterblättern, Bürohaltung",
+    "x": "Akute Schulter- oder Rippenbeschwerden, Bandscheibenvorfall ohne Freigabe; nur schmerzfrei",
+    "fig": [
+      "8,22,14,24,28,24,38,32,30,36,22,24,30,24;M14 24L22 24L30 24M28 24L38 33L30 37",
+      "8,22,14,24,28,24,38,32,30,36,22,24,30,24;M14 24L14 15L14 6M28 24L38 33L30 37"
+    ],
+    "l": "Lege dich auf die Seite, den Kopf auf einem Kissen. Die Knie sind auf Hüfthöhe angewinkelt, die Arme liegen gestreckt vor dir übereinander. Hebe den oberen Arm und führe ihn in einem großen Bogen über den Körper zur anderen Seite, als würdest du ein Buch aufklappen. Der Blick folgt der Hand, die Knie bleiben zusammen und am Boden, so entsteht die Drehung aus dem Brustkorb. Atme ruhig aus, halte kurz und führe den Arm zurück. Die Zeichnung zeigt die Position von oben gesehen."
+  },
+  {
+    "id": "e41",
+    "n": "Sprunggelenk-Kreisen",
+    "al": [
+      "Fußkreisen",
+      "Ankle Circles",
+      "Knöchel kreisen"
+    ],
+    "c": "Mobilisation",
+    "m": "Stuhl",
+    "d": "Im Sitzen ein Bein anheben und den Fuß in großen Kreisen bewegen. Die Bewegung kommt nur aus dem Sprunggelenk, der Unterschenkel bleibt ruhig. Je 10 Kreise in jede Richtung.",
+    "s": "Sitzen, Fuß am Boden",
+    "e": "Bein angehoben, Fuß kreist",
+    "g": "Sprunggelenkmobilität, Fußbeweglichkeit, Durchblutung, Aufwärmen, nach Umknicken (nur mit Freigabe)",
+    "x": "Frische Fraktur oder Bänderriss ohne Freigabe, starke Schwellung",
+    "fig": [
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M29 41L35 41M10 31L28 31M12 31L12 44M26 31L26 44",
+      "16,8,16,14,16,29,28,29,40,31,20,22,26,28;M40 31L44 30M10 31L28 31M12 31L12 44M26 31L26 44M42 24Q47 29 42 34"
+    ],
+    "l": "Setze dich aufrecht auf einen Stuhl und hebe ein Bein leicht an, das Knie bleibt ruhig. Male mit der großen Zehe große Kreise in die Luft, sodass der Fuß abwechselnd nach oben, außen, unten und innen wandert. Die Bewegung kommt nur aus dem Sprunggelenk, nicht aus dem ganzen Bein. 10 Kreise in jede Richtung, dann Seite wechseln. Die Zeichnung zeigt den angehobenen Fuß mit einem Pfeil für die Kreisbewegung."
+  },
+  {
+    "id": "e42",
+    "n": "Dead Bug",
+    "al": [
+      "Toter Käfer",
+      "Käfer",
+      "Dead-Bug"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Rückenlage, Arme senkrecht nach oben, Hüfte und Knie 90° gebeugt. Gegenüberliegenden Arm und Bein langsam Richtung Boden strecken, ohne dass das Hohlkreuz abhebt, dann zurück und Seite wechseln.",
+    "s": "Rückenlage, Arme und Beine senkrecht bzw. 90° angewinkelt",
+    "e": "Ein Arm und das gegenüberliegende Bein gestreckt knapp über dem Boden",
+    "g": "Rumpfstabilität, unterer Rücken, unspezifischer Rückenschmerz, Koordination, Bauchmuskeln",
+    "x": "Akute starke Rückenschmerzen; bei Hohlkreuz die Beine weniger weit absenken",
+    "fig": [
+      "8,42,14,43,26,43,26,30,36,30,14,36,14,29;M14 43L14 36L14 29M26 43L26 30L36 30",
+      "8,42,14,43,26,43,26,30,36,30,8,41,2,39;M14 43L14 36L14 29M26 43L33 42L41 40"
+    ],
+    "l": "Lege dich auf den Rücken, die Arme zeigen senkrecht zur Decke, Hüfte und Knie sind 90° gebeugt, die Schienbeine verlaufen waagerecht. Drücke den unteren Rücken sanft gegen den Boden. Senke langsam den rechten Arm hinter den Kopf und strecke gleichzeitig das linke Bein, bis beide knapp über dem Boden schweben, ohne dass das Hohlkreuz abhebt. Kehre kontrolliert zurück und wechsle die Seite. Atme gleichmäßig weiter. Wenn es zu schwer ist, bewege nur die Beine oder nur die Arme. Die Zeichnung zeigt eine Hälfte der Bewegung vereinfacht."
+  },
+  {
+    "id": "e43",
+    "n": "Beckenkippen",
+    "al": [
+      "Pelvic Tilt",
+      "Becken kippen",
+      "Beckenlift"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Rückenlage, Knie gebeugt, Füße aufgestellt. Bauch anspannen und das Becken nach hinten kippen, bis die Lendenwirbelsäule den Boden berührt, dann wieder lösen. Kleine, kontrollierte Bewegung, das Gesäß bleibt am Boden.",
+    "s": "Rückenlage, kleines Hohlkreuz",
+    "e": "Lendenwirbelsäule flach am Boden",
+    "g": "Unterer Rücken, Beckenkontrolle, unspezifischer Rückenschmerz, tiefe Bauchmuskeln, Haltung",
+    "x": "Akute Rückenschmerzen mit Ausstrahlung; nur kleine Bewegung",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,20,43,26,43;M16 43Q21 38 25 43",
+      "8,42,14,43,26,43,34,33,38,44,20,43,26,43"
+    ]
+  },
+  {
+    "id": "e44",
+    "n": "Crunch",
+    "al": [
+      "Bauchpresse",
+      "Bauch-Crunch",
+      "Sit-up leicht"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Rückenlage, Knie gebeugt, Füße am Boden, Hände seitlich am Kopf. Kopf und Schultern langsam anheben, Bauch anspannen, der Lendenbereich bleibt am Boden. Langsam wieder absenken.",
+    "s": "Rückenlage, Knie gebeugt",
+    "e": "Kopf und Schulterblätter angehoben",
+    "g": "Gerade Bauchmuskeln, Rumpfkraft, Bauchmuskelaufbau",
+    "x": "Akute Nacken- oder Rückenschmerzen, Bandscheibenprobleme ohne Freigabe, Bluthochdruck bei Pressatmung",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,12,38,8,41",
+      "10,34,16,38,26,43,34,33,38,44,14,33,11,36"
+    ]
+  },
+  {
+    "id": "e45",
+    "n": "Snap Down",
+    "al": [
+      "Snapdown",
+      "Drop Squat",
+      "Landung"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Aus dem aufrechten Zehenstand explosiv und kontrolliert in eine stabile Kniebeuge-Landeposition abfedern, Arme ziehen nach hinten.",
+    "s": "Auf Zehenspitzen, Arme oben",
+    "e": "Tiefe stabile Viertelbeuge, Arme hinten",
+    "g": "Landemechanik, Plyometrie, Abbremskraft, Sprunggelenk- und Kniestabilität",
+    "x": "Akute Knie- oder Sehnenbeschwerden; Landung weich und leise ausführen",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,17,24,10",
+      "24,15,24,21,24,33,31,37,27,44,19,25,14,31"
+    ]
+  },
+  {
+    "id": "e46",
+    "n": "Elevated Single-Leg Glute Bridge",
+    "al": [
+      "Erhöhte einbeinige Hüftbrücke",
+      "Bench Bridge"
+    ],
+    "c": "Kraft",
+    "m": "Bank/Erhöhung",
+    "d": "Ein Fuß auf einer Bank/Stufe platziert, das andere Bein angewinkelt in der Luft. Becken kraftvoll nach oben drücken.",
+    "s": "Fuß auf Bank, Rückenlage",
+    "e": "Hüfte vollständig gestreckt",
+    "g": "Ischiocrurale, Gluteus, Beckenstabilität, hintere Kette",
+    "x": "Akute Oberschenkelzerrung oder starke Rückenschmerzen",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,36,20,43,26,43;M34 36L42 36L42 44L34 44Z",
+      "8,42,14,42,26,34,36,26,38,36,20,43,26,42;M34 36L42 36L42 44L34 44ZM26 34L20 22L16 28"
+    ]
+  },
+  {
+    "id": "e47",
+    "n": "Single-Leg Pogo Jumps",
+    "al": [
+      "Pogo Jumps",
+      "Einbeinige Pogos",
+      "Wadensprünge"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Auf einem Vorfuß reaktiv und federnd vom Boden abspringen. Knie minimal gebeugt halten, Sprungkraft aus dem Sprunggelenk.",
+    "s": "Stand auf einem Vorfuß",
+    "e": "Kurzer, federnder Absprung",
+    "g": "Achillessehne, Fußgewölbe, Wadenreaktivität, Sehnensteifigkeit",
+    "x": "Akute Achillessehnenentzündung, akute Fersensporn-Schmerzen",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L21 36L21 44",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M24 24L20 32L19 39"
+    ]
+  },
+  {
+    "id": "e48",
+    "n": "Heel-Elevated Squat",
+    "al": [
+      "Kniebeuge Fersenerhöhung",
+      "VMO Squat"
+    ],
+    "c": "Kraft",
+    "m": "Keil/Scheibe",
+    "d": "Fersen auf Keil oder Hantelscheibe stellen. Aufrecht bleiben und tief beugen, gezielte Belastung auf den Oberschenkelstrecker.",
+    "s": "Fersen erhöht, aufrecht",
+    "e": "Tiefe Kniebeuge, Knie über Zehen",
+    "g": "Quadrizeps (VMO), Kniestabilität, tiefe Kniebeugung bei unbeweglichem Sprunggelenk",
+    "x": "Akute Schmerzen unter der Kniescheibe (Patellofemoral)",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,28,15,33,15;M20 44L24 41L24 44Z",
+      "26,15,23,21,15,32,28,33,25,44,29,20,34,20;M20 44L25 41L25 44Z"
+    ]
+  },
+  {
+    "id": "e49",
+    "n": "Dumbbell Lunge",
+    "al": [
+      "Kurzhantel-Ausfallschritt",
+      "Hantellunge"
+    ],
+    "c": "Kraft",
+    "m": "Kurzhanteln",
+    "d": "Mit einer Hantel in jeder Hand sauber in den Ausfallschritt gehen. Oberkörper stabil und aufrecht halten.",
+    "s": "Aufrecht mit Kurzhanteln",
+    "e": "Hinteres Knie knapp über Boden",
+    "g": "Beinkraft, Gesäß, Rumpfstabilität, Gleichgewicht",
+    "x": "Akute Meniskus- oder Kniebeschwerden",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;;d",
+      "24,12,24,18,24,32,32,34,32,44,24,25,24,32;M24 32L19 41L12 44;d"
+    ]
+  },
+  {
+    "id": "e50",
+    "n": "Split Squat",
+    "al": [
+      "Ausfallschritt statisch",
+      "Kniebeuge im Schritt"
+    ],
+    "c": "Kraft",
+    "m": "optional Hanteln",
+    "d": "Im festen Ausfallschritt stehen bleiben und das hintere Knie kontrolliert vertikal absenken und hochdrücken.",
+    "s": "Schrittstellung aufrecht",
+    "e": "Hinteres Knie gebeugt",
+    "g": "Einbeinkraft, Hüftbeuger-Dehnung, Kniestabilität",
+    "x": "Akute Kniebeschwerden",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,12,24,18,24,32,32,34,32,44,24,25,24,32;M24 32L19 41L12 44"
+    ]
+  },
+  {
+    "id": "e51",
+    "n": "Heel-Elevated Split Squat Pulses",
+    "al": [
+      "Split Squat Pulse",
+      "Fersenerhöhung Pulse"
+    ],
+    "c": "Kraft",
+    "m": "Keil",
+    "d": "Split Squat mit erhöhter Vorderferse. In der mittleren Beugung bleiben und kleine, brennende Pulse ausführen.",
+    "s": "Split Squat, Vorderferse erhöht",
+    "e": "Mittlere Position pulsierend",
+    "g": "Quadrizeps-Dauerspannung, Patellasehnen-Reha, Brennen",
+    "x": "Frische Patellasehnenentzündung ohne ärztliche Absprache",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M28 44L32 41L32 44Z",
+      "24,14,24,20,24,33,32,35,32,44,24,26,24,33;M24 33L19 41L12 44M28 44L32 41L32 44Z"
+    ]
+  },
+  {
+    "id": "e52",
+    "n": "Schulterdehnung quer",
+    "al": [
+      "Cross-Body Stretch",
+      "Schulter dehnen",
+      "Armzug quer"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Einen Arm gestreckt quer vor der Brust zur Gegenseite führen und mit dem anderen Unterarm sanft an den Körper ziehen. 30 Sekunden halten, Seite wechseln.",
+    "s": "Aufrecht, Arme hängen",
+    "e": "Ein Arm quer vor der Brust herangezogen",
+    "g": "Schultersteife, Verspannung der hinteren Schulter, Bürohaltung, Überkopfarbeit",
+    "x": "Akute Schulterverletzung oder Instabilität; nur sanft ziehen",
+    "l": "Die Zeichnung zeigt von vorn den Arm quer über der Brust. Der gestreckte Arm liegt waagerecht vor der Brust, der andere Unterarm zieht ihn am Ellbogen sanft heran. Die Schulter bleibt unten, der Oberkörper bleibt nach vorn gerichtet.",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,29,27;M24 13L20 20L19 27M24 27L21 36L21 44",
+      "24,7,24,13,24,27,27,36,27,44,17,15,10,15;M24 13L21 20L16 16M24 27L21 36L21 44"
+    ]
+  },
+  {
+    "id": "e53",
+    "n": "Trizeps-Dehnung",
+    "al": [
+      "Overhead Triceps Stretch",
+      "Trizepsdehnung"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Einen Arm über den Kopf heben, den Ellbogen beugen und die Hand zwischen die Schulterblätter legen. Mit der anderen Hand den Ellbogen sanft nach hinten ziehen. 30 Sekunden halten.",
+    "s": "Aufrecht, Arme hängen",
+    "e": "Ellbogen oben, Hand im Nacken, Zug am Ellbogen",
+    "g": "Rückseite Oberarm, Schulterbeweglichkeit, Überkopfbewegungen",
+    "x": "Akute Schulter- oder Nackenschmerzen; nicht ruckartig ziehen",
+    "l": "Die Zeichnung zeigt von vorn den Start und das Ende mit dem Arm über dem Kopf. Der Ellbogen zeigt zur Decke, die Hand liegt hinter dem Kopf zwischen den Schulterblättern. Die andere Hand fasst den Ellbogen und schiebt ihn sanft nach hinten, bis du die Dehnung an der Oberarmrückseite spürst.",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,29,27;M24 13L20 20L19 27M24 27L21 36L21 44",
+      "24,8,24,14,24,28,27,37,27,44,29,6,23,10;M24 14L31 11L29 6M24 28L21 37L21 44"
+    ]
+  },
+  {
+    "id": "e54",
+    "n": "Handgelenk-Dehnung",
+    "al": [
+      "Unterarmdehnung",
+      "Wrist Stretch",
+      "Handgelenk dehnen"
+    ],
+    "c": "Dehnung",
+    "m": "–",
+    "d": "Den Arm nach vorn strecken, Handfläche nach oben. Mit der anderen Hand die Finger sanft Richtung Boden ziehen, danach mit dem Handrücken wiederholen. Je 20 bis 30 Sekunden.",
+    "s": "Aufrecht, Arm nach vorn gestreckt",
+    "e": "Hand von der anderen Hand zurückgebogen",
+    "g": "Unterarm, Handgelenk, Büroarbeit, Mausarm, Tennisarm",
+    "x": "Akute Sehnenscheidenentzündung, Taubheit in der Hand (Karpaltunnel): vorher abklären",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13",
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13;M38 13L39 19M24 13L30 19L38 16"
+    ]
+  },
+  {
+    "id": "e55",
+    "n": "Schmetterling-Dehnung",
+    "al": [
+      "Butterfly Stretch",
+      "Adduktorendehnung",
+      "Schneidersitz-Dehnung"
+    ],
+    "c": "Dehnung",
+    "m": "Matte",
+    "d": "Im Sitzen die Fußsohlen aneinanderlegen, die Knie fallen lassen. Rücken gerade, den Oberkörper leicht nach vorn neigen, bis es an der Innenseite der Oberschenkel zieht. 30 Sekunden halten.",
+    "s": "Sitzen, Fußsohlen zusammen, Knie leicht angehoben",
+    "e": "Knie abgesenkt, Oberkörper leicht vorgeneigt",
+    "g": "Innenseite Oberschenkel, Leiste, Hüftmobilität, langes Sitzen",
+    "x": "Akute Leisten- oder Knieschmerzen, Adduktorenzerrung; Knie nicht nach unten drücken",
+    "l": "Die Zeichnung zeigt von vorn den Sitz mit zusammengelegten Fußsohlen, im Endbild sind die Knie abgesenkt. Halte die Füße mit den Händen und richte den Rücken auf, bevor du dich leicht nach vorn neigst. Drücke die Knie nicht mit Gewalt nach unten, sie sinken durch die Schwerkraft.",
+    "fig": [
+      "24,15,24,21,24,38,33,34,26,43,29,30,26,42;M24 38L15 34L22 43",
+      "24,19,24,25,24,39,36,42,26,43,29,32,26,42;M24 39L12 42L22 43"
+    ]
+  },
+  {
+    "id": "e56",
+    "n": "Rückendrehung im Liegen",
+    "al": [
+      "Lying Twist",
+      "Spinal Twist",
+      "Rotation in Rückenlage"
+    ],
+    "c": "Dehnung",
+    "m": "Matte",
+    "d": "Lege dich auf den Rücken, die Arme seitlich ausgestreckt. Die angewinkelten Knie langsam zu einer Seite sinken lassen, die Schultern bleiben am Boden, der Blick geht zur Gegenseite. 30 Sekunden halten, dann die Seite wechseln.",
+    "s": "Rückenlage, Arme seitlich, Knie angewinkelt",
+    "e": "Knie seitlich abgelegt, Schultern am Boden",
+    "g": "Unterer Rücken, Rumpfrotation, Verspannung, Hüfte",
+    "x": "Akute Bandscheibenprobleme ohne Freigabe, frische Hüft-OP; nur im schmerzfreien Bereich",
+    "l": "Die Zeichnung zeigt die Position von oben: Der Körper liegt längs, die Arme zeigen zur Seite, die Knie sinken zu einer Seite.",
+    "fig": [
+      "8,24,14,24,28,24,35,23,30,24,14,16,14,8;M14 24L14 32L14 40",
+      "8,22,14,24,28,24,36,34,29,37,14,16,14,8;M14 24L14 32L14 40"
+    ]
+  },
+  {
+    "id": "e57",
+    "n": "Knie zur Brust",
+    "al": [
+      "Knee to Chest",
+      "Knie an die Brust",
+      "Rückendehnung"
+    ],
+    "c": "Dehnung",
+    "m": "Matte",
+    "d": "In Rückenlage ein Knie mit beiden Händen sanft zur Brust ziehen, das andere Bein bleibt gebeugt oder gestreckt am Boden. 20 bis 30 Sekunden halten, Seite wechseln.",
+    "s": "Rückenlage, Knie gebeugt",
+    "e": "Ein Knie zur Brust gezogen",
+    "g": "Unterer Rücken, Gesäß, Hüfte, Rückenverspannung",
+    "x": "Akute Rückenschmerzen mit Ausstrahlung, frische Hüft-OP; nicht ruckartig ziehen",
+    "l": "Die Zeichnung zeigt von der Seite die Rückenlage mit gebeugten Beinen, im Endbild ist ein Knie zur Brust gezogen. Beim Üben greifst du Schienbein oder Oberschenkel mit beiden Händen und ziehst es sanft heran. Das Becken bleibt am Boden, der Kopf entspannt.",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,20,43,26,43",
+      "8,42,14,43,26,43,20,32,28,36,17,38,21,33;M26 43L34 33L38 44"
+    ]
+  },
+  {
+    "id": "e58",
+    "n": "Armkreisen",
+    "al": [
+      "Arm Circles",
+      "Arme kreisen"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Arme seitlich auf Schulterhöhe heben und zuerst kleine, dann größere Kreise vor- und rückwärts machen. Je 10 bis 15 Kreise.",
+    "s": "Aufrecht, Arme hängen",
+    "e": "Arme seitlich auf Schulterhöhe, Kreisbewegung",
+    "g": "Schultermobilität, Aufwärmen, Verspannung, Bürohaltung",
+    "x": "Akute Schulterverletzung oder Instabilität; Kreise klein halten",
+    "l": "Die Zeichnung zeigt von vorn den Start (Arme hängen) und das Ende (Arme waagerecht). Aus dieser Position kreist du die gestreckten Arme zunächst klein, dann größer, erst vorwärts, dann rückwärts. Die Schultern bleiben unten, der Nacken locker.",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,29,27;M24 13L20 20L19 27M24 27L21 36L21 44",
+      "24,7,24,13,24,27,27,36,27,44,31,13,38,13;M24 13L17 13L10 13M24 27L21 36L21 44"
+    ]
+  },
+  {
+    "id": "e59",
+    "n": "Handgelenkkreisen",
+    "al": [
+      "Wrist Circles",
+      "Handgelenke kreisen"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Arme nach vorn strecken, Hände locker zur Faust und die Handgelenke in beide Richtungen kreisen lassen. Je 10 Kreise.",
+    "s": "Arme nach vorn, Hände gerade",
+    "e": "Hand abgewinkelt, im Kreis bewegt",
+    "g": "Handgelenk, Unterarm, Büroarbeit, Aufwärmen",
+    "x": "Akute Handgelenkverletzung, Taubheit in der Hand: vorher abklären",
+    "l": "Die Zeichnung zeigt den Arm von der Seite mit einem Pfeil für die Kreisbewegung. Halte den Unterarm ruhig und lasse nur die Hand kreisen: nach oben, außen, unten, innen. Erst 10 Kreise in eine, dann in die andere Richtung.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13",
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13;M38 13L39 8M41 7Q46 12 41 17"
+    ]
+  },
+  {
+    "id": "e60",
+    "n": "Nackenrotation",
+    "al": [
+      "Kopf drehen",
+      "Neck Rotation",
+      "Nackenmobilisation"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Aufrecht sitzen oder stehen, Schultern entspannt. Den Kopf langsam nach links drehen, als wolltest du über die Schulter schauen, zurück zur Mitte, dann nach rechts. Je 8 bis 10 Mal.",
+    "s": "Aufrecht, Blick nach vorn",
+    "e": "Kopf zur Seite gedreht",
+    "g": "Nackenverspannung, Bürohaltung, Beweglichkeit der Halswirbelsäule",
+    "x": "Schwindel, Kribbeln in den Armen, akute Nackenverletzung; langsam und nicht überdrehen",
+    "l": "Die Zeichnung zeigt die Drehung nur als Pfeil über dem Kopf: Der Kopf dreht sich zur Seite, die Schultern bleiben ruhig.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M18 4Q24 0 30 4"
+    ]
+  },
+  {
+    "id": "e61",
+    "n": "Beinpendel",
+    "al": [
+      "Leg Swings",
+      "Beine schwingen",
+      "Hüftpendel"
+    ],
+    "c": "Mobilisation",
+    "m": "Wand",
+    "d": "An einer Wand oder Stuhllehne abstützen und ein Bein locker und kontrolliert vor und zurück pendeln lassen. Der Oberkörper bleibt aufrecht. Je 10 Pendel pro Seite.",
+    "s": "Standbein, anderes Bein hinten",
+    "e": "Bein vorn angehoben",
+    "g": "Hüftmobilität, Aufwärmen, Gangbild, Hüftbeuger",
+    "x": "Akute Hüft- oder Rückenschmerzen, Schwindel; Schwung klein halten",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,30,14,38,16;M24 27L19 36L13 41M40 0L40 44",
+      "24,7,24,13,24,27,24,36,24,44,30,14,38,16;M24 27L30 34L38 36M40 0L40 44"
+    ]
+  },
+  {
+    "id": "e62",
+    "n": "Storchstand",
+    "al": [
+      "Single Leg Knee Raise",
+      "Einbein-Knieheben"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Auf einem Bein stehen, das andere Knie auf Hüfthöhe heben und halten. Hände an der Hüfte oder zur Seite, Blick auf einen festen Punkt.",
+    "s": "Aufrecht auf zwei Beinen",
+    "e": "Ein Knie auf Hüfthöhe angehoben",
+    "g": "Gleichgewicht, Hüftbeuger, Sturzprophylaxe, Rumpfkontrolle",
+    "x": "Schwindel, akute Hüft- oder Knieschmerzen; neben einer Wand üben",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L33 27L33 36"
+    ]
+  },
+  {
+    "id": "e63",
+    "n": "Gewichtsverlagerung",
+    "al": [
+      "Weight Shifts",
+      "Gewicht verlagern"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Füße schulterbreit, Knie leicht gebeugt. Das Gewicht langsam von einem Bein auf das andere verlagern, die Hüfte schiebt seitlich, der Oberkörper bleibt aufrecht. 10 Wechsel.",
+    "s": "Schulterbreiter Stand, Gewicht mittig",
+    "e": "Gewicht seitlich auf einem Bein",
+    "g": "Gleichgewicht, Gangsicherheit, Aufbau nach Verletzung (mit Freigabe), Hüftstabilität",
+    "x": "Akute Knie- oder Hüftprobleme, Schwindel; bei Unsicherheit festhalten",
+    "l": "Die Zeichnung zeigt von vorn den Start (Gewicht in der Mitte) und das Ende (Gewicht auf einem Bein). Verschiebe das Becken seitlich über ein Bein, ohne den Oberkörper mitzukippen, und entlaste das andere Bein fast vollständig. Dann wechselst du im gleichen Tempo zur anderen Seite.",
+    "fig": [
+      "24,7,24,13,24,27,28,36,30,44,27,20,28,27;M24 13L21 20L20 27M24 27L20 36L18 44",
+      "26,7,26,13,28,27,30,36,30,44,29,20,30,27;M26 13L23 20L22 27M28 27L22 36L19 44"
+    ]
+  },
+  {
+    "id": "e64",
+    "n": "Kissen-Balance",
+    "al": [
+      "Balance Pad",
+      "Wackelkissen",
+      "Instabiler Untergrund"
+    ],
+    "c": "Gleichgewicht",
+    "m": "Kissen oder gefaltete Decke",
+    "d": "Auf einem weichen, instabilen Untergrund aufrecht stehen, erst auf beiden Beinen, später auf einem Bein. Rumpf anspannen und ruhig atmen.",
+    "s": "Beidbeinig auf dem Kissen",
+    "e": "Einbeinig auf dem Kissen",
+    "g": "Gleichgewicht, Sprunggelenk, Aufbau nach Umknicken (mit Freigabe), Sturzprophylaxe",
+    "x": "Schwindel, akute Sprunggelenkverletzung; neben einer Wand üben",
+    "l": "Die Zeichnung zeigt von der Seite das Kissen als flaches Rechteck unter den Füßen. Stelle dich zuerst auf beide Füße, halte 30 Sekunden und hebe dann ein Bein leicht an. Die Knie bleiben locker, der Blick geht zu einem festen Punkt. Neben einer Wand oder Stuhllehne üben.",
+    "fig": [
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M14 44L34 44L34 41L14 41Z",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M24 24L31 28L28 35M14 44L34 44L34 41L14 41Z"
+    ]
+  },
+  {
+    "id": "e65",
+    "n": "Hoher Stütz",
+    "al": [
+      "High Plank",
+      "Liegestützposition",
+      "Stütz"
+    ],
+    "c": "Rumpf",
+    "m": "–",
+    "d": "Hände unter den Schultern, Arme gestreckt, der Körper bildet eine Linie von Kopf bis Ferse. Bauch und Gesäß anspannen, nicht ins Hohlkreuz sinken. Position halten.",
+    "s": "Hände unter den Schultern",
+    "e": "Körper in einer Linie gehalten",
+    "g": "Rumpfstabilität, Schulterstabilität, Haltekraft",
+    "x": "Akute Handgelenk- oder Schulterbeschwerden; leichter auf den Knien",
+    "l": "",
+    "fig": [
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43",
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43"
+    ]
+  },
+  {
+    "id": "e66",
+    "n": "Fahrrad-Crunch",
+    "al": [
+      "Bicycle Crunch",
+      "Fahrradfahren liegend"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Rückenlage, Hände seitlich am Kopf, Beine angehoben. Abwechselnd den Ellbogen zum gegenüberliegenden Knie führen, das andere Bein streckt sich. Langsam und kontrolliert.",
+    "s": "Rückenlage, Beine angehoben",
+    "e": "Oberkörper angehoben, ein Knie zur Brust, das andere Bein gestreckt",
+    "g": "Schräge Bauchmuskeln, Rumpfrotation, Bauchmuskeln",
+    "x": "Akute Nacken- oder Rückenschmerzen, Bandscheibenprobleme ohne Freigabe, Bluthochdruck bei Pressatmung",
+    "l": "Die Zeichnung zeigt von der Seite den Start mit angehobenen Beinen und das Ende mit angehobenem Oberkörper. Beim Üben drehst du den Oberkörper so, dass der Ellbogen zum gegenüberliegenden Knie geht, während sich das andere Bein streckt. Die Bewegung kommt aus dem Rumpf, nicht aus dem Nacken.",
+    "fig": [
+      "8,42,14,43,26,43,26,30,36,30,12,38,8,41",
+      "10,34,16,38,26,43,22,33,28,35,14,33,11,36;M26 43L34 41L42 39"
+    ]
+  },
+  {
+    "id": "e67",
+    "n": "Russian Twist",
+    "al": [
+      "Rumpfdrehen sitzend",
+      "Rotation sitzend"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Setze dich mit gebeugten Knien hin, Oberkörper leicht zurückgelehnt, Rücken gerade. Hände vor der Brust, den Oberkörper abwechselnd zu beiden Seiten drehen. Leichter mit den Füßen am Boden.",
+    "s": "Sitzen, Oberkörper leicht zurückgelehnt",
+    "e": "Oberkörper zur Seite gedreht (Zeichnung vereinfacht)",
+    "g": "Schräge Bauchmuskeln, Rotationsstabilität, Rumpfkraft",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe; Füße am Boden lassen",
+    "l": "Die Drehung ist von der Seite schwer zu zeichnen: Die Zeichnung zeigt nur die Sitzhaltung. Beim Üben dreht sich der Brustkorb mit den Händen nach links und rechts, das Becken bleibt ruhig.",
+    "fig": [
+      "13,22,16,28,20,40,30,34,32,44,23,33,29,30",
+      "13,22,16,28,20,40,30,34,32,44,22,35,26,38"
+    ]
+  },
+  {
+    "id": "e68",
+    "n": "Seilspringen",
+    "al": [
+      "Jump Rope",
+      "Rope Skipping",
+      "Seilhüpfen"
+    ],
+    "c": "Schnelligkeit",
+    "m": "optional Seil",
+    "d": "Mit kleinen Sprüngen auf dem Vorfuß hüpfen und das Seil (oder imaginär) mit den Handgelenken schwingen. Weich landen, Ellbogen am Körper.",
+    "s": "Aufrecht, Arme leicht gebeugt",
+    "e": "Kleiner Sprung, Füße knapp vom Boden",
+    "g": "Ausdauer, Koordination, Wadenkraft, Aufwärmen",
+    "x": "Knie-, Sprunggelenk- oder Achillessehnenbeschwerden; flach hüpfen",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,22,20,18,26",
+      "24,4,24,10,24,24,24,33,24,41,22,17,18,23"
+    ]
+  },
+  {
+    "id": "e69",
+    "n": "Ausfallschritt-Sprung",
+    "al": [
+      "Jumping Lunge",
+      "Wechselsprung",
+      "Split Jump"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Aus dem Ausfallschritt senkrecht nach oben springen, in der Luft die Beine wechseln und weich im gegenüberliegenden Ausfallschritt landen.",
+    "s": "Ausfallschritt, Knie ca. 90°",
+    "e": "In der Luft, Beine wechseln",
+    "g": "Schnellkraft, Beinkraft, Koordination",
+    "x": "Knie-, Sprunggelenk- oder Hüftbeschwerden, Gleichgewichtsprobleme; erst Ausfallschritt ohne Sprung üben",
+    "l": "",
+    "fig": [
+      "24,12,24,18,24,32,32,34,32,44,24,25,24,32;M24 32L19 41L12 44",
+      "24,5,24,11,24,25,18,33,12,38,29,17,32,12;M24 25L31 29L33 37"
+    ]
+  },
+  {
+    "id": "e70",
+    "n": "Schnelle Füße",
+    "al": [
+      "Fast Feet",
+      "Trippeln",
+      "Sprint auf der Stelle"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Leicht in die Knie gehen, Oberkörper etwas nach vorn, und auf dem Vorfuß möglichst schnell mit kleinen Schritten auf der Stelle trippeln. 15 bis 20 Sekunden.",
+    "s": "Athletische Grundstellung, Knie leicht gebeugt",
+    "e": "Schnelles Trippeln, ein Fuß leicht angehoben",
+    "g": "Schnelligkeit, Koordination, Aufwärmen, Sprunggelenk",
+    "x": "Akute Knie- oder Sprunggelenkprobleme, Gleichgewichtsprobleme",
+    "l": "",
+    "fig": [
+      "26,13,24,19,22,30,28,36,26,44,29,24,33,28",
+      "26,13,24,19,22,30,28,36,23,41,29,24,33,28;M22 30L18 37L16 44"
+    ]
+  },
+  {
+    "id": "e71",
+    "n": "Zehenstand halten",
+    "al": [
+      "Heel Raise Hold",
+      "Zehenspitzenstand",
+      "Auf Zehen stehen"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Auf die Zehenspitzen stellen, die Fersen sind angehoben, aufrecht bleiben und die Position halten. Zur Hilfe mit einer Hand an der Wand abstützen.",
+    "s": "Fersen am Boden",
+    "e": "Auf den Zehenspitzen",
+    "g": "Wadenkraft, Gleichgewicht, Sprunggelenkstabilität, Fußgewölbe",
+    "x": "Akute Achillessehnen- oder Sprunggelenkverletzung, Schwindel; neben einer Wand üben",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 44L28 44",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M24 41L28 44"
+    ]
+  },
+  {
+    "id": "e72",
+    "n": "Seitgang",
+    "al": [
+      "Side Steps",
+      "Seitliches Gehen",
+      "Seitschritte"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Leicht in die Knie gehen und mit kleinen Schritten seitlich gehen, die Füße schließen sich jeweils nebeneinander. Oberkörper aufrecht, Blick nach vorn. 10 Schritte pro Seite.",
+    "s": "Füße zusammen",
+    "e": "Ein Fuß seitlich abgesetzt",
+    "g": "Hüftstabilität, seitliches Gesäß, Gangsicherheit, Gleichgewicht",
+    "x": "Akute Hüft- oder Knieprobleme, Schwindel; mit Festhalten üben",
+    "l": "Die Zeichnung zeigt von vorn den Start (Füße zusammen) und das Ende (ein Fuß seitlich abgesetzt). Setze einen Fuß zur Seite, verlagere das Gewicht darauf und ziehe den anderen Fuß nach, ohne die Füße zu kreuzen. Die Knie bleiben leicht gebeugt, die Zehen zeigen nach vorn.",
+    "fig": [
+      "24,7,24,13,24,27,25,36,25,44,28,20,29,27;M24 13L20 20L19 27M24 27L23 36L23 44",
+      "24,7,24,13,27,27,32,36,36,44,29,20,30,27;M24 13L21 20L20 27M27 27L22 36L20 44"
+    ]
+  },
+  {
+    "id": "e73",
+    "n": "Tandemgang",
+    "al": [
+      "Line Walk",
+      "Gehen auf einer Linie",
+      "Seiltänzergang"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Gehe Schritt für Schritt auf einer geraden Linie, bei jedem Schritt setzt du die Ferse direkt vor die Zehen des anderen Fußes. Arme zur Seite, Blick nach vorn. 10 Schritte.",
+    "s": "Aufrecht, ein Fuß auf der Linie",
+    "e": "Schritt, Ferse vor Zehen",
+    "g": "Gleichgewicht, Gangsicherheit, Sturzprophylaxe, Koordination",
+    "x": "Schwindel oder starke Unsicherheit; neben einer Wand üben",
+    "l": "Die Zeichnung zeigt von der Seite den Start und einen Schritt. Setze beim Gehen die Ferse jeweils direkt vor die Zehen des anderen Fußes, als würdest du auf einem Seil gehen. Die Arme helfen seitlich beim Ausbalancieren. Bei Unsicherheit an einer Wand entlang üben.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,27,36,30,44,30,20,35,22;M24 27L22 36L19 44"
+    ]
+  },
+  {
+    "id": "e74",
+    "n": "Rückwärtsgehen",
+    "al": [
+      "Backward Walk",
+      "Rückwärts gehen"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Gehe langsam rückwärts, setze zuerst die Zehen auf und rolle über den Fuß ab. Aufrecht bleiben, Schultern entspannt, nur in sicherer Umgebung mit freiem Weg.",
+    "s": "Aufrecht stehen",
+    "e": "Schritt nach hinten, Zehen setzen zuerst auf",
+    "g": "Gleichgewicht, Gangsicherheit, Oberschenkelvorderseite, Koordination",
+    "x": "Schwindel, Gleichgewichtsprobleme ohne Begleitung; freien Weg sichern",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,21,36,17,44,26,21,29,26;M24 27L27 36L29 44"
+    ]
+  },
+  {
+    "id": "e75",
+    "n": "Flamingo-Stand",
+    "al": [
+      "Flamingo",
+      "Ferse zum Gesäß",
+      "Einbeinstand mit Ferse hinten"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Auf einem Bein stehen, den anderen Fuß mit der Ferse zum Gesäß heben, der Oberschenkel bleibt senkrecht. Aufrecht, Blick auf einen Punkt. 20 bis 30 Sekunden.",
+    "s": "Aufrecht auf zwei Beinen",
+    "e": "Ein Bein gebeugt, Ferse am Gesäß",
+    "g": "Gleichgewicht, Sprunggelenk, Standbein, Kniestabilität",
+    "x": "Schwindel, akute Knieschmerzen; neben einer Wand üben",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 27L24 37L16 34"
+    ]
+  },
+  {
+    "id": "e76",
+    "n": "Einbein-Minikniebeuge",
+    "al": [
+      "Single Leg Mini Squat",
+      "Einbeinige Kniebeuge klein"
+    ],
+    "c": "Gleichgewicht",
+    "m": "Stuhl",
+    "d": "Auf einem Bein stehen, den Po leicht nach hinten schieben und das Knie ein kleines Stück beugen, dann wieder aufrichten. Hand an Stuhl oder Wand zur Sicherheit. 8 bis 10 Wiederholungen.",
+    "s": "Aufrecht auf einem Bein",
+    "e": "Standbein leicht gebeugt",
+    "g": "Kniestabilität, Gleichgewicht, Aufbau nach Verletzung (mit Freigabe), Beinkraft",
+    "x": "Akute Knieschmerzen, Instabilität; nur kleiner Bewegungsumfang",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,29,15,34,15;M24 27L24 37L17 38",
+      "25,12,23,18,20,29,28,35,26,44,28,22,33,22;M20 29L17 36L12 40"
+    ]
+  },
+  {
+    "id": "e77",
+    "n": "Fersen-Zehen-Wippen",
+    "al": [
+      "Heel-Toe Rocks",
+      "Wippen",
+      "Zehen und Fersen im Wechsel"
+    ],
+    "c": "Gleichgewicht",
+    "m": "–",
+    "d": "Stehe aufrecht und wippe langsam auf die Fersen (Zehen angehoben), dann auf die Zehenspitzen. Die Knie bleiben fast gestreckt, die Bewegung kommt aus den Füßen.",
+    "s": "Auf den Fersen, Zehen angehoben",
+    "e": "Auf den Zehenspitzen",
+    "g": "Fußkontrolle, Gleichgewicht, Sprunggelenk, vorderer und hinterer Unterschenkel",
+    "x": "Schwindel, akute Sprunggelenk- oder Achillessehnenprobleme; neben einer Wand üben",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M24 44L29 41",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M24 41L28 44"
+    ]
+  },
+  {
+    "id": "e78",
+    "n": "Aufstehen vom Stuhl",
+    "al": [
+      "Sit-to-Stand",
+      "Stuhl-Aufstehen",
+      "Von Stuhl aufstehen"
+    ],
+    "c": "Gleichgewicht",
+    "m": "Stuhl",
+    "d": "Setze dich an die Stuhlkante, Füße hüftbreit, Arme vor der Brust. Beuge den Oberkörper nach vorn und stehe ohne Hände auf, dann setze dich langsam wieder hin. 8 bis 10 Wiederholungen.",
+    "s": "Sitzen auf der Stuhlkante",
+    "e": "Aufrecht stehend",
+    "g": "Beinkraft, Gleichgewicht, Alltagsfunktion, Sturzprophylaxe, Knie- und Hüftkraft",
+    "x": "Akute Knie- oder Hüftschmerzen, Schwindel; Stuhl an die Wand stellen",
+    "l": "",
+    "fig": [
+      "18,8,18,14,18,29,29,30,29,44,23,21,28,19;M10 31L26 31M12 31L12 44M24 31L24 44",
+      "24,7,24,13,24,27,24,36,24,44,26,20,28,18;M6 33L16 33M8 33L8 44M14 33L14 44"
+    ]
+  },
+  {
+    "id": "e79",
+    "n": "Zehenmobilisation",
+    "al": [
+      "Zehen spreizen",
+      "Zehen krallen",
+      "Fußgymnastik"
+    ],
+    "c": "Mobilisation",
+    "m": "Stuhl",
+    "d": "Im Sitzen die Füße flach auf den Boden stellen. Zehen anheben und spreizen, dann absetzen und die Zehen krallen, als wolltest du ein Handtuch greifen. 10 bis 15 Wiederholungen je Fuß.",
+    "s": "Sitzen, Fuß flach",
+    "e": "Zehen angehoben und gespreizt",
+    "g": "Fußgewölbe, Zehenbeweglichkeit, Spreizfuß, Fußkraft",
+    "x": "Akute Fußverletzung, Krämpfe in der Fußsohle; kleiner und langsam üben",
+    "l": "",
+    "fig": [
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M29 41L35 41M10 31L28 31M12 31L12 44M26 31L26 44",
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M29 41L33 41L36 37M10 31L28 31M12 31L12 44M26 31L26 44"
+    ]
+  },
+  {
+    "id": "e80",
+    "n": "Knie beugen und strecken",
+    "al": [
+      "Knee Extension sitzend",
+      "Kniestrecken",
+      "Beinstrecken im Sitzen"
+    ],
+    "c": "Mobilisation",
+    "m": "Stuhl",
+    "d": "Im Sitzen ein Bein langsam strecken, bis das Knie gestreckt ist, kurz halten und wieder beugen. Der Oberschenkel bleibt auf dem Stuhl. 10 Wiederholungen je Seite.",
+    "s": "Sitzen, Knie 90° gebeugt",
+    "e": "Bein gestreckt",
+    "g": "Kniebeweglichkeit, Oberschenkelstrecker, nach Knieverletzung oder -OP (mit Freigabe)",
+    "x": "Akute Knieschwellung, frische Knie-OP ohne Freigabe; nur schmerzfrei",
+    "l": "",
+    "fig": [
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M10 31L28 31M12 31L12 44M26 31L26 44",
+      "16,8,16,14,16,29,28,29,41,31,20,22,26,28;M10 31L28 31M12 31L12 44M26 31L26 44"
+    ]
+  },
+  {
+    "id": "e81",
+    "n": "Schulterblatt-Rückziehen",
+    "al": [
+      "Scapular Retraction",
+      "Schulterblätter zusammen",
+      "Rudern ohne Gewicht"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Arme angewinkelt vor dem Körper, dann die Ellbogen nach hinten ziehen und die Schulterblätter zusammenführen, als wolltest du einen Stift dazwischen klemmen. Kurz halten, lösen. 10 bis 15 Wiederholungen.",
+    "s": "Arme vor dem Körper",
+    "e": "Ellbogen hinten, Schulterblätter zusammen",
+    "g": "Haltung, Rundrücken, Bürohaltung, oberer Rücken, Schulterblattkontrolle",
+    "x": "Akute Schulter- oder Nackenschmerzen; Schultern nicht hochziehen",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,29,15,33,15",
+      "24,7,24,13,24,27,24,36,24,44,19,17,24,15"
+    ]
+  },
+  {
+    "id": "e82",
+    "n": "Rumpfseitneigung",
+    "al": [
+      "Side Bend",
+      "Seitliche Rumpfbeuge",
+      "Seitbeuge"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Füße hüftbreit, ein Arm hängt, der andere gleitet am Körper entlang nach unten. Neige den Oberkörper zur Seite, ohne nach vorn zu kippen, kurz halten und zur Mitte zurück. 8 bis 10 Wiederholungen je Seite.",
+    "s": "Aufrecht, Arme hängen",
+    "e": "Oberkörper seitlich geneigt, ein Arm über dem Kopf",
+    "g": "Seitliche Rumpfmuskulatur, Wirbelsäulenmobilität, Verspannung",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe; nur schmerzfrei",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,27,36,27,44,28,20,29,27;M24 13L20 20L19 27M24 27L21 36L21 44",
+      "30,9,27,14,24,27,27,36,27,44,32,8,34,2;M27 14L24 21L23 28M24 27L21 36L21 44"
+    ]
+  },
+  {
+    "id": "e83",
+    "n": "Kinn-Einziehen",
+    "al": [
+      "Chin Tuck",
+      "Doppelkinn",
+      "Nacken zurück"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Aufrecht sitzen oder stehen, Blick nach vorn. Ziehe das Kinn waagerecht nach hinten, als wolltest du ein Doppelkinn bilden, ohne den Kopf zu neigen. 3 Sekunden halten, lösen. 10 Wiederholungen.",
+    "s": "Kopf leicht nach vorn geschoben",
+    "e": "Kopf gerade über den Schultern",
+    "g": "Nackenverspannung, Kopf-vorn-Haltung, Bürohaltung, Nackenschmerz",
+    "x": "Schwindel, Kribbeln in den Armen; kleine Bewegung, nicht überziehen",
+    "l": "",
+    "fig": [
+      "28,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27"
+    ]
+  },
+  {
+    "id": "e84",
+    "n": "Tiefe Hocke halten",
+    "al": [
+      "Deep Squat",
+      "Hocke",
+      "Asian Squat"
+    ],
+    "c": "Mobilisation",
+    "m": "–",
+    "d": "Füße etwas mehr als hüftbreit, Fußspitzen leicht nach außen. Gehe in die tiefe Hocke, Fersen am Boden, Rücken lang, Hände vor der Brust. Mit den Ellbogen sanft die Knie nach außen drücken. 20 bis 30 Sekunden.",
+    "s": "Aufrecht, Füße etwas breiter",
+    "e": "Tiefe Hocke, Fersen am Boden",
+    "g": "Hüft- und Sprunggelenkbeweglichkeit, Knie, Rückenhaltung",
+    "x": "Akute Knie- oder Hüftbeschwerden, frische Knie-OP; mit Festhalten oder Fersenunterlage üben",
+    "l": "Die Zeichnung zeigt von der Seite den Start im Stand und das Ende in der tiefen Hocke. Hüfte und Knie sind tief gebeugt, die Fersen bleiben am Boden, der Rücken ist lang. Wenn die Fersen abheben, lege ein gefaltetes Handtuch darunter. Halte dich bei Bedarf an einem Türrahmen fest.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "22,17,22,24,12,38,28,38,26,44,28,28,32,34"
+    ]
+  },
+  {
+    "id": "e85",
+    "n": "Katzenbuckel im Sitzen",
+    "al": [
+      "Seated Cat-Cow",
+      "Sitzendes Katze-Kuh",
+      "Wirbelsäulenmobilisation sitzend"
+    ],
+    "c": "Mobilisation",
+    "m": "Stuhl",
+    "d": "Im Sitzen die Hände auf die Knie legen. Runde den Rücken nach hinten, Kinn zur Brust, dann richte dich auf und schiebe die Brust nach vorn. Im Atemrhythmus, 8 bis 10 Wiederholungen.",
+    "s": "Sitzen, Rücken rund",
+    "e": "Sitzen, Brust vorn, Rücken aufgerichtet",
+    "g": "Wirbelsäulenmobilität, Bürohaltung, Rückenverspannung, Brustwirbelsäule",
+    "x": "Akute Rückenschmerzen mit Ausstrahlung, Bandscheibenprobleme ohne Freigabe; kleine Bewegung",
+    "l": "Die Zeichnung zeigt von der Seite den Start mit rundem Rücken und das Ende mit aufgerichtetem Rücken. Wechsle langsam zwischen den beiden Positionen. Beim Aufrichten schiebst du die Brust vor und die Schulterblätter nach hinten unten, beim Runden fällt der Kopf entspannt nach vorn.",
+    "fig": [
+      "22,11,16,16,16,29,29,30,29,41,23,23,28,27;M10 31L28 31M12 31L12 44M26 31L26 44",
+      "17,7,16,13,16,29,29,30,29,41,23,23,28,27;M10 31L28 31M12 31L12 44M26 31L26 44"
+    ]
+  },
+  {
+    "id": "e86",
+    "n": "Seitstütz mit Beinheben",
+    "al": [
+      "Side Plank Leg Raise",
+      "Seitstütz Bein heben"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Gehe in den Seitstütz auf dem Unterarm, Körper in einer Linie. Hebe das obere Bein gestreckt ein Stück an, halte kurz und senke es kontrolliert, ohne dass die Hüfte absackt.",
+    "s": "Seitstütz, Beine übereinander",
+    "e": "Oberes Bein angehoben",
+    "g": "Seitliche Rumpfmuskulatur, Hüfte, Gesäß, Rückenstabilität",
+    "x": "Akute Schulter- oder Hüftbeschwerden; leichter mit gebeugtem unterem Knie",
+    "l": "",
+    "fig": [
+      "40,27,34,30,20,37,13,40,6,44,34,44,41,44",
+      "40,27,34,30,20,37,13,40,6,44,34,44,41,44;M20 37L11 32L3 28"
+    ]
+  },
+  {
+    "id": "e87",
+    "n": "Schulter-Tippen im Stütz",
+    "al": [
+      "Plank Shoulder Taps",
+      "Schultertippen"
+    ],
+    "c": "Rumpf",
+    "m": "–",
+    "d": "Im hohen Stütz abwechselnd eine Hand zur gegenüberliegenden Schulter führen, ohne dass die Hüfte kippt. Beine etwas breiter stellen für mehr Stabilität. Langsam und kontrolliert.",
+    "s": "Hoher Stütz",
+    "e": "Eine Hand an der Schulter",
+    "g": "Rumpfstabilität, Schulterstabilität, Rotationskontrolle",
+    "x": "Akute Handgelenk- oder Schulterbeschwerden; leichter auf den Knien",
+    "l": "Die Zeichnung zeigt von der Seite den hohen Stütz, im Endbild mit einer Hand an der Schulter. Löse eine Hand und tippe die gegenüberliegende Schulter an, ohne dass sich das Becken dreht oder absackt. Stelle die Beine etwas breiter, wenn du wackelst.",
+    "fig": [
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43",
+      "40,25,34,29,24,33,15,37,6,42,40,31,35,29;M34 29L34 36L34 43"
+    ]
+  },
+  {
+    "id": "e88",
+    "n": "Kobra-Heben",
+    "al": [
+      "Prone Cobra",
+      "Bauchlage Oberkörper heben",
+      "Rückenheben mit Armen hinten"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Bauchlage, Arme neben dem Körper. Hebe Kopf und Brust leicht vom Boden und ziehe die Schulterblätter zusammen, Blick zum Boden. Kurz halten, langsam absenken.",
+    "s": "Bauchlage, Arme am Körper",
+    "e": "Brust leicht angehoben, Schulterblätter zusammen",
+    "g": "Rückenstrecker, oberer Rücken, Haltung, Schulterblätter",
+    "x": "Akute Rückenschmerzen im Hohlkreuz, Bandscheibenvorfall ohne Freigabe; nur wenig anheben",
+    "l": "Die Zeichnung zeigt die Bauchlage von der Seite: Start flach, Ende mit angehobenem Oberkörper. Hebe nur Kopf und Brust wenige Zentimeter an, die Arme liegen neben dem Körper, die Schulterblätter ziehen zusammen und nach unten. Der Blick geht zum Boden, die Beine bleiben liegen.",
+    "fig": [
+      "38,42,32,43,18,43,10,43,3,43,26,43,18,43",
+      "38,36,32,39,18,43,10,43,3,43,27,41,19,43"
+    ]
+  },
+  {
+    "id": "e89",
+    "n": "Einbeinige Hüftbrücke",
+    "al": [
+      "Single Leg Bridge",
+      "Einbein-Brücke",
+      "Einbeiniges Beckenheben"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Wie die Hüftbrücke, aber ein Bein ist gestreckt. Becken heben, bis Schulter, Hüfte und Knie eine Linie bilden, ohne dass das Becken seitlich kippt. Langsam absenken, Seite wechseln.",
+    "s": "Hüftbrücke mit beiden Beinen",
+    "e": "Becken gehoben, ein Bein gestreckt",
+    "g": "Gesäß, Rumpfstabilität, hintere Oberschenkel, Hüfte",
+    "x": "Akute Rücken-, Knie- oder Hüftschmerzen, Wadenkrämpfe; erst beidbeinig üben",
+    "l": "Die Zeichnung zeigt von der Seite die Brücke, im Endbild mit einem gestreckten Bein. Das Standbein drückt Becken und Gesäß nach oben, das andere Bein ist gestreckt in einer Linie mit dem Oberschenkel des Standbeins. Das Becken bleibt waagerecht, ohne seitlich abzukippen.",
+    "fig": [
+      "8,42,14,42,26,35,37,30,38,44,20,43,26,42",
+      "8,42,14,42,26,35,37,30,38,44,20,43,26,42;M26 35L36 29L46 24"
+    ]
+  },
+  {
+    "id": "e90",
+    "n": "Wandstütz",
+    "al": [
+      "Wall Plank",
+      "Plank an der Wand",
+      "Stütz an der Wand"
+    ],
+    "c": "Rumpf",
+    "m": "Wand",
+    "d": "Stelle dich eine Armlänge von der Wand entfernt hin, Hände oder Unterarme an die Wand. Lehne dich nach vorn, der Körper bildet eine Linie, Bauch und Gesäß anspannen. Position halten. Leichte Einstiegsvariante des Unterarmstütz.",
+    "s": "Aufrecht, Hände an der Wand",
+    "e": "Schräg gegen die Wand gelehnt, Körper in einer Linie",
+    "g": "Rumpfstabilität, Schulterstabilität, Einstieg ohne Bodenübung",
+    "x": "Akute Schulter- oder Handgelenkbeschwerden; Abstand zur Wand verkleinern",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,31,14,40,14;M42 0L42 44",
+      "38,16,33,21,23,32,17,38,11,44,38,22,42,22;M42 0L42 44"
+    ]
+  },
+  {
+    "id": "e91",
+    "n": "Bauchatmung",
+    "al": [
+      "Zwerchfellatmung",
+      "Belly Breathing",
+      "Bauch atmen"
+    ],
+    "c": "Rumpf",
+    "m": "Matte",
+    "d": "Rückenlage, Knie angewinkelt, eine Hand auf dem Bauch. Atme langsam durch die Nase ein, sodass sich der Bauch hebt, und durch den Mund wieder aus. Die Brust bleibt ruhig. 5 bis 10 Atemzüge.",
+    "s": "Rückenlage, Hand am Bauch",
+    "e": "Bauch gehoben beim Einatmen",
+    "g": "Entspannung, tiefe Bauchmuskeln, Stress, Verspannung, Rumpfkontrolle",
+    "x": "Bei Atemnot oder Schwindel abbrechen und Pause machen",
+    "l": "Die Zeichnung zeigt die Rückenlage mit angewinkelten Beinen, die Hand liegt am Bauch. Der Bogen im Endbild zeigt, dass sich der Bauch beim Einatmen hebt. Atme durch die Nase ein, lass den Bauch nach oben kommen und atme ruhig und lang durch den Mund aus.",
+    "fig": [
+      "8,42,14,43,26,43,34,33,38,44,22,40,26,39",
+      "8,42,14,43,26,43,34,33,38,44,22,40,26,39;M18 43Q22 39 26 43"
+    ]
+  },
+  {
+    "id": "e92",
+    "n": "Seitliche Linienhüpfer",
+    "al": [
+      "Line Hops",
+      "Seitsprünge",
+      "Hüpfen über Linie"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Stelle dich neben eine Linie (oder ein Seil auf dem Boden). Hüpfe mit beiden Füßen seitlich darüber und zurück, auf dem Vorfuß, schnell aber weich.",
+    "s": "Neben der Linie",
+    "e": "Auf der anderen Seite gelandet",
+    "g": "Schnelligkeit, Sprunggelenk, Koordination, Wade",
+    "x": "Akute Sprunggelenk- oder Knieprobleme, Gleichgewichtsprobleme; erst kleine Sprünge",
+    "l": "",
+    "fig": [
+      "18,7,18,13,18,27,18,36,18,44,22,20,23,27;M18 27L16 36L16 44",
+      "30,4,30,10,30,24,30,33,30,40,34,17,36,23;M30 24L28 33L26 40"
+    ]
+  },
+  {
+    "id": "e93",
+    "n": "Schattenboxen",
+    "al": [
+      "Shadow Boxing",
+      "Boxen ohne Gegner"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Leicht in die Knie, Fäuste an der Wange, abwechselnd schnelle gerade Schläge nach vorn, dabei aus der Hüfte drehen. Schultern locker, nicht überstrecken.",
+    "s": "Boxstellung, Fäuste an der Wange",
+    "e": "Arm gestreckt nach vorn",
+    "g": "Schnelligkeit, Koordination, Ausdauer, Schultern, Rumpf",
+    "x": "Akute Schulter- oder Ellbogenbeschwerden; Schläge nicht ganz durchstrecken",
+    "l": "",
+    "fig": [
+      "24,9,24,15,23,28,25,36,25,44,29,19,31,14;M23 28L18 36L14 44",
+      "24,9,24,15,23,28,25,36,25,44,33,15,42,15;M24 15L28 20L28 14M23 28L18 36L14 44"
+    ]
+  },
+  {
+    "id": "e94",
+    "n": "Marschieren mit Armschwung",
+    "al": [
+      "March in Place",
+      "Auf der Stelle marschieren",
+      "Marschieren"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Marschiere auf der Stelle, hebe die Knie bis etwa Hüfthöhe und schwinge die Arme gegengleich mit. Tempo langsam steigern. Gelenkschonend.",
+    "s": "Aufrecht",
+    "e": "Knie angehoben, Arme im Gegenschwung",
+    "g": "Ausdauer, Aufwärmen, gelenkschonend, Koordination",
+    "x": "Akute Knie- oder Hüftbeschwerden; Knie nur niedrig heben",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,29,19,32,13;M24 27L30 31L29 38M24 13L19 19L21 25"
+    ]
+  },
+  {
+    "id": "e95",
+    "n": "Anfersen",
+    "al": [
+      "Butt Kicks",
+      "Fersen zum Gesäß"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Laufe locker auf der Stelle und ziehe dabei bei jedem Schritt die Ferse Richtung Gesäß. Oberkörper aufrecht, Arme schwingen mit. 20 bis 30 Sekunden.",
+    "s": "Aufrecht",
+    "e": "Ferse zum Gesäß",
+    "g": "Ausdauer, hintere Oberschenkel, Aufwärmen, Koordination",
+    "x": "Akute Knie- oder Oberschenkelbeschwerden, Zerrungen; langsam beginnen",
+    "l": "",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,22,20,18,26",
+      "24,7,24,13,24,27,24,36,24,44,29,19,26,13;M24 27L23 37L14 34"
+    ]
+  },
+  {
+    "id": "e96",
+    "n": "Burpee ohne Sprung",
+    "al": [
+      "Step Burpee",
+      "Burpee",
+      "Burpee light"
+    ],
+    "c": "Schnelligkeit",
+    "m": "–",
+    "d": "Gehe aus dem Stand in die Hocke, setze die Hände auf, steige mit den Füßen nacheinander in den Stütz zurück, dann wieder in die Hocke und aufrichten. Ohne Liegestütz und ohne Sprung.",
+    "s": "Hocke, Hände am Boden",
+    "e": "Hoher Stütz",
+    "g": "Ganzkörper, Ausdauer, Schnellkraft, Koordination",
+    "x": "Akute Handgelenk-, Schulter-, Knie- oder Rückenbeschwerden; Tempo niedrig halten",
+    "l": "",
+    "fig": [
+      "26,17,23,23,15,33,26,35,24,44,29,34,32,43",
+      "40,25,34,29,24,33,15,37,6,42,34,36,34,43"
+    ]
+  },
+  {
+    "id": "e97",
+    "n": "Tempo-Step-up",
+    "al": [
+      "Schnelle Stufen",
+      "Step-up schnell",
+      "Treppentraining"
+    ],
+    "c": "Schnelligkeit",
+    "m": "Brett oder Stufe",
+    "d": "Wie der Step-up, aber zügig: Fuß auf das Brett, aufrichten, zurücksteigen, im Wechsel. Weich absetzen, das Knie zeigt über den Fuß. 20 bis 30 Sekunden.",
+    "s": "Ein Fuß auf dem Brett",
+    "e": "Aufrecht auf dem Brett",
+    "g": "Ausdauer, Beinkraft, Alltagsfunktion (Treppen)",
+    "x": "Knie-, Hüft- oder Gleichgewichtsprobleme; erst langsam üben",
+    "l": "",
+    "fig": [
+      "22,7,22,13,22,27,28,31,30,36,22,20,22,27;M22 27L20 36L20 44M28 36L42 36L42 44L28 44Z",
+      "32,3,32,9,32,22,32,31,32,36,32,15,32,22;M32 22L38 26L38 33M28 36L42 36L42 44L28 44Z"
+    ]
+  },
+  {
+    "id": "e98",
+    "n": "Nacken-Isometrie",
+    "al": [
+      "Neck Isometric",
+      "Nackenkräftigung",
+      "Kopf gegen Hand drücken"
+    ],
+    "c": "Kraft",
+    "m": "–",
+    "d": "Lege die Hand an die Stirn und drücke den Kopf gegen die Hand, ohne dass sich der Kopf bewegt. 5 Sekunden halten, dann an Schläfe und Hinterkopf wiederholen. Gleichmäßig atmen.",
+    "s": "Aufrecht, Hand an der Stirn",
+    "e": "Kopf drückt gegen die Hand",
+    "g": "Nackenkraft, Nackenverspannung, Haltung, Bürohaltung",
+    "x": "Akute Halswirbelsäulenverletzung, Schwindel, Kribbeln in den Armen; nur leichter Druck",
+    "l": "Die Zeichnung zeigt von der Seite die Hand an der Stirn. Der Kopf drückt gegen die Hand, die Hand hält dagegen, sodass sich nichts bewegt. Wiederhole an der Schläfe (links, rechts) und am Hinterkopf. Der Druck ist leicht bis mittel, der Kiefer bleibt locker.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27",
+      "24,7,24,13,24,27,24,36,24,44,31,14,27,6"
+    ]
+  },
+  {
+    "id": "e99",
+    "n": "Greifkraft-Training",
+    "al": [
+      "Faust pressen",
+      "Handtuch auswringen",
+      "Ball quetschen"
+    ],
+    "c": "Kraft",
+    "m": "Handtuch oder weicher Ball",
+    "d": "Nimm einen weichen Ball oder ein zusammengerolltes Handtuch in die Hand. Drücke fest zu, halte 5 Sekunden und lasse langsam los. Alternativ das Handtuch wie beim Auswringen verdrehen. 10 Wiederholungen je Hand.",
+    "s": "Hand locker geöffnet",
+    "e": "Faust fest geschlossen",
+    "g": "Greifkraft, Unterarm, Handgelenk, Tennisarm, Alltagsfunktion",
+    "x": "Akute Sehnenscheidenentzündung, Taubheit in der Hand; nur ohne Schmerz",
+    "l": "Die Zeichnung zeigt den ausgestreckten Arm, im Endbild mit einem Punkt für die geschlossene Faust um den Ball. Beim Üben kannst du im Sitzen oder Stehen trainieren, der Arm liegt locker auf dem Oberschenkel oder hängt neben dem Körper. Drücke mit gleichmäßigem Druck, nicht ruckartig.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13",
+      "24,7,24,13,24,27,24,36,24,44,31,13,38,13;;d"
+    ]
+  },
+  {
+    "id": "e100",
+    "n": "Kurzer Fuß",
+    "al": [
+      "Short Foot",
+      "Fußgewölbe aktivieren",
+      "Fußmuskeltraining"
+    ],
+    "c": "Kraft",
+    "m": "Stuhl",
+    "d": "Im Sitzen den Fuß flach auf den Boden stellen. Ziehe den Vorfuß zur Ferse, ohne die Zehen zu krallen, sodass sich das Fußgewölbe hebt. 5 Sekunden halten, lösen. 10 Wiederholungen je Fuß.",
+    "s": "Fuß flach",
+    "e": "Fußgewölbe angehoben",
+    "g": "Fußgewölbe, Plattfuß, Senkfuß, Fußmuskulatur, Gleichgewicht",
+    "x": "Akute Fußverletzung, Krämpfe in der Fußsohle; klein und langsam üben",
+    "l": "Die Zeichnung zeigt den sitzenden Körper von der Seite, im Endbild ist das Fußgewölbe leicht angedeutet gehoben. Beim Üben bleiben Ferse und Zehen am Boden, du ziehst den Vorfuß zur Ferse und hebst damit die Fußmitte, ohne die Zehen einzukrallen. Die Bewegung ist klein.",
+    "fig": [
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M29 41L35 41M10 31L28 31M12 31L12 44M26 31L26 44",
+      "16,8,16,14,16,29,29,30,29,41,20,22,26,28;M29 41L32 38L35 41M10 31L28 31M12 31L12 44M26 31L26 44"
+    ]
+  },
+  {
+    "id": "e101",
+    "n": "Schulter-Außenrotation",
+    "al": [
+      "External Rotation",
+      "Außenrotation Schulter",
+      "Rotatorenmanschette"
+    ],
+    "c": "Kraft",
+    "m": "leichte Hantel oder Flasche",
+    "d": "Stehe aufrecht, den Ellbogen am Körper im rechten Winkel gebeugt, Hantel oder Flasche in der Hand. Drehe den Unterarm langsam nach außen, ohne den Ellbogen vom Körper zu lösen, und führe ihn kontrolliert zurück. 10 bis 12 Wiederholungen.",
+    "s": "Ellbogen am Körper, Unterarm nach vorn",
+    "e": "Unterarm nach außen gedreht",
+    "g": "Rotatorenmanschette, Schulterstabilität, Überkopfsport, Schulterengpass",
+    "x": "Akute Schulterschmerzen oder Verletzung; sehr leichtes Gewicht, nicht ruckartig",
+    "l": "Die Drehung findet in der Schulter statt und ist von der Seite schwer zu zeichnen. Der Pfeil deutet an, wie sich der Unterarm nach außen dreht, der Ellbogen bleibt am Körper.",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,31,20;;d",
+      "24,7,24,13,24,27,24,36,24,44,24,20,31,20;M33 24Q37 20 33 16;d"
+    ]
+  },
+  {
+    "id": "e102",
+    "n": "Ergometer",
+    "al": [
+      "Fahrradergometer",
+      "Heimtrainer",
+      "Indoor Bike",
+      "Radfahren"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle den Sattel so ein, dass das Knie unten leicht gebeugt bleibt. Aufrecht sitzen, Schultern locker, gleichmäßig treten, den Widerstand so wählen, dass du dich dabei noch unterhalten kannst.",
+    "s": "Aufsitzen, Sattel passend eingestellt",
+    "e": "Gleichmäßiges Treten, Rücken gerade",
+    "g": "Ausdauer, Herz-Kreislauf, Oberschenkel, Gesäß, Knie (gelenkschonend), Aufwärmen",
+    "x": "Akute Herz-Kreislauf-Beschwerden, unkontrollierter Bluthochdruck (vorher ärztlich abklären), akute Knieschmerzen beim Beugen",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "31,9,26,14,15,24,27,33,24,43,31,18,36,22;M15 24L24 26L24 32M24 38L16 22M13 22L19 22M24 38L34 22M34 22L38 22",
+      "31,9,26,14,15,24,24,27,24,33,31,18,36,22;M15 24L27 33L24 43M24 38L16 22M13 22L19 22M24 38L34 22M34 22L38 22"
+    ]
+  },
+  {
+    "id": "e103",
+    "n": "Liegeergometer",
+    "al": [
+      "Recumbent Bike",
+      "Liegerad",
+      "Liege-Ergometer"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich in den Liegesitz, den Rücken an die Lehne, die Füße in den Pedalen, die Beine nicht ganz durchstrecken. Gleichmäßig treten, ruhig atmen. Der Rücken ist gestützt, daher besonders gelenk- und rückenschonend.",
+    "s": "Zurückgelehnt, Füße auf den Pedalen",
+    "e": "Beine im Wechsel gestreckt, Rücken an der Lehne",
+    "g": "Ausdauer, Herz-Kreislauf, rückenschonend, Oberschenkel, Knie, Aufbau nach Verletzung (mit Freigabe)",
+    "x": "Akute Herz-Kreislauf-Beschwerden, unkontrollierter Bluthochdruck: vorher ärztlich abklären",
+    "l": "Die Zeichnung zeigt den Sitz von der Seite: Der Rücken liegt an der Lehne, die Pedale sind vorn. Das Gerät stützt den Rücken und schont die Gelenke, daher eignet es sich gut zum Wiedereinstieg. Stelle den Sitz so ein, dass die Knie in der Streckung leicht gebeugt bleiben.",
+    "sub": "Ausdauer",
+    "fig": [
+      "6,19,9,24,16,34,26,27,33,34,13,29,18,33;M16 34L25 33L30 37M4 20L10 38M6 38L19 38M36 28L36 40",
+      "6,19,9,24,16,34,26,33,37,34,13,29,18,33;M16 34L27 28L32 34M4 20L10 38M6 38L19 38M36 28L36 40"
+    ]
+  },
+  {
+    "id": "e104",
+    "n": "Laufband",
+    "al": [
+      "Treadmill",
+      "Gehband",
+      "Joggen",
+      "Gehen"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Beginne mit langsamem Gehen zum Aufwärmen und steigere Tempo oder Steigung langsam. Aufrecht laufen, Blick nach vorn, Sicherheitsclip anstecken, den Handlauf nur bei Bedarf kurz greifen.",
+    "s": "Aufrecht auf dem Band stehen",
+    "e": "Im Gehen oder Laufen, Schrittbewegung",
+    "g": "Ausdauer, Herz-Kreislauf, Beine, Gangbild, Wade, Fuß",
+    "x": "Akute Knie-, Sprunggelenk- oder Hüftbeschwerden bei Stoßbelastung, Herz-Kreislauf-Beschwerden (vorher abklären); lieber Gehen mit Steigung",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "28,7,26,13,24,26,31,31,29,38,31,19,35,15;M24 26L18 34L11 36M26 13L21 19L24 24M6 41L42 41L42 44L6 44Z",
+      "28,7,26,13,24,26,17,34,11,36,21,19,24,24;M24 26L31 31L29 38M26 13L31 19L35 15M6 41L42 41L42 44L6 44Z"
+    ]
+  },
+  {
+    "id": "e105",
+    "n": "Crosstrainer",
+    "al": [
+      "Ellipsentrainer",
+      "Elliptical",
+      "Cross Trainer"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle dich auf die Pedale, halte die Griffe und bewege Arme und Beine gegengleich in einer fließenden Bewegung. Aufrecht bleiben, nicht auf die Griffe stützen. Gelenkschonend.",
+    "s": "Aufrecht auf den Pedalen, Hände an den Griffen",
+    "e": "Ein Bein vorn, Arme gegengleich",
+    "g": "Ausdauer, Herz-Kreislauf, Ganzkörper, gelenkschonend, Oberschenkel, Gesäß, Arme",
+    "x": "Akute Herz-Kreislauf-Beschwerden, Gleichgewichtsprobleme; mit Festhalten",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "24,7,24,13,24,27,28,35,32,42,29,19,34,22;M24 27L20 35L16 42M24 13L19 18L14 22M34 10L34 30M14 10L14 30M8 43L40 43",
+      "24,7,24,13,24,27,20,35,16,42,29,19,34,22;M24 27L28 35L32 42M24 13L19 18L14 22M34 10L34 30M14 10L14 30M8 43L40 43"
+    ]
+  },
+  {
+    "id": "e106",
+    "n": "Stepper",
+    "al": [
+      "Treppensteiger",
+      "Stair Climber",
+      "Stepmaschine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Steige gleichmäßig auf die Pedale, die Hände liegen leicht am Haltegriff, der Oberkörper bleibt aufrecht, die Fersen bleiben auf den Pedalen. Kleine Schritte bedeuten niedrige Belastung.",
+    "s": "Aufrecht, ein Pedal oben",
+    "e": "Pedale im Wechsel",
+    "g": "Ausdauer, Oberschenkel, Gesäß, Wade, Herz-Kreislauf, Treppensteigen",
+    "x": "Akute Knie- oder Hüftbeschwerden, Gleichgewichtsprobleme; Tempo niedrig halten",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "24,7,24,13,24,27,30,32,30,38,28,19,32,22;M24 27L22 36L21 43M32 12L32 30M8 43L40 43",
+      "24,7,24,13,24,27,22,36,21,43,28,19,32,22;M24 27L30 32L30 38M32 12L32 30M8 43L40 43"
+    ]
+  },
+  {
+    "id": "e107",
+    "n": "Rudergerät",
+    "al": [
+      "Rudern",
+      "Rower",
+      "Indoor Rowing",
+      "Ruderergometer"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Beginn: Beine gebeugt, Arme gestreckt. Zuerst die Beine strecken, dann den Oberkörper leicht zurücklehnen, zuletzt den Griff zum Bauch ziehen. Zurück in umgekehrter Reihenfolge, Rücken gerade.",
+    "s": "Beine gebeugt, Arme gestreckt",
+    "e": "Beine gestreckt, Griff am Bauch",
+    "g": "Ausdauer, Ganzkörper, Rücken, Beine, Arme, Rumpf",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe, Knieschmerzen bei tiefer Beugung; Technik zuerst mit wenig Widerstand üben",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "26,21,22,26,14,37,27,29,36,37,30,26,38,26;M2 40L40 40M37 30L37 40",
+      "3,19,6,24,8,37,22,36.5,36,37,13,28,22,27;M2 40L40 40M37 30L37 40"
+    ]
+  },
+  {
+    "id": "e108",
+    "n": "Air Bike",
+    "al": [
+      "Assault Bike",
+      "Fan Bike",
+      "Luftwiderstandsrad"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setz dich aufrecht, die Hände an den beweglichen Griffen. Trete und schiebe bzw. ziehe die Griffe gleichzeitig, der Widerstand steigt mit dem Tempo. Gut für kurze Intervalle.",
+    "s": "Aufrecht, Hände an den Griffen",
+    "e": "Arme und Beine arbeiten gleichzeitig",
+    "g": "Ausdauer, Intervalle, Ganzkörper, Oberschenkel, Arme, Herz-Kreislauf",
+    "x": "Akute Herz-Kreislauf-Beschwerden, Schulter- oder Knieprobleme; mit niedrigem Tempo beginnen",
+    "l": "",
+    "sub": "Ausdauer",
+    "fig": [
+      "31,9,26,14,15,24,27,33,24,43,31,18,36,22;M15 24L24 26L24 32M24 38L16 22M13 22L19 22M24 38L34 22M34 22L38 22M40 20Q46 28 40 36",
+      "31,9,26,14,15,24,24,27,24,33,29,20,32,27;M15 24L27 33L24 43M24 38L16 22M13 22L19 22M24 38L34 22M34 22L38 22M40 20Q46 28 40 36"
+    ]
+  },
+  {
+    "id": "e109",
+    "n": "Beinpresse",
+    "al": [
+      "Leg Press"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich, den Rücken an der Lehne, die Füße schulterbreit auf der Platte. Drücke die Platte kontrolliert weg, ohne die Knie ganz durchzudrücken, und lass sie langsam zurück. Das Becken bleibt am Sitz, die Knie zeigen über die Füße.",
+    "s": "Knie gebeugt, Füße auf der Platte",
+    "e": "Beine fast gestreckt",
+    "g": "Oberschenkel, Gesäß, Knie, Beinkraft, Aufbau nach Verletzung (mit Freigabe)",
+    "x": "Akute Knie- oder Rückenschmerzen, Pressatmung bei Bluthochdruck; Knie nie ganz durchdrücken",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "5,17,8,22,14,34,23,27,31,31,11,28,16,31;M33 24L30 38M3 18L12 37M8 38L20 38",
+      "5,17,8,22,14,34,26,26,36,20,11,28,16,31;M38 14L35 28M3 18L12 37M8 38L20 38"
+    ]
+  },
+  {
+    "id": "e110",
+    "n": "Beinstrecker",
+    "al": [
+      "Leg Extension"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich, das Polster liegt knapp über den Knöcheln. Strecke die Beine kontrolliert, halte kurz und senke langsam ab. Der Rücken bleibt an der Lehne. Mit leichtem Gewicht beginnen.",
+    "s": "Knie gebeugt",
+    "e": "Beine gestreckt",
+    "g": "Oberschenkelvorderseite, Knie, Kniestabilität, Aufbau nach Verletzung (mit Freigabe)",
+    "x": "Akute Knieschmerzen, Kniescheibenprobleme, frische Kreuzband-OP ohne Freigabe; leichtes Gewicht",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "14,8,14,14,14,28,26,28,26,40,17,21,19,27;M10 10L10 30M8 30L24 30",
+      "14,8,14,14,14,28,26,28,39,30,17,21,19,27;M10 10L10 30M8 30L24 30"
+    ]
+  },
+  {
+    "id": "e111",
+    "n": "Beinbeuger",
+    "al": [
+      "Leg Curl",
+      "Beinbizeps"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich, das Polster liegt oberhalb der Fersen. Ziehe die Unterschenkel nach unten und hinten, halte kurz und lass kontrolliert zurück. Das Gesäß bleibt am Sitz.",
+    "s": "Beine gestreckt",
+    "e": "Beine nach hinten gebeugt",
+    "g": "Hintere Oberschenkel, Knie, Beinkraft, Verletzungsprävention",
+    "x": "Akute Zerrung der hinteren Oberschenkel, Wadenkrämpfe; langsam und mit leichtem Gewicht",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "14,8,14,14,14,28,26,28,39,30,17,21,19,27;M10 10L10 30M8 30L24 30",
+      "14,8,14,14,14,28,26,28,24,40,17,21,19,27;M10 10L10 30M8 30L24 30"
+    ]
+  },
+  {
+    "id": "e112",
+    "n": "Brustpresse",
+    "al": [
+      "Chest Press",
+      "Bankdrücken Maschine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle den Sitz so ein, dass die Griffe auf Brusthöhe liegen. Drücke die Griffe nach vorn, bis die Arme fast gestreckt sind, und lass sie langsam zurück. Die Schulterblätter bleiben an der Lehne.",
+    "s": "Griffe auf Brusthöhe, Ellbogen gebeugt",
+    "e": "Arme fast gestreckt",
+    "g": "Brust, Schulter, Arm (Trizeps), Rumpf, Oberkörperkraft",
+    "x": "Akute Schulter-, Ellbogen- oder Brustbeschwerden; Pressatmung bei Bluthochdruck vermeiden",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "14,9,14,15,14,30,26,31,26,43,11,21,20,16;M10 8L10 32M8 32L24 32",
+      "14,9,14,15,14,30,26,31,26,43,24,16,34,16;M10 8L10 32M8 32L24 32"
+    ]
+  },
+  {
+    "id": "e113",
+    "n": "Latzug",
+    "al": [
+      "Lat Pulldown",
+      "Latissimuszug"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Greife die Stange etwas breiter als schulterbreit, die Oberschenkel liegen unter dem Polster. Ziehe die Stange kontrolliert zur oberen Brust, die Ellbogen zeigen nach unten, die Schulterblätter ziehen zusammen. Langsam zurück.",
+    "s": "Arme gestreckt über dem Kopf",
+    "e": "Stange vor der oberen Brust",
+    "g": "Rücken, oberer Rücken, Schulterblattkontrolle, Haltung, Arm (Bizeps)",
+    "x": "Akute Schulterschmerzen, Schulterengpass; die Stange nie hinter den Nacken ziehen",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "14,9,14,15,14,30,26,31,26,43,19,9,22,2;M12 2L34 2M8 32L24 32M20 25L32 25",
+      "14,9,14,15,14,30,26,31,26,43,9,22,19,14;M12 14L30 14M8 32L24 32M20 25L32 25"
+    ]
+  },
+  {
+    "id": "e114",
+    "n": "Sitzrudern",
+    "al": [
+      "Seated Row",
+      "Rudern am Kabel",
+      "Rudermaschine sitzend"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich aufrecht, die Füße auf der Platte, die Knie leicht gebeugt. Ziehe den Griff zum Bauch, die Schulterblätter nach hinten und unten, der Rücken bleibt gerade. Langsam zurück.",
+    "s": "Arme gestreckt, Oberkörper aufrecht",
+    "e": "Griff am Bauch, Ellbogen hinten",
+    "g": "Oberer Rücken, Haltung, Schulterblattkontrolle, Rücken, Arm (Bizeps)",
+    "x": "Akute Rückenschmerzen, Bandscheibenprobleme ohne Freigabe; nicht mit Schwung ziehen",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "13,13,13,19,12,34,24,32,32,40,22,24,30,25;M30 25L44 25M34 34L34 44M4 36L16 36",
+      "13,13,13,19,12,34,24,32,32,40,8,26,17,25;M17 25L44 25M34 34L34 44M4 36L16 36"
+    ]
+  },
+  {
+    "id": "e115",
+    "n": "Schulterpresse",
+    "al": [
+      "Shoulder Press Maschine",
+      "Military Press Maschine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle den Sitz so ein, dass die Griffe auf Schulterhöhe liegen. Drücke die Griffe nach oben, bis die Arme fast gestreckt sind, und lass sie langsam sinken. Kein Hohlkreuz.",
+    "s": "Griffe auf Schulterhöhe",
+    "e": "Arme über dem Kopf fast gestreckt",
+    "g": "Schulter, Arm (Trizeps), Oberkörperkraft",
+    "x": "Schulterengpass, akute Schulter- oder Nackenschmerzen; nicht ins Hohlkreuz gehen",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "14,9,14,15,14,30,26,31,26,43,10,21,17,12;M10 8L10 32M8 32L24 32",
+      "14,9,14,15,14,30,26,31,26,43,20,9,22,1;M10 8L10 32M8 32L24 32"
+    ]
+  },
+  {
+    "id": "e116",
+    "n": "Butterfly",
+    "al": [
+      "Pec Deck",
+      "Brustmaschine",
+      "Fliegende Maschine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich aufrecht, die Unterarme an den Polstern, die Ellbogen etwa auf Schulterhöhe. Führe die Arme vor der Brust zusammen und öffne sie kontrolliert wieder. Die Schultern bleiben unten.",
+    "s": "Arme seitlich geöffnet",
+    "e": "Arme vor der Brust zusammengeführt",
+    "g": "Brust, Schulter, Haltung, Schulterblatt",
+    "x": "Instabile Schulter, akute Schulterschmerzen; Bewegungsumfang begrenzen",
+    "l": "Die Zeichnung zeigt das Gerät von vorn: Start mit seitlich geöffneten Armen, Ende mit vor der Brust zusammengeführten Armen. Die Unterarme liegen an den Polstern, die Ellbogen bleiben etwa auf Schulterhöhe. Führe die Arme zusammen, halte kurz und öffne sie langsam, nur so weit, wie es in der Schulter angenehm ist.",
+    "sub": "Krafttraining",
+    "fig": [
+      "24,8,24,14,24,30,28,32,28,43,34,16,34,8;M24 14L14 16L14 8M24 30L20 32L20 43M16 32L32 32",
+      "24,8,24,14,24,30,28,32,28,43,28,19,27,11;M24 14L20 19L21 11M24 30L20 32L20 43M16 32L32 32"
+    ]
+  },
+  {
+    "id": "e117",
+    "n": "Rückenstrecker",
+    "al": [
+      "Hyperextension",
+      "Back Extension",
+      "Rückenstreckmaschine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Lege die Hüften auf das Polster, die Füße sind fixiert, der Oberkörper hängt nach vorn. Hebe den Oberkörper bis in eine gerade Linie, halte kurz und senke kontrolliert ab. Nicht ins Hohlkreuz überstrecken.",
+    "s": "Oberkörper nach vorn gesenkt",
+    "e": "Oberkörper in einer Linie mit den Beinen",
+    "g": "Rücken, Rückenstrecker, Gesäß, Haltung, unspezifischer Rückenschmerz",
+    "x": "Akute Rückenschmerzen im Hohlkreuz, Bandscheibenvorfall ohne Freigabe, Osteoporose: vorher abklären",
+    "l": "Die Zeichnung zeigt das Gerät von der Seite: Die Hüften liegen auf dem Polster, die Füße sind unten fixiert. Senke den Oberkörper nur so weit ab, wie du den Rücken gerade halten kannst, und hebe ihn bis in eine Linie mit den Beinen. Die Bewegung kommt aus Hüfte und Rückenstrecker.",
+    "sub": "Krafttraining",
+    "fig": [
+      "35,36,30,32,20,24,16,33,11,43,31,35,27,34;M14 21L26 27M8 44L22 28",
+      "37,12,32,16,20,24,16,33,11,43,31,21,27,20;M14 21L26 27M8 44L22 28"
+    ]
+  },
+  {
+    "id": "e118",
+    "n": "Adduktoren- und Abduktorenmaschine",
+    "al": [
+      "Beininnenseite",
+      "Beinaußenseite",
+      "Hip Adduction",
+      "Hip Abduction"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich mit dem Rücken an die Lehne, die Polster innen bzw. außen an den Knien. Schließe (Adduktoren) oder öffne (Abduktoren) die Beine kontrolliert gegen den Widerstand, halte kurz und lass langsam zurück.",
+    "s": "Beine geöffnet",
+    "e": "Beine geschlossen",
+    "g": "Hüfte, Gesäß, Innenseite Oberschenkel, Leiste, Gangstabilität, seitliches Gesäß",
+    "x": "Akute Leisten- oder Hüftschmerzen, frische Hüft-OP ohne Freigabe; leichtes Gewicht",
+    "l": "Die Zeichnung zeigt das Gerät von vorn im Sitzen. An der Adduktorenmaschine startest du mit geöffneten Beinen und schließt sie gegen den Widerstand. An der Abduktorenmaschine ist es umgekehrt: Du startest mit geschlossenen Beinen und öffnest sie. Der Rücken bleibt an der Lehne.",
+    "sub": "Krafttraining",
+    "fig": [
+      "24,8,24,14,24,28,32,32,35,43,28,20,28,27;M24 28L16 32L13 43M24 14L20 20L20 27M12 30L36 30",
+      "24,8,24,14,24,28,26,33,26,43,28,20,28,27;M24 28L22 33L22 43M24 14L20 20L20 27M12 30L36 30"
+    ]
+  },
+  {
+    "id": "e119",
+    "n": "Bauchmaschine",
+    "al": [
+      "Crunch Machine",
+      "Bauchpresse Gerät",
+      "Abdominal Machine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Setze dich, den Rücken an die Lehne, die Handgriffe oder das Polster vor der Brust. Rolle den Oberkörper kontrolliert zusammen, atme aus, halte kurz und kehre langsam zurück. Die Bewegung kommt aus dem Bauch, nicht aus den Armen.",
+    "s": "Aufrecht, Rücken an der Lehne",
+    "e": "Oberkörper nach vorn zusammengerollt",
+    "g": "Gerade Bauchmuskeln, Rumpfkraft, Bauchmuskelaufbau",
+    "x": "Akute Nacken- oder Rückenschmerzen, Bandscheibenprobleme ohne Freigabe, Bluthochdruck bei Pressatmung; leichtes Gewicht, nicht ruckartig",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "13,9,13,15,14,30,26,31,26,43,17,20,21,15;M9 8L9 32M8 32L24 32",
+      "24,18,19,23,14,30,26,31,26,43,22,28,25,24;M9 8L9 32M8 32L24 32"
+    ]
+  },
+  {
+    "id": "e120",
+    "n": "Wadenheber",
+    "al": [
+      "Calf Raise Machine",
+      "Wadenmaschine",
+      "Wadenheben am Gerät"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle dich mit den Ballen auf die Plattform, die Schulterpolster liegen auf. Hebe die Fersen kontrolliert so hoch wie möglich, halte kurz oben und senke sie langsam unter die Plattform. Die Knie bleiben fast gestreckt.",
+    "s": "Fersen unten, Ballen auf der Plattform",
+    "e": "Auf den Zehenspitzen",
+    "g": "Wade, Achillessehne, Sprunggelenk-Stabilität, Fußkraft",
+    "x": "Akute Achillessehnen- oder Sprunggelenkverletzung ohne Freigabe, Wadenkrämpfe; leichtes Gewicht, kontrolliert",
+    "l": "",
+    "sub": "Krafttraining",
+    "fig": [
+      "24,7,24,13,24,27,24,36,24,44,24,20,24,27;M20 11L28 11M31 10L31 44M24 44L28 44",
+      "24,4,24,10,24,24,24,33,24,41,24,17,24,24;M20 9L28 9M31 7L31 44M24 41L28 44"
+    ]
+  },
+  {
+    "id": "e121",
+    "n": "Kabelzug (Trizepsdrücken)",
+    "al": [
+      "Cable Pushdown",
+      "Trizepsdrücken am Kabel",
+      "Kabelturm",
+      "Cable Machine"
+    ],
+    "c": "Fitnessstudio",
+    "m": "Gerät",
+    "d": "Stelle dich vor den Kabelzug, die Ellbogen eng am Körper. Drücke die Stange oder das Seil nach unten, bis die Arme gestreckt sind, halte kurz und lass langsam zurück. Der Oberkörper bleibt ruhig.",
+    "s": "Ellbogen gebeugt, Hände auf Brusthöhe",
+    "e": "Arme nach unten gestreckt",
+    "g": "Arm (Trizeps), Ellbogenstreckung, Schulterstabilität, Oberarmrückseite",
+    "x": "Akute Ellbogen- oder Schulterschmerzen; nicht mit dem Oberkörper mitschwingen",
+    "l": "Der Kabelzug ist ein vielseitiges Gerät: Je nach Griff, Höhe und Richtung trainierst du damit auch Bizeps, Rücken (Face Pull, Rudern), Schultern oder Rumpf. Die Zeichnung zeigt das Trizepsdrücken von der Seite: Die Ellbogen bleiben am Körper, nur die Unterarme bewegen sich nach unten.",
+    "sub": "Krafttraining",
+    "fig": [
+      "24,8,24,14,24,28,24,37,24,44,24,21,31,19;M31 19L34 2M38 0L38 44M34 2L38 2",
+      "24,8,24,14,24,28,24,37,24,44,24,21,27,31;M27 31L34 2M38 0L38 44M34 2L38 2"
+    ]
+  },
+  {
+    "id": "e122",
+    "n": "Verlängerte Ausatmung",
+    "al": [
+      "Atmen 4-6",
+      "Ausatmung verlängern",
+      "Entspannungsatmung"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 4 Sekunden durch die Nase ein und 6 Sekunden langsam aus (durch die Nase oder leicht geöffnete Lippen). Lass die Schultern sinken, der Bauch hebt sich beim Einatmen. Gleichmäßig und ohne Anstrengung, 3 bis 5 Minuten.",
+    "s": "Bequem sitzen oder liegen, Schultern locker",
+    "e": "Ruhiger, langer Ausatem, Körper entspannt",
+    "g": "Beruhigung, Stressabbau, Anspannung, Nervosität, Einschlafen, Entspannung",
+    "x": "Bei Schwindel oder Atemnot sofort normal weiteratmen; bei Lungen- oder Herzerkrankungen vorher ärztlich abklären",
+    "l": "Wenn die Ausatmung länger ist als die Einatmung, wird nach bisherigen Studien der Parasympathikus (Ruhenerv) stärker angesprochen, die Herzfrequenz sinkt beim Ausatmen. Der kurzfristige Effekt ist gut nachvollziehbar, die Studien zur langfristigen Wirkung sind überwiegend klein.",
+    "sub": "Beruhigung,Schlaf",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 A6",
+      "min": 4,
+      "hi": [
+        "Nase",
+        "Nase oder Lippen"
+      ]
+    }
+  },
+  {
+    "id": "e123",
+    "n": "Physiologischer Seufzer",
+    "al": [
+      "Cyclic Sighing",
+      "Zyklisches Seufzen",
+      "Doppeltes Einatmen"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme tief durch die Nase ein, setze oben einen zweiten kurzen Atemzug durch die Nase nach, um die Lunge ganz zu füllen, und atme dann lang und vollständig durch den Mund aus. Locker, wie ein Seufzen. 5 Minuten.",
+    "s": "Entspannt sitzen, Schultern locker",
+    "e": "Lange, volle Ausatmung wie ein Seufzer",
+    "g": "Beruhigung, Stressabbau, Stimmung, Anspannung, Nervosität",
+    "x": "Atemnot, Lungenerkrankungen, Schwindel: nicht erzwingen, sanft atmen und bei Bedarf Pause machen",
+    "l": "In einer randomisierten Studie (Stanford, 2023) verbesserte tägliches fünfminütiges zyklisches Seufzen die Stimmung stärker als Achtsamkeitsmeditation und senkte die Atemfrequenz. Die Studienlage ist noch jung, die Technik ist einfach und gut verträglich.",
+    "sub": "Beruhigung",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E3 e1 A6",
+      "min": 5,
+      "hi": [
+        "Nase",
+        "Mund"
+      ]
+    }
+  },
+  {
+    "id": "e124",
+    "n": "Lippenbremse",
+    "al": [
+      "Pursed-Lip Breathing",
+      "Atmen gegen Lippenbremse"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 2 Sekunden ruhig durch die Nase ein. Forme die Lippen wie zum Pfeifen und atme 4 Sekunden lang sanft durch die fast geschlossenen Lippen aus, ohne zu pressen. Aufrecht oder leicht nach vorn gebeugt, 2 bis 5 Minuten.",
+    "s": "Aufrecht sitzen, Schultern entspannt",
+    "e": "Sanftes, langes Ausatmen durch die Lippen",
+    "g": "Atemnot (z. B. bei COPD, nach Anstrengung), Beruhigung, Atemkontrolle",
+    "x": "Bei Atemnot in Ruhe, Brustschmerz oder Schwindel ärztlich abklären; nicht pressen",
+    "l": "Die Lippenbremse ist in der Atemtherapie etabliert und wird bei Lungenerkrankungen wie COPD empfohlen, um Atemnot zu lindern: Der leichte Widerstand hält die Atemwege länger offen und verlangsamt die Atmung.",
+    "sub": "Beruhigung",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E2 A4",
+      "min": 3,
+      "hi": [
+        "Nase",
+        "Lippenbremse"
+      ]
+    }
+  },
+  {
+    "id": "e125",
+    "n": "4-7-8-Atmung",
+    "al": [
+      "4-7-8",
+      "Einschlafatmung",
+      "Entspannungsatmung nach Weil"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 4 Sekunden durch die Nase ein, halte 7 Sekunden den Atem an und atme 8 Sekunden hörbar durch den Mund aus. Die Zunge liegt hinter den oberen Schneidezähnen. Beginne mit etwa vier Durchgängen, später bis zu 2 Minuten, am besten sitzend oder liegend.",
+    "s": "Bequem liegen oder sitzen",
+    "e": "Ausatmen lang und gleichmäßig, Körper schwer",
+    "g": "Einschlafen, Entspannung, Beruhigung, Stressabbau, Anspannung am Abend",
+    "x": "Schwindel, Herz-Kreislauf-Erkrankungen, Schwangerschaft: nur kurz und mit verkürzter Haltezeit üben, nie im Stehen",
+    "l": "Die Methode stammt aus der Yoga-Atemlehre (Pranayama) und wurde vom Arzt Andrew Weil bekannt gemacht. Die Wirkung beruht vermutlich auf der langen Ausatmung und der verlangsamten Atmung. Gute Studien speziell zu 4-7-8 gibt es kaum.",
+    "sub": "Schlaf,Beruhigung",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 H7 A8",
+      "min": 2,
+      "hi": [
+        "Nase",
+        "Mund"
+      ]
+    }
+  },
+  {
+    "id": "e126",
+    "n": "Resonanzatmung",
+    "al": [
+      "Kohärente Atmung",
+      "Herzkohärenz",
+      "6 Atemzüge pro Minute",
+      "HRV-Atmung"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 5 Sekunden ein und 5 Sekunden aus, das sind sechs Atemzüge pro Minute. Durch die Nase, ruhig und fließend, ohne Pause dazwischen. 5 bis 10 Minuten, am besten täglich.",
+    "s": "Aufrecht sitzen, Hände auf den Oberschenkeln",
+    "e": "Gleichmäßiger, fließender Atem, ruhiger Herzschlag",
+    "g": "Stressabbau, Beruhigung, Herzratenvariabilität, Konzentration, Entspannung, Anspannung",
+    "x": "Schwindel, Herzrhythmusstörungen oder Atemwegserkrankungen: vorher ärztlich abklären",
+    "l": "Etwa sechs Atemzüge pro Minute gelten als besonders günstiger Rhythmus für die Herzratenvariabilität. Dieses Training (HRV-Biofeedback) wird in Studien zu Stress und Angst untersucht, die Effekte sind meist klein bis mittel.",
+    "sub": "Beruhigung,Konzentration",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E5 A5",
+      "min": 5,
+      "hi": [
+        "Nase",
+        "Nase"
+      ]
+    }
+  },
+  {
+    "id": "e127",
+    "n": "Box-Atmung",
+    "al": [
+      "Quadratatmung",
+      "Box Breathing",
+      "4-4-4-4"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 4 Sekunden ein, halte 4 Sekunden, atme 4 Sekunden aus und halte wieder 4 Sekunden, wie die Seiten eines Quadrats. Durch die Nase, ruhig und ohne Anstrengung. 3 bis 5 Minuten.",
+    "s": "Aufrecht sitzen, Füße am Boden",
+    "e": "Vier gleich lange Phasen im Wechsel",
+    "g": "Konzentration, Fokus, Beruhigung, Prüfungsangst, Anspannung, Nervosität",
+    "x": "Bei Schwindel oder Beklemmung die Phasen kürzen oder auf die Haltepausen verzichten; Herz-Kreislauf-Erkrankungen vorher abklären",
+    "l": "Das gleichmäßige Zählen lenkt die Aufmerksamkeit auf den Atem und bremst Grübeln. Die Methode wird häufig in Sport und Einsatzberufen genutzt, kontrollierte Studien speziell zur Box-Atmung sind begrenzt. Die Wirkung beruht wahrscheinlich auf ruhigem Tempo und Aufmerksamkeitslenkung.",
+    "sub": "Konzentration,Beruhigung",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 H4 A4 H4",
+      "min": 4,
+      "hi": [
+        "Nase",
+        "Nase"
+      ]
+    }
+  },
+  {
+    "id": "e128",
+    "n": "Wechselatmung",
+    "al": [
+      "Nadi Shodhana",
+      "Alternate Nostril Breathing",
+      "Nasenwechselatmung"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Verschließe mit dem Daumen das rechte Nasenloch und atme links ein (4 Sekunden). Wechsle: Der Ringfinger verschließt das linke Nasenloch, rechts atmest du aus (4 Sekunden). Dann rechts einatmen und links ausatmen. Ruhig und leise, 3 bis 5 Minuten.",
+    "s": "Aufrecht sitzen, rechte Hand vor dem Gesicht",
+    "e": "Wechsel zwischen den Nasenlöchern, gleichmäßiger Atem",
+    "g": "Konzentration, Beruhigung, Fokus, Ausgleich, Anspannung",
+    "x": "Verstopfte Nase, Schwindel, Herz-Kreislauf-Erkrankungen: sanft und ohne Atem anzuhalten üben",
+    "l": "Die Wechselatmung stammt aus dem Yoga. Kleinere Studien beschreiben Effekte auf Herzfrequenz, Blutdruck und Entspannung, die Studienlage ist aber uneinheitlich.",
+    "sub": "Konzentration,Beruhigung",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 A4",
+      "min": 4,
+      "hi": [
+        "Einatmen durch ein Nasenloch",
+        "Ausatmen durch das andere"
+      ]
+    }
+  },
+  {
+    "id": "e129",
+    "n": "Aktivierende Atmung",
+    "al": [
+      "Wach-Atmung",
+      "Energie-Atmung",
+      "Belebende Atmung"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme zügig und gleichmäßig durch die Nase ein und aus, jeweils etwa 2 Sekunden, mit leicht betontem Ausatmen. Aufrecht sitzen oder stehen. Nur 1 bis 2 Minuten, dann normal weiteratmen.",
+    "s": "Aufrecht sitzen oder stehen",
+    "e": "Wach, belebt, leicht aktiviert",
+    "g": "Wach werden, Energie, Müdigkeit, Mittagstief, Aktivierung",
+    "x": "Schwangerschaft, Bluthochdruck, Epilepsie, Panikstörung, Herz-Kreislauf- oder Lungenerkrankungen; bei Schwindel oder Kribbeln sofort aufhören",
+    "l": "Zügiges Atmen erhöht kurzfristig die körperliche Aktivierung, etwa Herzfrequenz und Wachheit. Die Studienlage zur gezielten Wirkung ist begrenzt. Atme nur moderat schneller, nicht übertrieben tief, und übe nicht länger als 1 bis 2 Minuten.",
+    "sub": "Energie",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E2 A2",
+      "min": 1,
+      "hi": [
+        "Nase",
+        "Nase"
+      ]
+    }
+  },
+  {
+    "id": "e130",
+    "n": "Summ-Atmung",
+    "al": [
+      "Bhramari",
+      "Bienenatmung",
+      "Humming Breath"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme 4 Sekunden durch die Nase ein. Atme dann 8 Sekunden mit geschlossenen Lippen aus und summe dabei leise einen gleichmäßigen Ton. Spüre die Vibration im Gesicht. 3 bis 5 Minuten.",
+    "s": "Entspannt sitzen, Kiefer locker",
+    "e": "Gleichmäßiges Summen beim Ausatmen",
+    "g": "Beruhigung, Einschlafen, Entspannung, Stressabbau, Anspannung",
+    "x": "Ohren- oder Nasennebenhöhlenentzündung, Schwindel: nur leise und kurz",
+    "l": "Beim Summen verlängert sich die Ausatmung, und die Vibration in den Nasennebenhöhlen steigert die Bildung von Stickstoffmonoxid. Für entspannende Effekte gibt es kleine Studien, die Technik gilt als gut verträglich.",
+    "sub": "Beruhigung,Schlaf",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 A8",
+      "min": 3,
+      "hi": [
+        "Nase",
+        "Summen (Lippen geschlossen)"
+      ]
+    }
+  },
+  {
+    "id": "e131",
+    "n": "Achtsame Atemzählung",
+    "al": [
+      "Atem zählen",
+      "Mindful Breathing",
+      "Achtsamkeitsatmung"
+    ],
+    "c": "Atmen",
+    "m": "–",
+    "d": "Atme natürlich und zähle jeden Ausatem von 1 bis 10, dann beginne wieder bei 1. Wenn Gedanken abschweifen, bemerke es freundlich und beginne bei 1. Rhythmus etwa 4 Sekunden ein, 4 Sekunden aus. 5 Minuten.",
+    "s": "Aufrecht sitzen, Blick weich auf den Boden",
+    "e": "Aufmerksamkeit ruhig beim Atem",
+    "g": "Konzentration, Fokus, Gedankenkreisen, Grübeln, Achtsamkeit",
+    "x": "Bei belastenden Erinnerungen oder starker Unruhe die Augen öffnen und abbrechen, bei Bedarf professionelle Hilfe suchen",
+    "l": "Achtsamkeitsübungen mit Fokus auf den Atem werden in Studien zu Aufmerksamkeit und Stressbewältigung untersucht, die Effekte sind meist klein bis mittel. Regelmäßiges Üben wirkt stärker als gelegentliches.",
+    "sub": "Konzentration",
+    "fig": [
+      "BR0",
+      "BR1"
+    ],
+    "br": {
+      "p": "E4 A4",
+      "min": 5,
+      "hi": [
+        "Nase",
+        "Nase"
+      ]
+    }
+  }
+]
