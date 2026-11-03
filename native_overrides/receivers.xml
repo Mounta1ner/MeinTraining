@@ -1,0 +1,3 @@
+<activity android:name=".WidgetConfigActivity" android:exported="true"/>
+<receiver android:name=".FitnessWidgets$SmallWidget" android:exported="true"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="at.meintraining.fitness.WIDGET_TAP"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_small"/></receiver>
+<receiver android:name=".FitnessWidgets$LargeWidget" android:exported="true"><intent-filter><action android:name="android.appwidget.action.APPWIDGET_UPDATE"/><action android:name="at.meintraining.fitness.WIDGET_TAP"/></intent-filter><meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_large"/></receiver>

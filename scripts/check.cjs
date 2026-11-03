@@ -1,0 +1,11 @@
+const fs=require('fs'),vm=require('vm'),path=require('path');
+let root='www/';let files=['app','features','tracking-advanced','v27','v28'];
+for(const name of files)new vm.Script(fs.readFileSync(root+'js/'+name+'.js','utf8'));
+let data={};for(const name of ['exercises','plans','translations'])data[name]=JSON.parse(fs.readFileSync(root+'data/'+name+'.json','utf8'));
+if(data.exercises.length!==132)throw Error('Existing catalog count changed');
+let ids=data.exercises.map(x=>x.id);if(new Set(ids).size!==ids.length)throw Error('Duplicate exercise identifier');
+if(data.plans.templates.length<3||data.plans.curated.length<5)throw Error('Training plan templates missing');
+for(const name of ['css/style.css','assets/icon.png','index.html'])if(!fs.existsSync(root+name))throw Error(name+' missing');
+let loader=fs.readFileSync(root+'js/loader.js','utf8');for(const name of files)if(!loader.includes("'"+name+"'"))throw Error('Loader does not load '+name);
+if(!fs.readFileSync(root+'js/app.js','utf8').includes('trainingsplan-v1'))throw Error('Legacy storage key changed');
+console.log('PASS: 132 exercises, preserved stable IDs, plan templates, JS syntax, loader and storage key');

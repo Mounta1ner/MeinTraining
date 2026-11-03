@@ -235,7 +235,7 @@ function vToday(){
     p.items.forEach((it,i)=>{const e=ex(it.ex);if(!e)return;const dn=l[i]||0;it=effective(it,p);
      h+=`<div style="margin-top:12px;padding-top:8px;border-top:1px solid var(--bd)"><div class="r" style="justify-content:space-between"><b style="cursor:pointer" onclick="tg('${p.id}_${i}')">${esc(e.n)} ${tdo[p.id+"_"+i]?"▲":"▼"}</b> <span class="mu" style="font-size:13px">${it.sets} × ${it.reps}${unit(e)!=="Wdh."?" "+unit(e):""}${+it.kg?" · "+it.kg+" kg":""}</span></div><div class="r" style="margin-top:6px">`;
      for(let s=1;s<=it.sets;s++)h+=`<button class="set ${dn>=s?"on":""}" onclick="tick('${dt}','${p.id}',${i},${s})">${s}</button>`;
-     h+=`${e.br?`<button class="b" onclick="brOpen('${e.id}',${it.reps},'${dt}','${p.id}',${i})">🌬️ ${it.reps} min</button>`:unit(e)!=="Wdh."?`<button class="b g" onclick="holdT('${dt}','${p.id}',${i})">▶ ${it.reps} ${unit(e)==="Min."?"min":"s"}</button>`:""}</div>${tdo[p.id+"_"+i]?`<div class="c" style="background:var(--bg)">${detTxt(e)}<div style="margin-top:10px;text-align:right"><button class="b g" style="min-height:44px;padding:6px 14px;border-radius:8px" onclick="closeDet('${p.id}_${i}')">▲ Beschreibung einklappen</button></div></div>`:""}</div>`});
+     h+=`${e.br?`<button class="b" onclick="brOpen('${e.id}',${it.reps},'${dt}','${p.id}',${i})">🌬️ ${it.reps} min</button>`:unit(e)==="Wdh."?`<button class="b g" onclick="v28StartPlanSet('${e.id}',${it.reps},'${dt}','${p.id}',${i})">▶ Wiederholungen</button>`:unit(e)!=="Wdh."?`<button class="b g" onclick="holdT('${dt}','${p.id}',${i})">▶ ${it.reps} ${unit(e)==="Min."?"min":"s"}</button>`:""}</div>${tdo[p.id+"_"+i]?`<div class="c" style="background:var(--bg)">${detTxt(e)}<div style="margin-top:10px;text-align:right"><button class="b g" style="min-height:44px;padding:6px 14px;border-radius:8px" onclick="closeDet('${p.id}_${i}')">▲ Beschreibung einklappen</button></div></div>`:""}</div>`});
     h+=`</div></div>`});
  }
 
@@ -243,7 +243,7 @@ function vToday(){
  const habitsDue = (S.habits||[]);
  const habitLogToday = S.habitLog[dt] || {};
  const dueCount = habitsDue.length;
- const doneHabitCount = habitsDue.filter(hb=>habitLogToday[hb.id]===true).length;
+ const doneHabitCount = habitsDue.filter(hb=>(habitLogToday[hb.id]===true || (+habitLogToday[hb.id]||0)>0)).length;
 
  h+=`<div class="c">
    <div class="r" style="justify-content:space-between;align-items:center">
@@ -422,7 +422,7 @@ function favHtml(){
       <div class="r" style="margin-top:8px;padding:6px 0;border-bottom:1px solid var(--bd);align-items:center">
         <span style="flex:1"><b>${esc(e.n)}</b><br><span class="mu" style="font-size:12px">${esc(e.c)}${e.br?" · "+e.br.min+" Min.":""}</span></span>
         <div class="r" style="gap:6px">
-          ${e.br ? `<button class="b" style="min-height:38px;padding:4px 10px;font-size:13px" onclick="brOpen('${e.id}')">🌬️ Start</button>` : `<button class="b" style="min-height:38px;padding:4px 10px;font-size:13px" onclick="toast('✓ 1 Satz ${esc(e.n)} erfasst!');try{navigator.vibrate&&navigator.vibrate(100)}catch(x){}}">✓ Tracken</button>`}
+          ${e.br ? `<button class="b" style="min-height:38px;padding:4px 10px;font-size:13px" onclick="brOpen('${e.id}')">🌬️ Start</button>` : `<button class="b" style="min-height:38px;padding:4px 10px;font-size:13px" onclick="v28StartExercise('${e.id}')">✓ Tracken</button>`}
           <button class="b g" style="min-height:38px;padding:4px 8px;font-size:13px" onclick="tg('fav_${e.id}')">Info</button>
           <button class="x" style="font-size:14px;min-width:32px" onclick="togFav('${e.id}')" title="Aus Favoriten entfernen">✕</button>
         </div>
@@ -480,7 +480,7 @@ function vEdit(){
  <div id="res">${resHtml(res)}</div></div><div class="r"><button class="b" onclick="savePlan()">Speichern</button><button class="b g" onclick="ed=null;render()">Abbrechen</button></div>`;
  return h}
 function resHtml(r){return r.map(e=>`<div class="r" style="margin-top:6px"><span style="flex:1">${esc(e.n)} <span class="mu">${esc(e.c)}</span></span><button class="b g" onclick="addIt('${e.id}')">+</button></div>`).join("")}
-function rs(inp){const s=q.toLowerCase();document.getElementById("res").innerHTML=resHtml(s?all().filter(e=>mt(e,s)).slice(0,8):[]);}
+function rs(inp){const s=String(inp?.value ?? inp ?? q ?? "").toLowerCase();q=s;document.getElementById("res").innerHTML=resHtml(s?all().filter(e=>mt(e,s)).slice(0,8):[]);}
 function tgl(i){ed.days=ed.days.includes(i)?ed.days.filter(x=>x!==i):ed.days.concat(i).sort();render()}
 function addIt(id){ed.items.push({ex:id,sets:3,reps:10,kg:0});q="";render()}
 function savePlan(){if(!ed.name.trim()){toast("Bitte einen Namen eingeben.");return}if(!ed.items.length){toast("Bitte mindestens eine Übung hinzufügen.");return}

@@ -1,0 +1,9 @@
+/* iOS safe areas; preserve existing layout and color scheme. */
+@supports (padding: env(safe-area-inset-top)) {
+  body { padding-top: max(0px, env(safe-area-inset-top));
+         padding-bottom: max(0px, env(safe-area-inset-bottom)); }
+  #nav, nav { padding-bottom: max(0px, env(safe-area-inset-bottom)); }
+}
+html { -webkit-text-size-adjust: 100%; }
+button, input, select, textarea { touch-action: manipulation; }
+input, select, textarea { font-size: max(16px, 1em); }
