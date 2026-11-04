@@ -11,8 +11,25 @@ const money=n=>Number(n||0).toLocaleString('de-AT',{minimumFractionDigits:2,maxi
 const cents=n=>Math.round((+n||0)*100);
 const timestamp=()=>new Date().toISOString();
 const localDay=t=>iso(new Date(t));
+function finance281Init(x){
+ if(x.finance281)return;
+ const done=Number(x.penaltyDone)||0,miss=Number(x.penaltyMiss)||0;
+ // Existing conflicting legacy rates are not silently reinterpreted.
+ x.finance281={type:done>0&&miss===0?'negative':miss>0&&done===0?'positive':'neutral',amount:done>0&&miss===0?done:miss>0&&done===0?miss:0};
+}
+function finance281Apply(x){finance281Init(x);const f=x.finance281;
+ x.penaltyDone=f.type==='negative'?f.amount:0;
+ x.penaltyMiss=f.type==='positive'?f.amount:0;
+}
+function finance281Set(kind,id,key,value){const x=(kind==='plan'?S.plans:S.habits).find(a=>a.id===id);if(!x)return;
+ finance281Init(x);
+ if(key==='type'&&['positive','negative','neutral'].includes(value))x.finance281.type=value;
+ if(key==='amount'){const v=Number(value);if(!Number.isFinite(v)||v<0||v>10000){toast('Betrag zwischen 0 und 10.000 €');render();return;}x.finance281.amount=v;}
+ finance281Apply(x);save();render();
+}
+
 function addActivityEvent(id,type='done',when=timestamp(),source='app',eventId){
- const h=S.habits.find(x=>x.id===id);if(!h)return;
+ const h=S.habits.find(x=>x.id===id);if(!h)return;finance281Apply(h);
  const uid=eventId||'act-'+when+'-'+Math.random().toString(36).slice(2);
  if(S.activityEvents.some(e=>e.id===uid))return;
  S.activityEvents.push({id:uid,habitId:id,name:h.name,type,at:when,source:source});
@@ -51,6 +68,7 @@ function nextDay(date,add){let d=justDate(date);d.setDate(d.getDate()+add);retur
 function bornDay(obj){const key=String(obj.id||'');const millis=Number(key.substring(1,14));const valid=millis>1500000000000&&millis<Date.now()+864e5;return obj.createdAt?.slice(0,10)||(valid?iso(new Date(millis)):S.financeStart)}
 function habitCountOn(day,id){const v=S.habitLog[day]?.[id];return typeof v==='number'?v:v===true?1:0}
 function scheduledMisses(today=iso()){
+ S.plans.forEach(finance281Apply);S.habits.forEach(finance281Apply);
  const misses=[],until=nextDay(today,-1),seen=new Set();
  const maxDays=365,start=nextDay(today,-maxDays);
  const put=(key,category,obj,day)=>{if(seen.has(key))return;seen.add(key);misses.push({id:'miss:'+key,category,targetId:obj.id,name:obj.name,type:'miss',date:day,at:day+'T23:59:59',cents:cents(obj.penaltyMiss)})};
@@ -76,10 +94,9 @@ function ensureMisses(){let changed=false;for(const m of scheduledMisses()){
 function activeLedger(){return S.financeLedger.filter(x=>!S.financeSettlements.some(z=>z.ids?.includes(x.id)))}
 function remainingMoney(){return activeLedger().reduce((sum,x)=>sum+x.cents,0)/100}
 function financeHome(){if(!S.financeEnabled||S.homeVisible?.finance===false)return '';ensureMisses();return `<div class="c mf-compact"><div class="r" style="justify-content:space-between"><div><h3>⚡ Make me feel it</h3><strong>${money(remainingMoney())}</strong><div class="mu">Noch offen</div></div><button class="b g" onclick="go('hist')">Details →</button></div></div>`}
-function financialSettingRow(kind,x){const name=esc(x.name),id=JSON.stringify(x.id);
- return `<div class="mf-row"><span style="font-size:13px">${name}</span><label class="mu" style="font-size:11px">Erledigt (€)<input class="mf-input" type="number" min="0" step="0.1" value="${Math.max(0,+x.penaltyDone||0)}" onchange="setFinanceRate('${kind}',${id},'penaltyDone',this.value)"></label><label class="mu" style="font-size:11px">Verpasst (€)<input class="mf-input" type="number" min="0" step="0.1" value="${Math.max(0,+x.penaltyMiss||0)}" onchange="setFinanceRate('${kind}',${id},'penaltyMiss',this.value)"></label></div>`}
-function setFinanceRate(kind,id,key,raw){let arr=kind==='plan'?S.plans:S.habits;const x=arr.find(e=>e.id===id);if(!x)return;const v=+raw;if(!Number.isFinite(v)||v<0||v>10000){toast('Bitte einen Betrag von 0 bis 10.000 € wählen');render();return}x[key]=v;save()}
-function financeSettings(){return `<div class="c"><h3>⚡ Make me feel it</h3><label class="r" style="font-weight:700"><input type="checkbox" ${S.financeEnabled?'checked':''} onchange="toggleFinance(this.checked)"> Aktivieren</label><p class="mu">Beträge pro abgeschlossener oder verpasster Einheit. Feste Termine gelten nach Tagesende als verpasst, flexible Wochenziele erst nach Wochenabschluss. Jeder verpasste Plan zählt einmal pro fälliger Einheit. Rückblick für verpasste Termine: 365 Tage.</p><h4>Trainingspläne</h4>${S.plans.length?S.plans.map(x=>financialSettingRow('plan',x)).join(''):'<p class="mu">Noch keine Pläne.</p>'}<h4>Aktivitäten</h4>${S.habits.length?S.habits.map(x=>financialSettingRow('habit',x)).join(''):'<p class="mu">Noch keine Aktivitäten.</p>'}<p class="mu" style="margin-top:10px">Aktuell offen: <b>${money(remainingMoney())}</b></p></div>`}
+function financialSettingRow(kind,x){finance281Init(x);const f=x.finance281,id=JSON.stringify(x.id);
+ return `<div class="mf-row"><b>${esc(x.name)}</b><label>Bewertung <select onchange="finance281Set('${kind}',${id},'type',this.value)">${[['positive','Positiv – bei Auslassen buchen'],['negative','Negativ – bei Erledigt buchen'],['neutral','Neutral – keine Buchung']].map(([k,v])=>`<option value="${k}" ${f.type===k?'selected':''}>${v}</option>`).join('')}</select></label><label>Betrag (€) <input class="mf-input" type="number" min="0" max="10000" step="0.01" value="${f.amount}" onchange="finance281Set('${kind}',${id},'amount',this.value)"></label></div>`}
+function financeSettings(){return `<div class="c"><h3>⚡ Make me feel it</h3><label class="r"><input type="checkbox" ${S.financeEnabled?'checked':''} onchange="toggleFinance(this.checked)"> Aktivieren</label><p class="mu">Negativ: Betrag bei Erfassung. Positiv: Betrag bei verpasster geplanter Einheit, nach Ablauf des Tages bzw. der Woche. Neutral: keine Buchung. Bestehende Buchungen bleiben erhalten.</p><h4>Trainingspläne</h4>${S.plans.map(x=>financialSettingRow('plan',x)).join('')||'<p>Keine Pläne</p>'}<h4>Aktivitäten</h4>${S.habits.map(x=>financialSettingRow('habit',x)).join('')||'<p>Keine Aktivitäten</p>'}<p>Offen: <b>${money(remainingMoney())}</b></p></div>`}
 function toggleFinance(flag){S.financeEnabled=flag;S.penalty.enabled=flag;if(flag&&!S.financeActivatedAt){S.financeActivatedAt=timestamp();S.financeStart=iso()}save();render()}
 const _vSetAdvanced=vSet;
 vSet=function(){return _vSetAdvanced()+financeSettings()}
@@ -110,9 +127,9 @@ vPlans=function(){ // show effective intensity when listing saved plans as well
  let h=_vPlansAdvanced();return h;
 }
 const _tickAdvanced=tick;
-tick=function(date,id,i,n){let plan=S.plans.find(x=>x.id===id),before=plan?planPct(plan,date):0;_tickAdvanced(date,id,i,n);if(S.financeEnabled&&plan&&before<100&&planPct(plan,date)===100){bookFinance('plan-done:'+id+':'+date,'Plan',id,plan.name,'done',cents(plan.penaltyDone),timestamp());save()}}
+tick=function(date,id,i,n){let plan=S.plans.find(x=>x.id===id),before=plan?planPct(plan,date):0;_tickAdvanced(date,id,i,n);if(plan)finance281Apply(plan);if(S.financeEnabled&&plan&&before<100&&planPct(plan,date)===100){bookFinance('plan-done:'+id+':'+date,'Plan',id,plan.name,'done',cents(plan.penaltyDone),timestamp());save()}}
 const _tickNextAdvanced=tickNext;
-tickNext=function(date,id,i,max){const p=S.plans.find(x=>x.id===id),before=p?planPct(p,date):0;_tickNextAdvanced(date,id,i,max);if(S.financeEnabled&&p&&before<100&&planPct(p,date)===100){bookFinance('plan-done:'+id+':'+date,'Plan',id,p.name,'done',cents(p.penaltyDone),timestamp());save()}}
+tickNext=function(date,id,i,max){const p=S.plans.find(x=>x.id===id),before=p?planPct(p,date):0;_tickNextAdvanced(date,id,i,max);if(p)finance281Apply(p);if(S.financeEnabled&&p&&before<100&&planPct(p,date)===100){bookFinance('plan-done:'+id+':'+date,'Plan',id,p.name,'done',cents(p.penaltyDone),timestamp());save()}}
 
 // Render once again after optional finance and activity history features are fully installed.
 render();

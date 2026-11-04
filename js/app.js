@@ -465,7 +465,7 @@ function editPlan(id){ed=JSON.parse(JSON.stringify(S.plans.find(p=>p.id===id)));
 function delPlan(id){if(cdel!==id){cdel=id;render();return}cdel=null;S.plans=S.plans.filter(p=>p.id!==id);save();toast("Plan gelöscht");render()}
 function vEdit(){
  const res=q?all().filter(m).slice(0,8):[];
- function m(e){return mt(e,q)}
+ function m(e){return v281Search(e,q)}
  let h=`<h2>${S.plans.some(p=>p.id===ed.id)?"Plan bearbeiten":"Neuer Plan"}</h2><div class="c"><label class="mu">Name</label><input value="${esc(ed.name)}" oninput="ed.name=this.value" placeholder="z. B. Knie-Reha">
  <p class="mu">Wann soll der Plan fällig sein?</p><div class="r"><button class="chip ${ed.mode==="week"?"":"on"}" onclick="ed.mode='days';render()">Feste Wochentage</button><button class="chip ${ed.mode==="week"?"on":""}" onclick="ed.mode='week';render()">Mal pro Woche</button></div><div class="r" style="margin-top:8px;${ed.mode==="week"?"display:none":""}">${DAYS.map((d,i)=>`<button class="chip ${ed.days.includes(i)?"on":""}" onclick="tgl(${i})">${d}</button>`).join("")}</div>
  ${ed.mode==="week"?`<p class="mu">Wie oft pro Woche?</p><div class="r"><button class="chip" onclick="ed.pw=Math.max(1,ed.pw-1);render()">−</button><b style="font-size:22px;min-width:34px;text-align:center">${ed.pw}</b><button class="chip" onclick="ed.pw=Math.min(7,ed.pw+1);render()">+</button><span class="mu">× pro Woche</span></div><p class="mu" style="font-size:13px">Der Plan steht ab Montag unter „Home“ als fällig, bis du ihn so oft abgehakt hast wie hier eingestellt.</p>`:""}</div>
@@ -480,7 +480,7 @@ function vEdit(){
  <div id="res">${resHtml(res)}</div></div><div class="r"><button class="b" onclick="savePlan()">Speichern</button><button class="b g" onclick="ed=null;render()">Abbrechen</button></div>`;
  return h}
 function resHtml(r){return r.map(e=>`<div class="r" style="margin-top:6px"><span style="flex:1">${esc(e.n)} <span class="mu">${esc(e.c)}</span></span><button class="b g" onclick="addIt('${e.id}')">+</button></div>`).join("")}
-function rs(inp){const s=String(inp?.value ?? inp ?? q ?? "").toLowerCase();q=s;document.getElementById("res").innerHTML=resHtml(s?all().filter(e=>mt(e,s)).slice(0,8):[]);}
+function rs(inp){const s=String(inp?.value ?? inp ?? q ?? "").toLowerCase();q=s;document.getElementById("res").innerHTML=resHtml(s?all().filter(e=>v281Search(e,s)).slice(0,8):[]);}
 function tgl(i){ed.days=ed.days.includes(i)?ed.days.filter(x=>x!==i):ed.days.concat(i).sort();render()}
 function addIt(id){ed.items.push({ex:id,sets:3,reps:10,kg:0});q="";render()}
 function savePlan(){if(!ed.name.trim()){toast("Bitte einen Namen eingeben.");return}if(!ed.items.length){toast("Bitte mindestens eine Übung hinzufügen.");return}
@@ -494,12 +494,18 @@ function imp(){document.getElementById("app").innerHTML=`<h2>Plan importieren</h
 function doImp(){try{const o=JSON.parse(decodeURIComponent(escape(atob(document.getElementById("cd").value.trim()))));
  o.cu.forEach(c=>{if(!S.custom.some(x=>x.id===c.id))S.custom.push(c)});(o.plans||[o.p]).forEach((p,i)=>{p.id="p"+Date.now()+i;S.plans.push(p)});save();go("plans")}catch(e){toast("Der Code ist ungültig.")}}
 
+// Version 2.8.1: One search field; retain all existing category/region buttons.
+function v281Normalize(v){return String(v??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ß/g,'ss').toLowerCase()}
+function v281Search(e,text){const fields=[e.n,...(Array.isArray(e.al)?e.al:[e.al]),e.c,e.sub,e.m,e.d,e.s,e.e,e.l,e.g,e.x];
+ const region=Object.keys(REG).filter(k=>inReg(e,k)).join(' ');
+ const hay=v281Normalize(fields.filter(Boolean).join(' ')+' '+region);
+ return v281Normalize(text).trim().split(/\s+/).every(term=>hay.includes(term));}
 function vLib(){
  const s=eq.toLowerCase();
- const list=all().filter(e=>(cat==="Alle"||e.c===cat)&&subOk(e)&&inReg(e,reg)&&(!s||mt(e,s)));
+ const list=all().filter(e=>(cat==="Alle"||e.c===cat)&&subOk(e)&&inReg(e,reg)&&(!s||v281Search(e,s)));
  let h=`<h2>Übungen</h2><input placeholder="Suchen: Name, Beschwerde oder Ziel (z. B. Squat, Knie, Rücken, Balance)" value="${esc(eq)}" oninput="eq=this.value;lib2()"><div class="r sc" style="margin:8px 0">${["Alle","Kraft","Rumpf","Gleichgewicht","Mobilisation","Dehnung","Schnelligkeit","Fitnessstudio","Atmen","Eigene"].map(c=>`<button class="chip ${cat===c?"on":""}" onclick="cat='${c}';sub='Alle';render()">${c}</button>`).join("")}</div>
  ${(cat==="Fitnessstudio"||cat==="Atmen")?`<div class="r sc" style="margin:0 0 8px">${(cat==="Atmen"?["Alle","Beruhigung","Konzentration","Energie","Schlaf"]:["Alle","Ausdauer","Krafttraining"]).map(s=>`<button class="chip ${sub===s?"on":""}" onclick="sub='${s}';render()">${s}</button>`).join("")}</div>`:""}<div class="r sc" style="margin:0 0 8px"><span class="mu" style="flex:none">Körperregion:</span>${["Alle Regionen",...Object.keys(REG)].map(r=>`<button class="chip ${reg===r?"on":""}" onclick="reg='${r}';render()">${r}</button>`).join("")}</div><button class="b g" onclick="cf=!cf;render()">+ Eigene Übung</button>${cf?cForm():""}<div id="ll">${libList(list)}</div>`;return h}
-function lib2(){const s=eq.toLowerCase();document.getElementById("ll").innerHTML=libList(all().filter(e=>(cat==="Alle"||e.c===cat)&&subOk(e)&&inReg(e,reg)&&(!s||mt(e,s))))}
+function lib2(){const s=eq.toLowerCase();document.getElementById("ll").innerHTML=libList(all().filter(e=>(cat==="Alle"||e.c===cat)&&subOk(e)&&inReg(e,reg)&&(!s||v281Search(e,s))))}
 function libList(l){if(!l.length)return`<div class="c mu">Nichts gefunden.</div>`;return l.map(e=>{const o=opn===e.id;
  return`<div class="c"><div class="r" onclick="opn=opn==='${e.id}'?null:'${e.id}';render()" style="cursor:pointer;flex-wrap:nowrap">${fig(e,0,44)}${fig(e,1,44)}<div style="flex:1"><h3>${esc(e.n)}${e.br?` <small style="font-size:11px;color:var(--ac)">· ${esc((e.sub||'').replace(/Beruhigung/g,'Entspannen').replace(/Konzentration/g,'Fokussieren').replace(/Schlaf/g,'Runterkommen'))}</small>`:''}</h3><div class="mu">${esc(e.c)} · ${esc(e.m||"–")}</div></div><span>${o?"▲":"▼"}</span></div>
  ${o?`<div class="r" style="margin-top:8px">${fig(e,0,110)}${fig(e,1,110)}</div><p class="mu" style="font-size:13px;margin:6px 0 0">${legend(e)}</p><p>${esc(e.d||"")}</p>${e.s?`<p><b>Start:</b> ${esc(e.s)}<br><b>Ende:</b> ${esc(e.e)}</p>`:""}${e.l?`<p><b>Genauere Anleitung:</b> ${esc(e.l)}</p>`:""}${e.g?`<p><b>Gut bei / Ziel:</b> ${esc(e.g)}</p>`:""}${e.x?`<p><b>Eher nicht machen bei:</b> ${esc(e.x)}</p><p class="mu">Allgemeine Hinweise, sie ersetzen keine Anweisung deiner Therapeutin, deines Therapeuten oder deines Arztes.</p>`:""}${e.al.filter(Boolean).length?`<p class="mu">Auch bekannt als: ${esc(e.al.join(", "))}</p>`:""}

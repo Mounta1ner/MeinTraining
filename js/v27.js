@@ -11,6 +11,16 @@ S.v27.restOn=S.v27.restOn!==false;
 const v27EffectiveOriginal=effective;effective=function(it,p){return p?.intro?{...it,sets:it.sets||1,reps:it.reps||10}:v27EffectiveOriginal(it,p)};
 // Expand home order without changing the existing arrangement, never delete saved preferences.
 S.homeOrder=[...new Set([...(S.homeOrder||[]),...V27_DEFAULT_ORDER])];
+// Only initialize the default for a fresh installation; never overwrite user choices.
+if(!S.homeDefaults281){
+ const existing=!!(S.v27?.onboarded || S.plans.length || S.habits.length || S.fav.length || Object.keys(S.log||{}).length || S.weights?.length || Object.keys(S.homeVisible||{}).length);
+ if(!existing){S.homeVisible=S.homeVisible||{};
+  for(const k of V27_DEFAULT_ORDER)S.homeVisible[k]=['plans','activities','breath','quote'].includes(k);
+  S.homeOrder=['plans','activities','breath','quote',...V27_DEFAULT_ORDER.filter(k=>!['plans','activities','breath','quote'].includes(k))];
+ }
+ S.homeDefaults281=true;save();
+}
+
 const V27_QUOTES=[
  ['Der beste Zeitpunkt zum Starten ist jetzt.','Motivation'],
  ['Es ist egal, wie schnell du gehst, solange du nicht stehen bleibst.','Motivation'],
