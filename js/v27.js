@@ -65,7 +65,7 @@ function v27Home(){const blocks=v27HomeParts();const cards={...blocks,weight:wei
 vToday=v27Home;
 // Consistent labels even in legacy navigation after each render.
 const v27OldNav=nav;
-nav=function(){v27OldNav();const btns=document.querySelectorAll('#nav button');const labels=[['home','⌂'],['plans','📋'],['exercises','💪'],['history','📈']];btns.forEach((b,i)=>{if(!labels[i])return;b.innerHTML=`<span style="font-size:24px;display:block;line-height:1.15">${labels[i][1]}</span>${v27Text(labels[i][0])}`;});};
+nav=function(){v27OldNav();const btns=document.querySelectorAll('#nav button');const labels=[['home','🏠'],['plans','📋'],['exercises','💪'],['history','📈']];btns.forEach((b,i)=>{if(!labels[i])return;b.innerHTML=`<span style="font-size:24px;display:block;line-height:1.15">${labels[i][1]}</span>${v27Text(labels[i][0])}`;});};
 // Header/footer is now outside Home; page-imprint only in Settings.
 const v27OldSet=vSet;
 vSet=function(){const t=v27Clip(v27OldSet());const legacy=[...t.content.querySelectorAll('.c')].filter(e=>/Kalender-Erinnerung|Pläne sichern|Verlauf sichern/.test(e.querySelector('h3')?.textContent||'')).map(x=>x.outerHTML).join('');
