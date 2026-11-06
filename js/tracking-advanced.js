@@ -12,7 +12,7 @@ const cents=n=>Math.round((+n||0)*100);
 const timestamp=()=>new Date().toISOString();
 const localDay=t=>iso(new Date(t));
 function finance281Init(x){
- if(x.finance281)return;
+ if(x.finance281 && ['positive','negative','neutral'].includes(x.finance281.type))return;
  const done=Number(x.penaltyDone)||0,miss=Number(x.penaltyMiss)||0;
  // Existing conflicting legacy rates are not silently reinterpreted.
  x.finance281={type:done>0&&miss===0?'negative':miss>0&&done===0?'positive':'neutral',amount:done>0&&miss===0?done:miss>0&&done===0?miss:0};
@@ -25,7 +25,7 @@ function finance281Set(kind,id,key,value){const x=(kind==='plan'?S.plans:S.habit
  finance281Init(x);
  if(key==='type'&&['positive','negative','neutral'].includes(value))x.finance281.type=value;
  if(key==='amount'){const v=Number(value);if(!Number.isFinite(v)||v<0||v>10000){toast('Betrag zwischen 0 und 10.000 €');render();return;}x.finance281.amount=v;}
- finance281Apply(x);save();render();
+ x.finance281Explicit=true;finance281Apply(x);save();render();
 }
 
 function addActivityEvent(id,type='done',when=timestamp(),source='app',eventId){
