@@ -11,24 +11,41 @@ const money=n=>Number(n||0).toLocaleString('de-AT',{minimumFractionDigits:2,maxi
 const cents=n=>Math.round((+n||0)*100);
 const timestamp=()=>new Date().toISOString();
 const localDay=t=>iso(new Date(t));
-S.finance281Types=S.finance281Types||{plan:{},habit:{}};
+// v2.8.3: authoritative persisted classification, independent of legacy penalty fields.
+const FINANCE_TYPES_KEY='meintraining-finance-types-v1';
+function financeTypesRead(){try{const o=JSON.parse(localStorage.getItem(FINANCE_TYPES_KEY)||'{}');return o&&typeof o==='object'?o:{}}catch(_){return {}}}
+const financeTypes=financeTypesRead();
+function financeKey(kind,id){return kind+':'+String(id)}
 function finance281Init(x,kind){
- const stored=S.finance281Types[kind]?.[x.id];
- if(['positive','negative','neutral'].includes(stored)&&x.finance281)x.finance281.type=stored;
- if(x.finance281 && ['positive','negative','neutral'].includes(x.finance281.type))return;
- const done=Number(x.penaltyDone)||0,miss=Number(x.penaltyMiss)||0;
- // Existing conflicting legacy rates are not silently reinterpreted.
- x.finance281={type:done>0&&miss===0?'negative':miss>0&&done===0?'positive':'neutral',amount:done>0&&miss===0?done:miss>0&&done===0?miss:0};
+ const valid=t=>['positive','negative','neutral'].includes(t);
+ const saved=kind?financeTypes[financeKey(kind,x.id)]:undefined;
+ if(!x.finance281||!valid(x.finance281.type)){
+  const done=Number(x.penaltyDone)||0,miss=Number(x.penaltyMiss)||0;
+  x.finance281={type:done>0&&miss===0?'negative':miss>0&&done===0?'positive':'neutral',amount:done>0&&miss===0?done:miss>0&&done===0?miss:0};
+ }
+ if(valid(saved))x.finance281.type=saved;
+ return x.finance281;
 }
-function finance281Apply(x,kind){finance281Init(x,kind);const f=x.finance281;
+function finance281Apply(x,kind){const f=finance281Init(x,kind);
  x.penaltyDone=f.type==='negative'?f.amount:0;
  x.penaltyMiss=f.type==='positive'?f.amount:0;
 }
-function finance281Set(kind,id,key,value){const x=(kind==='plan'?S.plans:S.habits).find(a=>a.id===id);if(!x)return;
- finance281Init(x,kind);
- if(key==='type'&&['positive','negative','neutral'].includes(value)){x.finance281.type=value;S.finance281Types[kind][id]=value;}
- if(key==='amount'){const v=Number(value);if(!Number.isFinite(v)||v<0||v>10000){toast('Betrag zwischen 0 und 10.000 €');render();return;}x.finance281.amount=v;}
- x.finance281Explicit=true;finance281Apply(x,kind);save();render();
+function finance281Set(kind,id,key,value){
+ if(kind!=='plan'&&kind!=='habit')return;
+ const x=(kind==='plan'?S.plans:S.habits).find(a=>String(a.id)===String(id));
+ if(!x){toast('Aktivität oder Plan nicht gefunden');return;}
+ const f=finance281Init(x,kind);
+ if(key==='type'){
+  if(!['positive','negative','neutral'].includes(value))return;
+  f.type=value;
+  financeTypes[financeKey(kind,x.id)]=value;
+  try{localStorage.setItem(FINANCE_TYPES_KEY,JSON.stringify(financeTypes));}catch(_){toast('Bewertung konnte nicht gespeichert werden');return;}
+ }else if(key==='amount'){
+  const n=Number(value);if(!Number.isFinite(n)||n<0||n>10000){toast('Betrag zwischen 0 und 10.000 €');render();return;}f.amount=n;
+ }else return;
+ x.finance281Explicit=true;
+ finance281Apply(x,kind);
+ save();render();
 }
 
 function addActivityEvent(id,type='done',when=timestamp(),source='app',eventId){
