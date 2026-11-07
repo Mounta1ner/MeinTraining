@@ -71,4 +71,37 @@ window.d282Cancel=()=>{clearInterval(timer);S.ui.d282Current=null;v27CloseModal(
 window.d282Save=()=>{const c=S.ui.d282Current;if(!c)return;clearInterval(timer);if((c.kind==='reps'?c.count:c.elapsed)<=0)return toast('Noch keine Wiederholung oder Zeit erfasst');const e=ex(c.id);S.exerciseHistory.push({id:c.id,name:e.n,at:new Date().toISOString(),unit:c.kind,reps:c.kind==='reps'?c.count:0,seconds:c.kind==='seconds'?c.elapsed:0,source:'favorite'});S.ui.d282Current=null;save();v27CloseModal();toast('✓ Gespeichert');render()};
 // Override only favorite buttons, preserving existing favorite descriptions.
 const oldFav=favHtml;favHtml=function(){let html=oldFav();return html.replace(/onclick="brOpen\('([^']+)'\)"/g,(_,id)=>`onclick="d282Start('${id}')"`).replace(/onclick="v28StartExercise\('([^']+)'\)"/g,(_,id)=>`onclick="d282Quick('${id}')"`).replace(/(<button class="b"[^>]*onclick="d282Quick\('([^']+)'\)"[^>]*>)([^<]*)(<\/button>)/g,(_,open,id,label,close)=>`${open}✓ Tracken${close}<button class="b g" onclick="d282Start('${id}')">▶ Start</button>`)};
+
+// Settings: compact, independently collapsible Home and Dashboard ordering.
+S.ui=S.ui||{};
+const d282SectionLabels={statsPlanned:'Geplante Aktivitäten',statsAll:'Alle Aktivitäten und Übungen',lastTraining:'Zuletzt trainiert',chart:'Trainingsentwicklung',plans:'Trainingspläne',activities:'Aktivitäten',weight:'Gewichtsverlauf',challenge:'Challenge',milestones:'Erfolge',finance:'Make me feel it',exercises:'Einzelübungen',other:'Weitere Bereiche'};
+const d282DefaultOrder=Object.keys(d282SectionLabels);
+function d282HistoryOrder(){S.ui.historyOrder=Array.isArray(S.ui.historyOrder)?[...new Set([...S.ui.historyOrder,...d282DefaultOrder])]:[...d282DefaultOrder];return S.ui.historyOrder;}
+window.d282MoveHistory=function(i,delta){const order=d282HistoryOrder(),j=i+delta;if(j<0||j>=order.length)return;[order[i],order[j]]=[order[j],order[i]];save();render();};
+window.d282ToggleHistory=function(key,enabled){S.ui.historyVisible=S.ui.historyVisible||{};S.ui.historyVisible[key]=enabled;save();};
+function d282HistorySettings(){const visible=S.ui.historyVisible||{};return `<div class="c"><details id="d282HistorySettings" ${S.ui.historySettingsOpen?'open':''} ontoggle="S.ui.historySettingsOpen=this.open;save()"><summary><b>📊 Verlauf-Reihung konfigurieren</b></summary><p class="mu">Bereiche ein-/ausblenden und mit den Pfeilen verschieben.</p>${d282HistoryOrder().map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${visible[k]===false?'':'checked'} onchange="d282ToggleHistory('${k}',this.checked)"> ${d282SectionLabels[k]}</label><button class="chip" onclick="d282MoveHistory(${i},-1)">↑</button><button class="chip" onclick="d282MoveHistory(${i},1)">↓</button></div>`).join('')}</details></div>`;}
+const d282SettingsBefore=vSet;
+vSet=function(){let html=d282SettingsBefore();const tpl=document.createElement('template');tpl.innerHTML=html;const cards=[...tpl.content.querySelectorAll('.c')];const home=cards.find(c=>/Home konfigurieren|Configure home/.test(c.querySelector('h3')?.textContent||''));if(home){const details=document.createElement('details');details.open=!!S.ui.homeSettingsOpen;details.setAttribute('ontoggle','S.ui.homeSettingsOpen=this.open;save()');const summary=document.createElement('summary');summary.innerHTML='<b>🏠 Home-Reihung konfigurieren</b>';details.appendChild(summary);while(home.firstChild)details.appendChild(home.firstChild);home.appendChild(details);}return tpl.innerHTML+d282HistorySettings();};
+// Sort rendered Dashboard blocks without altering the existing data or event handlers.
+const d282HistoryBefore=vHist;
+vHist=function(){const html=d282HistoryBefore();const tpl=document.createElement('template');tpl.innerHTML=html;const nodes=[...tpl.content.children];let context='other';const groups={};const assign=(node,k)=>{(groups[k]||(groups[k]=[])).push(node.outerHTML)};
+for(const node of nodes){const title=(node.querySelector?.('h3')?.textContent||'').toLowerCase();const text=(node.textContent||'').trim();let key='';if(node.classList?.contains('d282-stats'))key=context==='statsPlanned'?'statsPlanned':'statsAll';else if(node.classList?.contains('mu')&&text.includes('Zuletzt trainiert'))key='lastTraining';else if(title.includes('trainingsentwicklung'))key='chart';else if(title.includes('gewicht'))key='weight';else if(title.includes('aktivität'))key='activities';else if(title.includes('challenge')||title.includes('liegestütz'))key='challenge';else if(title.includes('erfolge')||title.includes('meilensteine'))key='milestones';else if(title.includes('make me feel it')||title.includes('finanz'))key='finance';else if(title.includes('einzelübungen'))key='exercises';else if(title.includes('trainingsplan'))key='plans';else if(node.tagName==='H3'&&text==='Geplante Aktivitäten'){context='statsPlanned';continue;}else if(node.tagName==='H3'&&text==='Alle Aktivitäten und Übungen'){context='statsAll';continue;}else if(node.tagName==='H2'){assign(node,'heading');continue;}else key='other';assign(node,key);}
+const visible=S.ui.historyVisible||{};return (groups.heading||[]).join('')+d282HistoryOrder().filter(k=>visible[k]!==false).map(k=>(groups[k]||[]).join('')).join('');};
+const d282FaqBefore=v27FAQ;
+v27FAQ=function(){return d282FaqBefore()+`<details><summary>${v27s('Was kann die App alles?','What can the app do?')}</summary><ul>${[
+ v27s('Trainingspläne erstellen, bearbeiten, importieren und absolvieren','Create, edit, import and complete workout plans'),
+ v27s('Übungen suchen, filtern und als Favoriten speichern','Find, filter and favorite exercises'),
+ v27s('Wiederholungen und Trainingszeiten erfassen','Track repetitions and workout time'),
+ v27s('Aktivitäten und Routinen mit Wochenzielen oder Wochentagen verwalten','Manage activities and routines with weekly goals or fixed days'),
+ v27s('Aktivitäten positiv, negativ oder neutral bewerten','Classify activities as positive, negative or neutral'),
+ v27s('Dashboard, Verlauf, Zeitstempel und Statistiken anzeigen','View dashboard, history, timestamps and statistics'),
+ v27s('Gewicht und BMI-Verlauf dokumentieren','Track weight and BMI history'),
+ v27s('Atemübungen, Pausentimer und BPM-Metronom verwenden','Use breathing exercises, rest timer and BPM metronome'),
+ v27s('Liegestütz-Challenge, Streaks und Meilensteine verfolgen','Track push-up challenge, streaks and milestones'),
+ v27s('Make me feel it mit optionaler finanzieller Bewertung verwenden','Use optional Make me feel it financial tracking'),
+ v27s('Home und Dashboard individuell anordnen','Customize Home and Dashboard order'),
+ v27s('Farbschema, Hell-/Dunkelmodus und Sprache einstellen','Set colors, light/dark mode and language'),
+ v27s('Daten exportieren und sichern','Export and back up data'),
+ v27s('Android-Widgets und lokale Erinnerungen verwenden (Android)','Use Android widgets and local reminders (Android)')
+].map(t=>`<li>${esc(t)}</li>`).join('')}</ul></details>`;};
 })();

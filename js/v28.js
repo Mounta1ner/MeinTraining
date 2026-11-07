@@ -17,9 +17,13 @@
  window.v28StartExercise=function(id,reps){const e=ex(id);if(!e)return;const n=Math.max(1,Math.min(999,Math.round(Number(reps)||10)));v27Modal(`<h2>${esc(e.n)}</h2><p>Tippe einmal pro Wiederholung.</p><button class="v27Counter" id="v28Counter" data-id="${esc(e.id)}" data-total="${n}" data-left="${n}" onclick="v28TapExercise()">${n}</button><button class="chip" onclick="v27CloseModal()">Schließen</button>`,false);};
  window.v28TapExercise=function(){const b=document.getElementById('v28Counter');if(!b)return;const n=Math.max(0,Number(b.dataset.left)-1);b.dataset.left=n;b.textContent=n;if(!n){const id=b.dataset.id,total=Number(b.dataset.total);v27CloseModal();v28TrackExercise(id,total);}};
  // Display Make Me Feel It even if v27 rebuilt settings from selected legacy sections.
+ // The original FAQ already renders HTML; do not append an array to it.
  const previousFAQ=v27FAQ;
- v27FAQ=function(){return previousFAQ().concat([[v27s('Wie wird die Intensität berechnet?','How is intensity calculated?'),v27s('Die Basiswerte bleiben unverändert. Pro Stufe steigen Wiederholungen um 8 %, zeitbasierte Werte um 12 %. Alle zwei Stufen kommt ein Satz hinzu, maximal sechs Sätze. Die Werte werden gerundet.','Base values remain unchanged. Reps increase by 8% per level, time values by 12%. One set is added every two levels, capped at six; values are rounded.')]]);};
-
+ v27FAQ=function(){
+  const html=previousFAQ();
+  const detail=v27s('Die Basiswerte bleiben unverändert. Pro Stufe steigen Wiederholungen um 8 %, zeitbasierte Werte um 12 %. Alle zwei Stufen kommt ein Satz hinzu, maximal sechs Sätze. Die Werte werden gerundet.','Base values remain unchanged. Reps increase by 8% per level, time values by 12%. One set is added every two levels, capped at six; values are rounded.');
+  return html.replace(/(<summary>Wie funktioniert die Intensität\?<\/summary>\s*<p>)[\s\S]*?(<\/p>)/,(_,start,end)=>start+detail+end).replace(/(<summary>How do intensity levels work\?<\/summary>\s*<p>)[\s\S]*?(<\/p>)/,(_,start,end)=>start+detail+end);
+ };
  window.v28StartPlanSet=function(id,reps,day,planId,index){
   const e=ex(id);if(!e)return;
   const n=Math.max(1,Math.min(999,Math.round(Number(reps)||1)));
