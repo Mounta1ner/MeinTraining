@@ -2,7 +2,7 @@
 (function(){
  S.ui=S.ui||{};
  const titles=[
-  'Darstellung & Sprache','Home Reihung und Anzeige konfigurieren','Verlauf Reihung und Anzeige konfigurieren','FAQ','Make me feel it','Lokale Benachrichtigungen','Kalender Erinnerungen','Pläne sichern','Verlauf sichern','Training','Native Android Widget','Datenschutz & Impressum'
+  'Darstellung & Sprache','Home Reihung und Anzeige konfigurieren','Verlauf Reihung und Anzeige konfigurieren','FAQ','Make me feel it','Lokale Benachrichtigungen','Kalender Erinnerungen','Pläne sichern','Verlauf sichern','Gewicht eingeben – für BMI Berechnung','Training','Native Android Widget','Datenschutz & Impressum'
  ];
  const escAttr=s=>String(s).replace(/&/g,'&amp;').replace(/"/g,'&quot;');
  const savedOpen=key=>S.ui.settingsExpanded?.[key]===true;
@@ -20,7 +20,18 @@
   const taken=new Set();
   const take=(re)=>{const n=cards.find(x=>!taken.has(x)&&re.test(sectionName(x)));if(n)taken.add(n);return n};
   const appearance=take(/darstellung|appearance/);
-  const home=take(/home konfigurieren|configure home/);
+  // Extract embedded legacy ordering controls from Appearance, rather than duplicating them.
+  let embeddedHome='';let embeddedHistory='';
+  if(appearance){
+   const matches=[...appearance.querySelectorAll('details,section,.c')];
+   for(const n of matches){
+    const label=(n.querySelector(':scope > summary,:scope > h3,:scope > h4')?.textContent||'').toLowerCase();
+    if(/home.*(reihung|konfigurieren|anzeige)/.test(label)){embeddedHome=n.innerHTML;n.remove();}
+    else if(/verlauf.*(reihung|konfigurieren|anzeige)/.test(label)){embeddedHistory=n.innerHTML;n.remove();}
+   }
+  }
+
+  const home=take(/home.*(konfigurieren|reihung)|configure home/);
   const faq=take(/^faq$/);
   const finance=take(/make me feel it/);
   const notifications=take(/lokale benachrichtigungen|local notifications/);
@@ -30,14 +41,26 @@
   const training=take(/^training$|^workout$/);
   const widgets=take(/native android widgets?/);
   const privacy=take(/datenschutz|privacy/);
-  const extras=cards.filter(x=>!taken.has(x));
+  const extras=cards.filter(x=>!taken.has(x) && !/home.*(konfigurieren|reihung)|verlauf.*(reihung|konfigurieren)/.test(sectionName(x)));
+  const weight=cards.find(x=>!taken.has(x)&&/gewicht|weight|bmi/.test(sectionName(x)));
+  if(weight)taken.add(weight);
+  // Do not repeat any legacy Home/History configuration cards.
   const labels={plans:'Trainingspläne',activities:'Aktivitäten',favorites:'Favoriten',pause:'Pausen',quote:'Motivationsspruch',weight:'Gewicht',bpm:'BPM',breath:'Atemübungen',challenge:'Challenge',streak:'Streaks',finance:'Make me feel it'};
   const order=S.homeOrder||[];
-  const homeContent=home?content(home):order.map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${S.homeVisible?.[k]===false?'':'checked'} onchange="S.homeVisible['${k}']=this.checked;save();render()"> ${labels[k]||escAttr(k)}</label><button class="chip" onclick="moveHome(${i},-1)">↑</button><button class="chip" onclick="moveHome(${i},1)">↓</button></div>`).join('');
+  const homeContent=home?content(home):(embeddedHome||order.map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${S.homeVisible?.[k]===false?'':'checked'} onchange="S.homeVisible['${k}']=this.checked;save();render()"> ${labels[k]||escAttr(k)}</label><button class="chip" onclick="moveHome(${i},-1)">↑</button><button class="chip" onclick="moveHome(${i},1)">↓</button></div>`).join(''));
   const histLabels={statsPlanned:'Geplante Aktivitäten',statsAll:'Alle Aktivitäten und Übungen',chart:'Trainingsentwicklung',weight:'Gewicht',activities:'Aktivitäten',challenge:'Challenge',milestones:'Erfolge',finance:'Make me feel it',exercises:'Einzelübungen',plans:'Trainingspläne',other:'Weitere Bereiche'};
   S.ui.historyOrder=Array.isArray(S.ui.historyOrder)?[...new Set([...S.ui.historyOrder,...Object.keys(histLabels)])]:Object.keys(histLabels);
   const visible=S.ui.historyVisible||{};
-  const histContent=S.ui.historyOrder.map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${visible[k]===false?'':'checked'} onchange="mtHistoryVisible('${k}',this.checked)"> ${histLabels[k]||escAttr(k)}</label><button class="chip" onclick="mtHistoryMove(${i},-1)">↑</button><button class="chip" onclick="mtHistoryMove(${i},1)">↓</button></div>`).join('');
+  const histContent=embeddedHistory||S.ui.historyOrder.map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${visible[k]===false?'':'checked'} onchange="mtHistoryVisible('${k}',this.checked)"> ${histLabels[k]||escAttr(k)}</label><button class="chip" onclick="mtHistoryMove(${i},-1)">↑</button><button class="chip" onclick="mtHistoryMove(${i},1)">↓</button></div>`).join('');
+  // Strip duplicate legacy controls from the Appearance card (including nested headings).
+  if(appearance){
+   for(const node of [...appearance.querySelectorAll('h3,h4,summary')]){
+    if(/home.*(reihung|konfigurieren|anzeige)|verlauf.*(reihung|konfigurieren|anzeige)/i.test(node.textContent||'')){
+     const parent=node.closest('details,.settingsRow')||node.parentElement;
+     if(parent&&parent!==appearance)parent.remove();
+    }
+   }
+  }
   const blocks=[
    appearance?appearance.outerHTML:'',
    card(titles[1],homeContent,true,'home'),
@@ -48,12 +71,13 @@
    calendar?calendar.outerHTML:'',
    plans?plans.outerHTML:'',
    history?history.outerHTML:'',
+   weight?card('Gewicht eingeben – für BMI Berechnung',content(weight)):card('Gewicht eingeben – für BMI Berechnung',''),
    training?training.outerHTML:'',
    widgets?widgets.outerHTML:'',
    privacy?privacy.outerHTML:''
   ];
   // Retain every additional setting that is not part of the requested 12 panels.
-  if(extras.length){const index=blocks.findIndex(Boolean);if(index>=0){const template=document.createElement('template');template.innerHTML=blocks[index];const section=template.content.firstElementChild;extras.forEach(x=>section.appendChild(x.cloneNode(true)));blocks[index]=section.outerHTML;}}
+  if(extras.length){const target=blocks.findIndex(Boolean);if(target>=0){const t=document.createElement('template');t.innerHTML=blocks[target];const section=t.content.firstElementChild;extras.forEach(x=>section.appendChild(x.cloneNode(true)));blocks[target]=section.outerHTML;}}
   return `<h2>${typeof v27Text==='function'?v27Text('settings'):'Einstellungen'}</h2>`+blocks.join('');
  };
  window.mtHistoryVisible=function(k,on){S.ui.historyVisible=S.ui.historyVisible||{};S.ui.historyVisible[k]=on;save();};
