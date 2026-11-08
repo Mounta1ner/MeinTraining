@@ -72,21 +72,87 @@ window.d282Save=()=>{const c=S.ui.d282Current;if(!c)return;clearInterval(timer);
 // Override only favorite buttons, preserving existing favorite descriptions.
 const oldFav=favHtml;favHtml=function(){let html=oldFav();return html.replace(/onclick="brOpen\('([^']+)'\)"/g,(_,id)=>`onclick="d282Start('${id}')"`).replace(/onclick="v28StartExercise\('([^']+)'\)"/g,(_,id)=>`onclick="d282Quick('${id}')"`).replace(/(<button class="b"[^>]*onclick="d282Quick\('([^']+)'\)"[^>]*>)([^<]*)(<\/button>)/g,(_,open,id,label,close)=>`${open}✓ Tracken${close}<button class="b g" onclick="d282Start('${id}')">▶ Start</button>`)};
 
-// Settings: compact, independently collapsible Home and Dashboard ordering.
+// One authoritative Settings layout; no nested legacy Home/History configuration.
 S.ui=S.ui||{};
 const d282SectionLabels={statsPlanned:'Geplante Aktivitäten',statsAll:'Alle Aktivitäten und Übungen',lastTraining:'Zuletzt trainiert',chart:'Trainingsentwicklung',plans:'Trainingspläne',activities:'Aktivitäten',weight:'Gewichtsverlauf',challenge:'Challenge',milestones:'Erfolge',finance:'Make me feel it',exercises:'Einzelübungen',other:'Weitere Bereiche'};
 const d282DefaultOrder=Object.keys(d282SectionLabels);
-function d282HistoryOrder(){S.ui.historyOrder=Array.isArray(S.ui.historyOrder)?[...new Set([...S.ui.historyOrder,...d282DefaultOrder])]:[...d282DefaultOrder];return S.ui.historyOrder;}
+function d282HistoryOrder(){S.ui.historyOrder=[...new Set([...(Array.isArray(S.ui.historyOrder)?S.ui.historyOrder:[]),...d282DefaultOrder])];return S.ui.historyOrder;}
 window.d282MoveHistory=function(i,delta){const order=d282HistoryOrder(),j=i+delta;if(j<0||j>=order.length)return;[order[i],order[j]]=[order[j],order[i]];save();render();};
-window.d282ToggleHistory=function(key,enabled){S.ui.historyVisible=S.ui.historyVisible||{};S.ui.historyVisible[key]=enabled;save();};
-function d282HistorySettings(){const visible=S.ui.historyVisible||{};return `<div class="c"><details id="d282HistorySettings" ${S.ui.historySettingsOpen?'open':''} ontoggle="S.ui.historySettingsOpen=this.open;save()"><summary><b>📊 Verlauf-Reihung konfigurieren</b></summary><p class="mu">Bereiche ein-/ausblenden und mit den Pfeilen verschieben.</p>${d282HistoryOrder().map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${visible[k]===false?'':'checked'} onchange="d282ToggleHistory('${k}',this.checked)"> ${d282SectionLabels[k]}</label><button class="chip" onclick="d282MoveHistory(${i},-1)">↑</button><button class="chip" onclick="d282MoveHistory(${i},1)">↓</button></div>`).join('')}</details></div>`;}
+window.d282ToggleHistory=function(key,enabled){S.ui.historyVisible=S.ui.historyVisible||{};S.ui.historyVisible[key]=enabled;save();render();};
+window.d282ToggleSettings=function(key,opened){S.ui.settingsOpen=S.ui.settingsOpen||{};S.ui.settingsOpen[key]=opened;save();};
+function d282SettingsCard(label,html,key,collapsible){
+ if(!collapsible)return `<div class="c"><h3>${label}</h3>${html}</div>`;
+ const open=S.ui.settingsOpen?.[key]?'open':'';
+ return `<div class="c"><details ${open} ontoggle="d282ToggleSettings('${key}',this.open)"><summary style="font-weight:700;cursor:pointer">${label}</summary><div style="margin-top:12px">${html}</div></details></div>`;
+}
 const d282SettingsBefore=vSet;
-vSet=function(){let html=d282SettingsBefore();const tpl=document.createElement('template');tpl.innerHTML=html;const cards=[...tpl.content.querySelectorAll('.c')];const home=cards.find(c=>/Home konfigurieren|Configure home/.test(c.querySelector('h3')?.textContent||''));if(home){const details=document.createElement('details');details.open=!!S.ui.homeSettingsOpen;details.setAttribute('ontoggle','S.ui.homeSettingsOpen=this.open;save()');const summary=document.createElement('summary');summary.innerHTML='<b>🏠 Home-Reihung konfigurieren</b>';details.appendChild(summary);while(home.firstChild)details.appendChild(home.firstChild);home.appendChild(details);}return tpl.innerHTML+d282HistorySettings();};
-// Sort rendered Dashboard blocks without altering the existing data or event handlers.
+vSet=function(){
+ const tpl=document.createElement('template');tpl.innerHTML=d282SettingsBefore();
+ const cards=[...tpl.content.children].filter(x=>x.classList?.contains('c'));
+ const used=new Set();
+ function take(re){const x=cards.find(c=>!used.has(c)&&re.test(c.querySelector(':scope > h3')?.textContent||''));if(x)used.add(x);return x;}
+ function body(c){if(!c)return '';const t=c.cloneNode(true);t.querySelector(':scope > h3')?.remove();return t.innerHTML;}
+ const appearance=take(/^(Darstellung|Appearance)$/i);
+ const home=take(/Home konfigurieren|Configure home/i);
+ const personal=take(/Persönliche Daten|Personal settings/i);
+ const notify=take(/Lokale Benachrichtigungen|Local notifications/i);
+ const training=take(/^Training$|^Workout$/i);
+ const faq=take(/^FAQ$/i);
+ const privacy=take(/Datenschutz|Privacy/i);
+ const calendar=take(/Kalender-Erinnerung|Calendar reminder/i);
+ const plans=take(/Pläne sichern|Backup plans/i);
+ const historyBackup=take(/Verlauf sichern|Backup history/i);
+ const widgets=take(/Native Android Widgets?/i);
+ const finance=take(/Make me feel it/i);
+ const weightWidget=document.createElement('template');weightWidget.innerHTML=weightQuick();
+ const weightEntry=weightWidget.content.querySelector('.c');
+ // Exactly one Home controller: reuse existing saved order, visibility and moveHome.
+ const homeLabels={plans:'Trainingspläne',activities:'Aktivitäten & Routinen',favorites:'Favoriten',pause:'Pause-Timer',quote:'Motivationsspruch',weight:'Gewicht',bpm:'BPM',breath:'Atemübungen',challenge:'Challenge',streak:'Streaks',finance:'Make me feel it'};
+ const homeRows=(S.homeOrder||[]).map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${S.homeVisible?.[k]===false?'':'checked'} onchange="S.homeVisible['${k}']=this.checked;save();render()"> ${homeLabels[k]||esc(k)}</label><button class="chip" onclick="moveHome(${i},-1)">↑</button><button class="chip" onclick="moveHome(${i},1)">↓</button></div>`).join('');
+ const historyRows=d282HistoryOrder().map((k,i)=>`<div class="settingsRow"><label style="flex:1"><input type="checkbox" ${S.ui.historyVisible?.[k]===false?'':'checked'} onchange="d282ToggleHistory('${k}',this.checked)"> ${d282SectionLabels[k]}</label><button class="chip" onclick="d282MoveHistory(${i},-1)">↑</button><button class="chip" onclick="d282MoveHistory(${i},1)">↓</button></div>`).join('');
+ const result=[
+ d282SettingsCard(v27s('Darstellung & Sprache','Appearance & language'),body(appearance), 'appearance',false),
+ d282SettingsCard(v27s('Home Reihung und Anzeige konfigurieren','Configure Home order and visibility'),homeRows,'home',true),
+ d282SettingsCard(v27s('Verlauf Reihung und Anzeige konfigurieren','Configure history order and visibility'),historyRows,'history',true),
+ d282SettingsCard('FAQ',body(faq),'faq',true),
+ d282SettingsCard('⚡ Make me feel it',body(finance),'finance',true),
+ notify?.outerHTML||'',calendar?.outerHTML||'',plans?.outerHTML||'',historyBackup?.outerHTML||'',
+ d282SettingsCard(v27s('Gewicht eingeben – für BMI Berechnung','Enter weight – for BMI calculation'),body(personal)+(weightEntry?weightEntry.innerHTML:''),'weight',false),
+ training?.outerHTML||'',widgets?.outerHTML||'',privacy?.outerHTML||''
+ ];
+ // Do not discard unknown future settings, but never reinsert duplicate order panels.
+ for(const c of cards)if(!used.has(c)&&!/Home|Verlauf.*Reihung|History.*order/i.test(c.querySelector(':scope > h3')?.textContent||''))result.push(c.outerHTML);
+ return `<h2>${v27Text('settings')}</h2>`+result.join('');
+};
+// The dashboard is grouped by actual top-level nodes, including the heading that owns each stats row.
 const d282HistoryBefore=vHist;
-vHist=function(){const html=d282HistoryBefore();const tpl=document.createElement('template');tpl.innerHTML=html;const nodes=[...tpl.content.children];let context='other';const groups={};const assign=(node,k)=>{(groups[k]||(groups[k]=[])).push(node.outerHTML)};
-for(const node of nodes){const title=(node.querySelector?.('h3')?.textContent||'').toLowerCase();const text=(node.textContent||'').trim();let key='';if(node.classList?.contains('d282-stats'))key=context==='statsPlanned'?'statsPlanned':'statsAll';else if(node.classList?.contains('mu')&&text.includes('Zuletzt trainiert'))key='lastTraining';else if(title.includes('trainingsentwicklung'))key='chart';else if(title.includes('gewicht'))key='weight';else if(title.includes('aktivität'))key='activities';else if(title.includes('challenge')||title.includes('liegestütz'))key='challenge';else if(title.includes('erfolge')||title.includes('meilensteine'))key='milestones';else if(title.includes('make me feel it')||title.includes('finanz'))key='finance';else if(title.includes('einzelübungen'))key='exercises';else if(title.includes('trainingsplan'))key='plans';else if(node.tagName==='H3'&&text==='Geplante Aktivitäten'){context='statsPlanned';continue;}else if(node.tagName==='H3'&&text==='Alle Aktivitäten und Übungen'){context='statsAll';continue;}else if(node.tagName==='H2'){assign(node,'heading');continue;}else key='other';assign(node,key);}
-const visible=S.ui.historyVisible||{};return (groups.heading||[]).join('')+d282HistoryOrder().filter(k=>visible[k]!==false).map(k=>(groups[k]||[]).join('')).join('');};
+vHist=function(){
+ const tpl=document.createElement('template');tpl.innerHTML=d282HistoryBefore();
+ const groups={};let statsContext=null;
+ const put=(key,html)=>{(groups[key]||(groups[key]=[])).push(html)};
+ for(const node of [...tpl.content.children]){
+  const title=(node.querySelector?.(':scope > h3')?.textContent||'').toLowerCase();
+  const text=(node.textContent||'').trim();
+  if(node.tagName==='H2'){put('_title',node.outerHTML);continue;}
+  if(node.tagName==='H3'&&/geplante aktivitäten/i.test(text)){statsContext='statsPlanned';put('statsPlanned',node.outerHTML);continue;}
+  if(node.tagName==='H3'&&/alle aktivitäten und übungen/i.test(text)){statsContext='statsAll';put('statsAll',node.outerHTML);continue;}
+  let key='other';
+  if(node.classList?.contains('d282-stats'))key=statsContext||'statsAll';
+  else if(node.classList?.contains('mu')&&/zuletzt trainiert/i.test(text))key='lastTraining';
+  else if(/trainingsentwicklung/i.test(title))key='chart';
+  else if(/gewicht/i.test(title))key='weight';
+  else if(/aktivität/i.test(title))key='activities';
+  else if(/challenge|liegestütz/i.test(title))key='challenge';
+  else if(/erfolge|meilensteine/i.test(title))key='milestones';
+  else if(/make me feel it|finanz/i.test(title))key='finance';
+  else if(/einzelübungen/i.test(title))key='exercises';
+  else if(/trainingsplan/i.test(title))key='plans';
+  put(key,node.outerHTML);
+ }
+ const visible=S.ui.historyVisible||{};
+ const order=d282HistoryOrder();
+ return (groups._title||[]).join('')+order.filter(k=>visible[k]!==false).map(k=>(groups[k]||[]).join('')).join('')+Object.keys(groups).filter(k=>k!=='_title'&&!order.includes(k)).map(k=>groups[k].join('')).join('');
+};
 const d282FaqBefore=v27FAQ;
 v27FAQ=function(){return d282FaqBefore()+`<details><summary>${v27s('Was kann die App alles?','What can the app do?')}</summary><ul>${[
  v27s('Trainingspläne erstellen, bearbeiten, importieren und absolvieren','Create, edit, import and complete workout plans'),
