@@ -1,0 +1,26 @@
+{
+  "name": "BOND – Body & Mind Training",
+  "short_name": "BOND",
+  "description": "BOND – Body & Mind Training: Körperliche Fitness, Reha, mentale Stärke, Denkfehler-Drills & Routinen.",
+  "lang": "de",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

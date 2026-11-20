@@ -1,0 +1,44 @@
+{
+  "templates": [
+    [
+      "Büro-Fit",
+      "0,2,4",
+      "Nackendehnung,2,30,0;Brustdehnung im Türrahmen,2,30,0;Hüftbeuger-Dehnung,2,30,0;Katze-Kuh,2,30,0;Hüftbrücke,2,12,0;Vierfüßler diagonal,2,8,0;Rückenheben,2,10,0;Unterarmstütz,2,20,0",
+      "Ca. 15 Minuten, Fokus auf Nacken, Schultern, Hüfte und Rücken gegen Verspannungen durch langes Sitzen."
+    ],
+    [
+      "Oberkörper",
+      "1,4",
+      "Liegestütz,3,8,0;Vorgebeugtes Rudern,3,10,3;Schulterdrücken,3,10,2;Seitheben,2,12,1;Bizeps-Curl,2,12,2;Dips am Stuhl,2,8,0;Unterarmstütz,3,20,0;Brustdehnung im Türrahmen,2,30,0;Nackendehnung,2,30,0",
+      "Ca. 30 Minuten, Brust, Rücken, Schultern und Arme mit leichten Kurzhanteln. Liegestütz bei Bedarf an der Wand oder auf den Knien."
+    ],
+    [
+      "Ganzkörper ausgewogen",
+      "0,2,5",
+      "Hampelmann,2,20,0;Kniebeuge,3,10,0;Hüftbrücke,3,12,0;Liegestütz,2,8,0;Vorgebeugtes Rudern,2,10,3;Unterarmstütz,3,20,0;Vierfüßler diagonal,2,8,0;Einbeinstand,2,20,0;Oberschenkel-Rückseite dehnen,2,30,0;Hüftbeuger-Dehnung,2,30,0;Brustdehnung im Türrahmen,2,30,0;Kindhaltung,2,30,0",
+      "Ca. 40 Minuten, Kraft für Beine, Rücken und Rumpf, dazu Aufwärmen, Gleichgewicht und Dehnung."
+    ]
+  ],
+  "curated": [
+    [
+      "Bauch, Beine, Po",
+      "Kniebeuge,Hüftbrücke,Ausfallschritt,Unterarmstütz,Seitstütz"
+    ],
+    [
+      "Ski-Vorbereitung",
+      "Kniebeuge,Wandsitzen,Ausfallschritt,Einbeinstand,Seitstütz"
+    ],
+    [
+      "Rücken stärken",
+      "Vierfüßler diagonal,Hüftbrücke,Rückenheben,Katze-Kuh,Unterarmstütz"
+    ],
+    [
+      "Für Läufer",
+      "Step-up,Ausfallschritt,Wadenheben,Hüftbrücke,Seitstütz"
+    ],
+    [
+      "Ganzkörper Kraft",
+      "Kniebeuge,Liegestütz,Vorgebeugtes Rudern,Schulterdrücken,Unterarmstütz"
+    ]
+  ]
+}
